@@ -4,5 +4,5 @@
 
 The library default namespace is:
 ```c#
-Pihrtsoft.Snippets;
+Pihrtsoft.Snippets
 ```
