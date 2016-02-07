@@ -1,0 +1,22 @@
+﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+
+using System;
+using System.Collections.Generic;
+
+namespace Pihrtsoft.Snippets
+{
+    internal static class CollectionExtensions
+    {
+        public static void AddRange<TSource>(this ICollection<TSource> collection, IEnumerable<TSource> itemsToAdd)
+        {
+            if (collection == null)
+                throw new ArgumentNullException(nameof(collection));
+
+            if (itemsToAdd == null)
+                throw new ArgumentNullException(nameof(itemsToAdd));
+
+            foreach (TSource item in itemsToAdd)
+                collection.Add(item);
+        }
+    }
+}

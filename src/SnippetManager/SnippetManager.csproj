@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD1F8E68-3235-4F96-A404-EE423536EA63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pihrtsoft.Snippets</RootNamespace>
+    <AssemblyName>Pihrtsoft.Snippets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Pihrtsoft.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Pihrtsoft.Snippets.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\Pihrtsoft.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Pihrtsoft.Snippets.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SnippetManager.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyReference.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Comparers\AssemblyReferenceDeepEqualityComparer.cs" />
+    <Compile Include="Comparers\LiteralDeepEqualityComparer.cs" />
+    <Compile Include="Comparers\SnippetDeepEqualityComparer.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="NamespaceCollection.cs" />
+    <Compile Include="KeywordCollection.cs" />
+    <Compile Include="LiteralCollection.cs" />
+    <Compile Include="Comparers\LiteralIdentifierComparer.cs" />
+    <Compile Include="Placeholder.cs" />
+    <Compile Include="Comparers\LiteralComparer.cs" />
+    <Compile Include="SnippetCode.cs" />
+    <Compile Include="SnippetCollection.cs" />
+    <Compile Include="Comparers\SnippetComparer.cs" />
+    <Compile Include="SnippetFile.cs" />
+    <Compile Include="Comparers\SnippetShortcutComparer.cs" />
+    <Compile Include="Comparers\SnippetTitleComparer.cs" />
+    <Compile Include="Validations\ErrorCode.cs" />
+    <Compile Include="Validations\ResultImportance.cs" />
+    <Compile Include="SaveSettings.cs" />
+    <Compile Include="SerializationContext.cs" />
+    <Compile Include="SnippetMapper.cs" />
+    <Compile Include="Snippet.cs" />
+    <Compile Include="ContextKind.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Literal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnippetFileSearcher.cs" />
+    <Compile Include="SnippetSerializer.cs" />
+    <Compile Include="PlaceholderCollection.cs" />
+    <Compile Include="SnippetTypes.cs" />
+    <Compile Include="SnippetUtility.cs" />
+    <Compile Include="Validations\SnippetValidationResult.cs" />
+    <Compile Include="Validations\SnippetValidator.cs" />
+    <Compile Include="TextUtility.cs" />
+    <Compile Include="Validations\SnippetValidationContext.cs" />
+    <Compile Include="Validations\ValidationHelper.cs" />
+    <Compile Include="Validations\ValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\CodeValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\SnippetTypeValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\FormatVersionValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\AssemblyReferenceValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\LiteralValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\NamespaceValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\DescriptionValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\ShortcutValidationRule.cs" />
+    <Compile Include="Validations\ValidationRules\TitleValidationRule.cs" />
+    <Compile Include="Xml\Serialization\DeclarationsElement.cs" />
+    <Compile Include="Xml\Serialization\CodeElement.cs" />
+    <Compile Include="Xml\Serialization\ObjectElement.cs" />
+    <Compile Include="Xml\Serialization\LiteralElement.cs" />
+    <Compile Include="Xml\Serialization\ReferenceElement.cs" />
+    <Compile Include="Xml\Serialization\ImportElement.cs" />
+    <Compile Include="Xml\Serialization\HeaderElement.cs" />
+    <Compile Include="Xml\Serialization\SnippetElement.cs" />
+    <Compile Include="Xml\Serialization\CodeSnippetElement.cs" />
+    <Compile Include="Xml\Serialization\CodeSnippetsElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="PihrtsoftDictionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SnippetManager.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
