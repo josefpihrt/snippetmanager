@@ -79,7 +79,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         /// <param name="stream">The <see cref="Stream"/> that contains snippets to deserialize.</param>
         /// <returns>Enumerable collection of snippets being deserialized.</returns>
-        public static IEnumerable<Snippet> Deserialize(Stream stream)
+        private static IEnumerable<Snippet> Deserialize(Stream stream)
         {
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
