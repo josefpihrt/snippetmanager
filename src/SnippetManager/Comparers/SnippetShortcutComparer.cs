@@ -6,7 +6,7 @@ namespace Pihrtsoft.Snippets.Comparers
 {
     internal class SnippetShortcutComparer : SnippetComparer
     {
-        private static readonly StringComparer _stringComparer = StringComparer.OrdinalIgnoreCase;
+        private static readonly StringComparer _stringComparer = StringComparer.CurrentCultureIgnoreCase;
 
         protected override string GetValue(Snippet snippet)
         {
