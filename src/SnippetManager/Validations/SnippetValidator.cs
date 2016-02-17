@@ -14,7 +14,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <summary>
         /// Initializes a new instance of the <see cref="SnippetValidator"/> class.
         /// </summary>
-        protected SnippetValidator()
+        public SnippetValidator()
         {
             ValidationRules = new Collection<ValidationRule>();
         }
