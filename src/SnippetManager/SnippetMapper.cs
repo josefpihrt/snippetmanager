@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Pihrtsoft.Snippets.Validations;
 using Pihrtsoft.Snippets.Xml.Serialization;
 
 namespace Pihrtsoft.Snippets
@@ -32,7 +33,7 @@ namespace Pihrtsoft.Snippets
                 Version version = null;
                 if (Version.TryParse(element.Format, out version))
                 {
-                    if (SnippetUtility.IsValidVersion(version))
+                    if (ValidationHelper.IsValidVersion(version))
                         snippet.FormatVersion = version;
                 }
             }
@@ -110,7 +111,7 @@ namespace Pihrtsoft.Snippets
 
         private static void SerializeVersion(Version version, SerializationContext context)
         {
-            if (SnippetUtility.IsValidVersion(version))
+            if (ValidationHelper.IsValidVersion(version))
                 context.Element.Format = version.ToString(3);
             else if (context.Settings.SetDefaultFormat)
                 context.Element.Format = Snippet.DefaultFormatVersionText;

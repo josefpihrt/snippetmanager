@@ -9,9 +9,8 @@ namespace Pihrtsoft.Snippets
 {
     //TODO: CreateHtmlTable
 
-    internal static class SnippetUtility
+    public static class SnippetUtility
     {
-        //TODO: FindDuplicateShortcuts
         public static IEnumerable<IGrouping<string, Snippet>> FindDuplicateShortcuts(IEnumerable<Snippet> snippets)
         {
             if (snippets == null)
@@ -24,20 +23,6 @@ namespace Pihrtsoft.Snippets
                 if (grouping.CountExceeds(1))
                     yield return grouping;
             }
-        }
-
-        public static bool IsValidVersion(Version version)
-        {
-            if (version == null
-                || version.Major == -1
-                || version.Minor == -1
-                || version.Build == -1
-                || version.Revision != -1)
-            {
-                return false;
-            }
-
-            return true;
         }
     }
 }

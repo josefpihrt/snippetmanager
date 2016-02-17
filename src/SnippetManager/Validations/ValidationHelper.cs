@@ -60,7 +60,19 @@ namespace Pihrtsoft.Snippets.Validations
             if (version == null)
                 return false;
 
-            return !(version.Major == -1 || version.Minor == -1 || version.Build == -1 || version.Revision != -1);
+            if (version.Major == -1)
+                return false;
+
+            if (version.Minor == -1)
+                return false;
+
+            if (version.Build == -1)
+                return false;
+
+            if (version.Revision != -1)
+                return false;
+
+            return true;
         }
     }
 }
