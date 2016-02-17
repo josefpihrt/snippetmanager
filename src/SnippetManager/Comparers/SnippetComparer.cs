@@ -38,7 +38,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns>A signed integer that indicates the relative values of <paramref name="x"/> and <paramref name="y"/>.</returns>
         public int Compare(Snippet x, Snippet y)
         {
-            return _stringComparer.Compare(GetValue(x), GetValue(y));
+            return StringComparer.Compare(GetValue(x), GetValue(y));
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns><c>true</c> if <paramref name="x"/> and <paramref name="y"/> refer to the same object, or <paramref name="x"/> and <paramref name="y"/> are <c>null</c>, or <paramref name="x"/> and <paramref name="y"/> are equal; otherwise, <c>false</c>.</returns>
         public bool Equals(Snippet x, Snippet y)
         {
-            return _stringComparer.Equals(GetValue(x), GetValue(y));
+            return StringComparer.Equals(GetValue(x), GetValue(y));
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj"/>.</returns>
         public int GetHashCode(Snippet obj)
         {
-            return _stringComparer.GetHashCode(GetValue(obj));
+            return StringComparer.GetHashCode(GetValue(obj));
         }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns>A signed integer that indicates the relative values of <paramref name="x"/> and <paramref name="y"/>.</returns>
         public int Compare(object x, object y)
         {
-            return _stringComparer.Compare(GetValue((Snippet)x), GetValue((Snippet)y));
+            return StringComparer.Compare(GetValue((Snippet)x), GetValue((Snippet)y));
         }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns><c>true</c> if <paramref name="x"/> and <paramref name="y"/> refer to the same object, or <paramref name="x"/> and <paramref name="y"/> are both the same type of object and those objects are equal; otherwise, <c>false</c>.</returns>
         new public bool Equals(object x, object y)
         {
-            return _stringComparer.Equals(GetValue((Snippet)x), GetValue((Snippet)y));
+            return StringComparer.Equals(GetValue((Snippet)x), GetValue((Snippet)y));
         }
 
         /// <summary>
@@ -91,7 +91,12 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj"/>.</returns>
         public int GetHashCode(object obj)
         {
-            return _stringComparer.GetHashCode(GetValue((Snippet)obj));
+            return StringComparer.GetHashCode(GetValue((Snippet)obj));
         }
+
+        /// <summary>
+        /// Gets <see cref="StringComparer"/> that is used to compare values.
+        /// </summary>
+        protected virtual StringComparer StringComparer => _stringComparer;
     }
 }
