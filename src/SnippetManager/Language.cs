@@ -53,6 +53,11 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// HTML language.
         /// </summary>
-        Html
+        Html,
+
+        /// <summary>
+        /// CSS style sheet language.
+        /// </summary>
+        Css
     }
 }
