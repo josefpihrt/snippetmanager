@@ -9,6 +9,11 @@ namespace Pihrtsoft.Snippets
     /// </summary>
     public class Literal : ICloneable
     {
+        /// <summary>
+        /// Defines name of literal function that returns containing type name. This field is a constant.
+        /// </summary>
+        public const string ClassNameFunctionName = "ClassName()";
+
         private string _identifier;
         private string _defaultValue;
 
@@ -31,6 +36,25 @@ namespace Pihrtsoft.Snippets
             DefaultValue = defaultValue;
             IsEditable = true;
         }
+
+#if DEBUG
+        /// <summary>
+        /// Create new <see cref="Literal"/> with function that returns containing type name.
+        /// </summary>
+        /// <param name="identifier">The <see cref="Literal"/> identifier.</param>
+        /// <param name="toolTip">The <see cref="Literal"/> description.</param>
+        /// <param name="defaultValue">The <see cref="Literal"/>default value.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="identifier"/> is <c>null</c>.</exception>
+        /// <returns><see cref="Literal"/> that returns containing type name.</returns>
+        public static Literal CreateClassNameLiteral(string identifier, string toolTip = null, string defaultValue = "")
+        {
+            return new Literal(identifier, toolTip, defaultValue)
+            {
+                Function = ClassNameFunctionName,
+                IsEditable = false
+            };
+        }
+#endif
 
         /// <summary>
         /// Creates a new <see cref="Literal"/> that is a deep copy of the current instance.
