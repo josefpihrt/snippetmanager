@@ -84,7 +84,7 @@ namespace Pihrtsoft.Snippets
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
 
-            using (var xmlReader = XmlReader.Create(stream, XmlReaderSettings))
+            using (XmlReader xmlReader = XmlReader.Create(stream, XmlReaderSettings))
             {
 #if DEBUG
                 CodeSnippetsElement element = null;
@@ -295,7 +295,7 @@ namespace Pihrtsoft.Snippets
 
         private static void Serialize(Stream stream, CodeSnippetElement[] elements, SaveSettings settings)
         {
-            using (var xw = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
+            using (XmlWriter xw = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
                 XmlSerializer.Serialize(xw, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
         }
 
