@@ -15,18 +15,21 @@ namespace Pihrtsoft.Snippets
         internal static readonly StringComparer IdentifierComparer = StringComparer.Ordinal;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Literal"/> class with a specified identifier.
+        /// Initializes a new instance of the <see cref="Literal"/> class with a specified identifier, tooltip and default value.
         /// </summary>
-        /// <param name="identifier">A <see cref="Literal"/> identifier.</param>
-        public Literal(string identifier)
+        /// <param name="identifier">The <see cref="Literal"/> identifier.</param>
+        /// <param name="toolTip">The <see cref="Literal"/> description.</param>
+        /// <param name="defaultValue">The <see cref="Literal"/>default value.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="identifier"/> is <c>null</c>.</exception>
+        public Literal(string identifier, string toolTip = null, string defaultValue = "")
         {
             if (identifier == null)
                 throw new ArgumentNullException(nameof(identifier));
 
             Identifier = identifier;
+            ToolTip = toolTip;
+            DefaultValue = defaultValue;
             IsEditable = true;
-
-            _defaultValue = string.Empty;
         }
 
         /// <summary>
