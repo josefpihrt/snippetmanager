@@ -74,7 +74,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <param name="x">An object to compare to <paramref name="y"/>.</param>
         /// <param name="y">An object to compare to <paramref name="x"/>.</param>
         /// <returns><c>true</c> if <paramref name="x"/> and <paramref name="y"/> refer to the same object, or <paramref name="x"/> and <paramref name="y"/> are both the same type of object and those objects are equal; otherwise, <c>false</c>.</returns>
-        public new bool Equals(object x, object y)
+        new public bool Equals(object x, object y)
         {
             return _stringComparer.Equals(GetValue((Literal)x), GetValue((Literal)y));
         }
