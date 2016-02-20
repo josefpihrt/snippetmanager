@@ -115,6 +115,7 @@
     <CodeAnalysisDictionary Include="PihrtsoftDictionary.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="SnippetManager.nuspec" />
     <None Include="SnippetManager.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
