@@ -11,15 +11,6 @@ namespace SnippetManagerTest
     {
         private static void Main(string[] args)
         {
-            var xx = SnippetSerializer.DeserializeFile("test.snippet");
-
-            var x = new Snippet();
-
-            x.Literals.Add(Literal.CreateClassNameLiteral("test", "t", "d"));
-
-            x.Save("test.snippet");
-
-            Console.ReadKey();
         }
     }
 }
