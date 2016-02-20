@@ -9,11 +9,6 @@ namespace Pihrtsoft.Snippets
     /// </summary>
     public class Literal : ICloneable
     {
-        /// <summary>
-        /// Defines name of literal function that returns containing type name. This field is a constant.
-        /// </summary>
-        public const string ClassNameFunctionName = "ClassName()";
-
         private string _identifier;
         private string _defaultValue;
 
@@ -44,12 +39,30 @@ namespace Pihrtsoft.Snippets
         /// <param name="toolTip">The <see cref="Literal"/> description.</param>
         /// <param name="defaultValue">The <see cref="Literal"/>default value.</param>
         /// <exception cref="ArgumentNullException"><paramref name="identifier"/> is <c>null</c>.</exception>
-        /// <returns><see cref="Literal"/> that returns containing type name.</returns>
+        /// <returns><see cref="Literal"/> with function that returns containing type name.</returns>
         public static Literal CreateClassNameLiteral(string identifier, string toolTip = null, string defaultValue = "")
         {
             return new Literal(identifier, toolTip, defaultValue)
             {
-                Function = ClassNameFunctionName,
+                Function = "ClassName()",
+                IsEditable = false
+            };
+        }
+
+        /// <summary>
+        /// Create new <see cref="Literal"/> with function generates switch cases.
+        /// </summary>
+        /// <param name="identifier">The <see cref="Literal"/> identifier.</param>
+        /// <param name="expressionIdentifier">Identifier of the literal that represent switch expression.</param>
+        /// <param name="toolTip">The <see cref="Literal"/> description.</param>
+        /// <param name="defaultValue">The <see cref="Literal"/>default value.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="identifier"/> is <c>null</c>.</exception>
+        /// <returns><see cref="Literal"/> with function that generates switch cases.</returns>
+        public static Literal CreateSwitchCasesLiteral(string identifier, string expressionIdentifier, string toolTip = null, string defaultValue = "default:")
+        {
+            return new Literal(identifier, toolTip, defaultValue)
+            {
+                Function = $"GenerateSwitchCases(${expressionIdentifier}$)",
                 IsEditable = false
             };
         }
