@@ -26,7 +26,7 @@ namespace Pihrtsoft.Snippets
         private static XmlWriterSettings _xmlWriterSettings;
         private static XmlReaderSettings _xmlReaderSettings;
         private static XmlSerializerNamespaces _namespaces;
-        private static readonly Encoding _encoding = Encoding.UTF8;
+        private static readonly Encoding _utf8Encoding = Encoding.UTF8;
 
         /// <summary>
         /// Returns enumerable collection of <see cref="Snippet"/> deserialized from snippet files in a specified directory.
@@ -85,6 +85,10 @@ namespace Pihrtsoft.Snippets
                 }
                 catch (InvalidOperationException ex)
                 {
+                    var fileStream = stream as FileStream;
+                    if (fileStream != null)
+                        Debug.WriteLine(fileStream.Name);
+
                     Debug.WriteLine(ex.GetBaseException());
                     throw;
                 }
@@ -249,7 +253,6 @@ namespace Pihrtsoft.Snippets
             Serialize(stream, SnippetMapper.MapToElement(snippets, settings).ToArray(), settings);
         }
 
-#if DEBUG
         /// <summary>
         /// Serializes a specified <see cref="Snippet"/> to xml text.
         /// </summary>
@@ -278,10 +281,9 @@ namespace Pihrtsoft.Snippets
             {
                 Serialize(stream, SnippetMapper.MapToElement(snippet, settings).ToArray(), settings);
 
-                return _encoding.GetString(stream.ToArray());
+                return _utf8Encoding.GetString(stream.ToArray());
             }
         }
-#endif
 
         private static void Serialize(Stream stream, CodeSnippetElement[] elements, SaveSettings settings)
         {

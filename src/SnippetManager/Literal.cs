@@ -37,7 +37,6 @@ namespace Pihrtsoft.Snippets
             IsEditable = true;
         }
 
-#if DEBUG
         /// <summary>
         /// Create new <see cref="Literal"/> with function that returns containing type name.
         /// </summary>
@@ -54,7 +53,6 @@ namespace Pihrtsoft.Snippets
                 IsEditable = false
             };
         }
-#endif
 
         /// <summary>
         /// Creates a new <see cref="Literal"/> that is a deep copy of the current instance.
