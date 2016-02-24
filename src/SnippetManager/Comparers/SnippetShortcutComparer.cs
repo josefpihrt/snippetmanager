@@ -4,7 +4,7 @@ using System;
 
 namespace Pihrtsoft.Snippets.Comparers
 {
-    internal class SnippetShortcutComparer : SnippetComparer
+    internal class SnippetShortcutComparer : SnippetStringComparer
     {
         private static readonly StringComparer _stringComparer = StringComparer.CurrentCultureIgnoreCase;
 
@@ -16,6 +16,6 @@ namespace Pihrtsoft.Snippets.Comparers
             return snippet.Shortcut;
         }
 
-        protected override StringComparer StringComparer => _stringComparer;
+        internal override StringComparer StringComparer => _stringComparer;
     }
 }

@@ -24,7 +24,7 @@ namespace Pihrtsoft.Snippets
                 throw new ArgumentNullException(nameof(snippets));
 
             foreach (IGrouping<string, Snippet> grouping in snippets
-                .GroupBy(f => f, SnippetComparer.Shortcut))
+                .GroupBy(f => f.Shortcut, SnippetComparer.Shortcut.GenericEqualityComparer))
             {
                 if (grouping.CountExceeds(1))
                     yield return grouping;

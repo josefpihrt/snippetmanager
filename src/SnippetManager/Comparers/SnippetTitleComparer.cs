@@ -4,8 +4,10 @@ using System;
 
 namespace Pihrtsoft.Snippets.Comparers
 {
-    internal class SnippetTitleComparer : SnippetComparer
+    internal class SnippetTitleComparer : SnippetStringComparer
     {
+        private static readonly StringComparer _stringComparer = StringComparer.CurrentCulture;
+
         protected override string GetValue(Snippet snippet)
         {
             if (snippet == null)
@@ -13,5 +15,7 @@ namespace Pihrtsoft.Snippets.Comparers
 
             return snippet.Title;
         }
+
+        internal override StringComparer StringComparer => _stringComparer;
     }
 }
