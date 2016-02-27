@@ -12,7 +12,7 @@ namespace Pihrtsoft.Snippets
     public class NamespaceCollection
         : Collection<string>
     {
-        private static readonly StringComparer _comparer = StringComparer.InvariantCulture;
+        private static readonly NamespaceSorter _sorter = new NamespaceSorter(placeSystemFirst: true);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="NamespaceCollection"/> class that is empty.
@@ -27,7 +27,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public void Sort()
         {
-            Sort(_comparer);
+            Sort(_sorter);
         }
 
         /// <summary>
