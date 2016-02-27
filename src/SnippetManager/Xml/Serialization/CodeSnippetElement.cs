@@ -7,6 +7,7 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
     /// <summary>
     /// Represents CodeSnippet element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
     /// </summary>
+    [XmlRoot("CodeSnippet")]
     public sealed class CodeSnippetElement
     {
         /// <summary>

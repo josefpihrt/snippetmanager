@@ -22,7 +22,8 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public const string DefaultNamespace = "http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet";
 
-        private static XmlSerializer _xmlSerializer;
+        private static XmlSerializer _codeSnippetsElementXmlSerializer;
+        private static XmlSerializer _codeSnippetElementXmlSerializer;
         private static XmlWriterSettings _xmlWriterSettings;
         private static XmlReaderSettings _xmlReaderSettings;
         private static XmlSerializerNamespaces _namespaces;
@@ -52,6 +53,8 @@ namespace Pihrtsoft.Snippets
                 var file = new SnippetFile(filePath);
                 int index = 0;
 
+                Debug.WriteLine($"deserializing snippet file '{filePath}'");
+
                 foreach (Snippet snippet in Deserialize(stream))
                 {
                     snippet.FilePath = filePath;
@@ -76,28 +79,48 @@ namespace Pihrtsoft.Snippets
 
             using (XmlReader xmlReader = XmlReader.Create(stream, XmlReaderSettings))
             {
-#if DEBUG
-                CodeSnippetsElement element = null;
-
-                try
+                while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Element)
                 {
-                    element = (CodeSnippetsElement)XmlSerializer.Deserialize(xmlReader);
                 }
-                catch (InvalidOperationException ex)
-                {
-                    var fileStream = stream as FileStream;
-                    if (fileStream != null)
-                        Debug.WriteLine(fileStream.Name);
 
-                    Debug.WriteLine(ex.GetBaseException());
-                    throw;
-                }
-#else
-                var element = (CodeSnippetsElement)XmlSerializer.Deserialize(xmlReader);
-#endif
-                for (int i = 0; i < element.Snippets.Length; i++)
-                    yield return SnippetMapper.MapFromElement(element.Snippets[i]);
+                switch (xmlReader.Name)
+                {
+                    case "CodeSnippet":
+                        {
+                            CodeSnippetElement element = Deserialize<CodeSnippetElement>(stream, xmlReader, CodeSnippetElementXmlSerializer);
+
+                            yield return SnippetMapper.MapFromElement(element);
+
+                            break;
+                        }
+                    case "CodeSnippets":
+                        {
+                            CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(stream, xmlReader, CodeSnippetsElementXmlSerializer);
+
+                            for (int i = 0; i < element.Snippets.Length; i++)
+                                yield return SnippetMapper.MapFromElement(element.Snippets[i]);
+
+                            break;
+                        }
+                };
             }
+        }
+
+        private static T Deserialize<T>(Stream stream, XmlReader xmlReader, XmlSerializer xmlSerializer)
+        {
+#if DEBUG
+            try
+            {
+#endif
+                return (T)xmlSerializer.Deserialize(xmlReader);
+#if DEBUG
+            }
+            catch (InvalidOperationException ex)
+            {
+                Debug.WriteLine(ex.GetBaseException());
+                throw;
+            }
+#endif
         }
 
         /// <summary>
@@ -287,17 +310,30 @@ namespace Pihrtsoft.Snippets
 
         private static void Serialize(Stream stream, CodeSnippetElement[] elements, SaveSettings settings)
         {
-            using (XmlWriter xw = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
-                XmlSerializer.Serialize(xw, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
+            XmlWriterSettings xmlWriterSettings = GetXmlWriterSettings(settings, canOmitXmlDeclaration: elements.Length == 1);
+
+            using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
+            {
+                xmlWriter.WriteStartDocument();
+
+                if (!string.IsNullOrEmpty(settings.Comment))
+                    xmlWriter.WriteComment(settings.Comment);
+
+                if (xmlWriterSettings.OmitXmlDeclaration)
+                    CodeSnippetElementXmlSerializer.Serialize(xmlWriter, elements[0], Namespaces);
+                else
+                    CodeSnippetsElementXmlSerializer.Serialize(xmlWriter, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
+            }
         }
 
-        private static XmlWriterSettings GetXmlWriterSettings(SaveSettings settings)
+        private static XmlWriterSettings GetXmlWriterSettings(SaveSettings settings, bool canOmitXmlDeclaration)
         {
             XmlWriterSettings xmlWriterSettings = XmlWriterSettings;
-            if (!settings.HasDefaultIndentChars)
+            if (!settings.HasDefaultIndentChars || (canOmitXmlDeclaration && settings.OmitXmlDeclaration))
             {
                 xmlWriterSettings = CreateXmlWriterSettings();
                 xmlWriterSettings.IndentChars = settings.IndentChars;
+                xmlWriterSettings.OmitXmlDeclaration = settings.OmitXmlDeclaration;
             }
 
             return xmlWriterSettings;
@@ -312,17 +348,25 @@ namespace Pihrtsoft.Snippets
             };
         }
 
-        /// <summary>
-        /// Gets a <see cref="XmlSerializer"/> instance that is used to serialize <see cref="Snippet"/>.
-        /// </summary>
-        private static XmlSerializer XmlSerializer
+        private static XmlSerializer CodeSnippetsElementXmlSerializer
         {
             get
             {
-                if (_xmlSerializer == null)
-                    _xmlSerializer = new XmlSerializer(typeof(CodeSnippetsElement), DefaultNamespace);
+                if (_codeSnippetsElementXmlSerializer == null)
+                    _codeSnippetsElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetsElement), DefaultNamespace);
 
-                return _xmlSerializer;
+                return _codeSnippetsElementXmlSerializer;
+            }
+        }
+
+        private static XmlSerializer CodeSnippetElementXmlSerializer
+        {
+            get
+            {
+                if (_codeSnippetElementXmlSerializer == null)
+                    _codeSnippetElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetElement), DefaultNamespace);
+
+                return _codeSnippetElementXmlSerializer;
             }
         }
 

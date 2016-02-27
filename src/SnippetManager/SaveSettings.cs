@@ -43,5 +43,15 @@ namespace Pihrtsoft.Snippets
         /// Gets or sets a value indicating whether Delimiter attribute with value equal to <see cref="Snippet.DefaultDelimiter"/> will be omitted. Default value is <c>true</c>.
         /// </summary>
         public bool OmitDefaultDelimiter { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to write an XML declaration. This option is relevant only if a single snippet is saved to a file.
+        /// </summary>
+        public bool OmitXmlDeclaration { get; set; }
+
+        /// <summary>
+        /// Gets or sets an XML comment that will be added to the snippet file.
+        /// </summary>
+        public string Comment { get; set; }
     }
 }
