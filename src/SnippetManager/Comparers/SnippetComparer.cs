@@ -11,8 +11,6 @@ namespace Pihrtsoft.Snippets.Comparers
     /// </summary>
     public abstract class SnippetComparer : IComparer<Snippet>, IEqualityComparer<Snippet>, IComparer, IEqualityComparer
     {
-        private static readonly StringComparer _stringComparer = StringComparer.CurrentCulture;
-
         /// <summary>
         /// Gets a <see cref="SnippetComparer{String}"/> that performs a case-sensitive ordinal <see cref="Snippet.Title"/> comparison.
         /// </summary>

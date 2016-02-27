@@ -87,7 +87,7 @@ namespace Pihrtsoft.Snippets
                 {
                     case "CodeSnippet":
                         {
-                            CodeSnippetElement element = Deserialize<CodeSnippetElement>(stream, xmlReader, CodeSnippetElementXmlSerializer);
+                            CodeSnippetElement element = Deserialize<CodeSnippetElement>(xmlReader, CodeSnippetElementXmlSerializer);
 
                             yield return SnippetMapper.MapFromElement(element);
 
@@ -95,7 +95,7 @@ namespace Pihrtsoft.Snippets
                         }
                     case "CodeSnippets":
                         {
-                            CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(stream, xmlReader, CodeSnippetsElementXmlSerializer);
+                            CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(xmlReader, CodeSnippetsElementXmlSerializer);
 
                             for (int i = 0; i < element.Snippets.Length; i++)
                                 yield return SnippetMapper.MapFromElement(element.Snippets[i]);
@@ -106,7 +106,7 @@ namespace Pihrtsoft.Snippets
             }
         }
 
-        private static T Deserialize<T>(Stream stream, XmlReader xmlReader, XmlSerializer xmlSerializer)
+        private static T Deserialize<T>(XmlReader xmlReader, XmlSerializer xmlSerializer)
         {
 #if DEBUG
             try
