@@ -24,10 +24,14 @@ namespace Pihrtsoft.Snippets
             IndentChars = DefaultIndentChars;
         }
 
-        /// <summary>
-        /// Gets a value indicating whether <see cref="IndentChars"/> is equal to <see cref="DefaultIndentChars"/>.
-        /// </summary>
-        internal bool HasDefaultIndentChars => string.Equals(IndentChars, DefaultIndentChars, StringComparison.Ordinal);
+        internal bool HasDefaultValues
+        {
+            get
+            {
+                return string.Equals(IndentChars, DefaultIndentChars, StringComparison.Ordinal)
+                    && !OmitXmlDeclaration;
+            }
+        }
 
         /// <summary>
         /// Gets or sets a value indicating whether default format version set is when <see cref="Snippet.FormatVersion"/> value is <c>null</c>.
@@ -45,7 +49,7 @@ namespace Pihrtsoft.Snippets
         public bool OmitDefaultDelimiter { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether to write an XML declaration. This option is relevant only if a single snippet is saved to a file.
+        /// Gets or sets a value indicating whether to write an XML declaration.
         /// </summary>
         public bool OmitXmlDeclaration { get; set; }
 
@@ -53,5 +57,10 @@ namespace Pihrtsoft.Snippets
         /// Gets or sets an XML comment that will be added to the snippet file.
         /// </summary>
         public string Comment { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to write 'CodeSnippets' XML element. This option is relevant only if a single snippet is saved to a file.
+        /// </summary>
+        public bool OmitCodeSnippetsElement { get; set; }
     }
 }

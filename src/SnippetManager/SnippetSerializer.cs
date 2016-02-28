@@ -325,7 +325,7 @@ namespace Pihrtsoft.Snippets
 
         private static void Serialize(Stream stream, CodeSnippetElement[] elements, SaveSettings settings)
         {
-            XmlWriterSettings xmlWriterSettings = GetXmlWriterSettings(settings, canOmitXmlDeclaration: elements.Length == 1);
+            XmlWriterSettings xmlWriterSettings = GetXmlWriterSettings(settings);
 
             using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
             {
@@ -334,17 +334,23 @@ namespace Pihrtsoft.Snippets
                 if (!string.IsNullOrEmpty(settings.Comment))
                     xmlWriter.WriteComment(settings.Comment);
 
-                if (xmlWriterSettings.OmitXmlDeclaration)
+                if (settings.OmitCodeSnippetsElement
+                    && elements.Length == 1)
+                {
                     CodeSnippetElementXmlSerializer.Serialize(xmlWriter, elements[0], Namespaces);
+                }
                 else
+                {
                     CodeSnippetsElementXmlSerializer.Serialize(xmlWriter, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
+                }
             }
         }
 
-        private static XmlWriterSettings GetXmlWriterSettings(SaveSettings settings, bool canOmitXmlDeclaration)
+        private static XmlWriterSettings GetXmlWriterSettings(SaveSettings settings)
         {
             XmlWriterSettings xmlWriterSettings = XmlWriterSettings;
-            if (!settings.HasDefaultIndentChars || (canOmitXmlDeclaration && settings.OmitXmlDeclaration))
+
+            if (!settings.HasDefaultValues)
             {
                 xmlWriterSettings = CreateXmlWriterSettings();
                 xmlWriterSettings.IndentChars = settings.IndentChars;
