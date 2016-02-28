@@ -35,6 +35,21 @@ namespace Pihrtsoft.Snippets
         /// <param name="directoryPath">The absolute or relative path to the directory to search.</param>
         /// <param name="searchOption">A <see cref="SearchOption"/> value that specifies whether the search should include all subdirectories or only current directory.</param>
         /// <returns>An enumerable collection <see cref="Snippet"/> being deserialized.</returns>
+        public static IEnumerable<Snippet> Deserialize(string directoryPath, SearchOption searchOption = SearchOption.TopDirectoryOnly)
+        {
+            foreach (SnippetFile snippetFile in DeserializeFiles(directoryPath, searchOption))
+            {
+                for (int i = 0; i < snippetFile.Snippets.Count; i++)
+                    yield return snippetFile.Snippets[i];
+            }
+        }
+
+        /// <summary>
+        /// Returns enumerable collection of <see cref="SnippetFile"/> deserialized from snippet files in a specified directory.
+        /// </summary>
+        /// <param name="directoryPath">The absolute or relative path to the directory to search.</param>
+        /// <param name="searchOption">A <see cref="SearchOption"/> value that specifies whether the search should include all subdirectories or only current directory.</param>
+        /// <returns>An enumerable collection <see cref="SnippetFile"/> being deserialized.</returns>
         public static IEnumerable<SnippetFile> DeserializeFiles(string directoryPath, SearchOption searchOption = SearchOption.TopDirectoryOnly)
         {
             foreach (string filePath in SnippetFileSearcher.EnumerateSnippetFiles(directoryPath, searchOption))
