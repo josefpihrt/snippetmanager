@@ -88,10 +88,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public bool IsExpansion
         {
-            get
-            {
-                return ((SnippetTypes & SnippetTypes.Expansion) != 0);
-            }
+            get { return ((SnippetTypes & SnippetTypes.Expansion) != 0); }
             set
             {
                 if (value)
@@ -106,10 +103,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public bool IsSurroundsWith
         {
-            get
-            {
-                return ((SnippetTypes & SnippetTypes.SurroundsWith) != 0);
-            }
+            get { return ((SnippetTypes & SnippetTypes.SurroundsWith) != 0); }
             set
             {
                 if (value)
@@ -124,10 +118,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public bool IsRefactoring
         {
-            get
-            {
-                return ((SnippetTypes & SnippetTypes.Refactoring) != 0);
-            }
+            get { return ((SnippetTypes & SnippetTypes.Refactoring) != 0); }
             set
             {
                 if (value)

@@ -117,7 +117,7 @@ namespace Pihrtsoft.Snippets
 
                             break;
                         }
-                };
+                }
             }
         }
 

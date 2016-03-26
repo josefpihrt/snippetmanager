@@ -43,10 +43,7 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         [XmlText]
         public XmlNode[] CodeCData
         {
-            get
-            {
-                return new XmlNode[] { new XmlDocument().CreateCDataSection(Code) };
-            }
+            get { return new XmlNode[] { new XmlDocument().CreateCDataSection(Code) }; }
             set
             {
                 if (value == null)
