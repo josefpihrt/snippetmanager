@@ -17,7 +17,7 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Visual Basic language.
         /// </summary>
-        VB,
+        VisualBasic,
 
         /// <summary>
         /// C# language.
