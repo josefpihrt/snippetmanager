@@ -117,9 +117,6 @@
     <Compile Include="Xml\Serialization\CodeSnippetsElement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <CodeAnalysisDictionary Include="PihrtsoftDictionary.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
     <None Include="SnippetManager.nuspec">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
