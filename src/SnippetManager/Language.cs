@@ -27,8 +27,7 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// C++ language.
         /// </summary>
-        [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = nameof(Cpp))]
-        Cpp,
+        CPlusPlus,
 
         /// <summary>
         /// XML language.
