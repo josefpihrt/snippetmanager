@@ -61,6 +61,7 @@
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LanguageMapper.cs" />
+    <Compile Include="LiteralRenamer.cs" />
     <Compile Include="NamespaceCollection.cs" />
     <Compile Include="KeywordCollection.cs" />
     <Compile Include="LiteralCollection.cs" />
