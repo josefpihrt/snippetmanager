@@ -12,6 +12,6 @@
     <description>Snippet Manager API enables to work with Visual Studio snippet format.</description>
     <summary>Snippet Manager API enables to work with Visual Studio snippet format.</summary>
     <copyright>Copyright (c) 2015-2016 Josef Pihrt</copyright>
-    <tags>Snippet</tags>
+    <tags>Snippet Snippets CodeSnippet</tags>
   </metadata>
 </package>
