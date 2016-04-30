@@ -167,7 +167,7 @@ namespace Pihrtsoft.Snippets
                     }
                     else
                     {
-                        if ((i > _startIndex))
+                        if (i > _startIndex)
                         {
                             var placeholder = new Placeholder(_startIndex, Text.Substring(_startIndex, i - _startIndex), Delimiter);
                             _indexes.Add(_startIndex, placeholder);

@@ -8,7 +8,7 @@ namespace Pihrtsoft.Snippets
 {
     internal class NamespaceSorter : IComparer<string>
     {
-        private static readonly Regex systemUsingRegex = new Regex(@"\A\s*System\s*(\.|\z)");
+        private static readonly Regex _systemUsingRegex = new Regex(@"\A\s*System\s*(\.|\z)");
 
         public NamespaceSorter(bool placeSystemFirst = false)
         {
@@ -28,12 +28,12 @@ namespace Pihrtsoft.Snippets
 
             if (PlaceSystemFirst)
             {
-                if (systemUsingRegex.IsMatch(x))
+                if (_systemUsingRegex.IsMatch(x))
                 {
-                    if (!systemUsingRegex.IsMatch(y))
+                    if (!_systemUsingRegex.IsMatch(y))
                         return -1;
                 }
-                else if (systemUsingRegex.IsMatch(y))
+                else if (_systemUsingRegex.IsMatch(y))
                 {
                     return 1;
                 }
