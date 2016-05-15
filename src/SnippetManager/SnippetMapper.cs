@@ -31,10 +31,11 @@ namespace Pihrtsoft.Snippets
             if (element.Format != null)
             {
                 Version version = null;
-                if (Version.TryParse(element.Format, out version))
+
+                if (Version.TryParse(element.Format, out version)
+                    && ValidationHelper.IsValidVersion(version))
                 {
-                    if (ValidationHelper.IsValidVersion(version))
-                        snippet.FormatVersion = version;
+                    snippet.FormatVersion = version;
                 }
             }
 
@@ -340,11 +341,8 @@ namespace Pihrtsoft.Snippets
 
         private static void LoadCodeElement(CodeElement element, Snippet snippet)
         {
-            if (!string.IsNullOrEmpty(element.Delimiter))
-            {
-                if (element.Delimiter.Length == 1)
-                    snippet.Delimiter = element.Delimiter[0];
-            }
+            if (element.Delimiter?.Length == 1)
+                snippet.Delimiter = element.Delimiter[0];
 
             if (element.Kind != null)
             {
