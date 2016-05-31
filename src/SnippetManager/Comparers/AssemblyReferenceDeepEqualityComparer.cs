@@ -10,8 +10,6 @@ namespace Pihrtsoft.Snippets.Comparers
     /// </summary>
     public class AssemblyReferenceDeepEqualityComparer : EqualityComparer<AssemblyReference>
     {
-        private static readonly AssemblyReferenceDeepEqualityComparer _instance = new AssemblyReferenceDeepEqualityComparer();
-
         /// <summary>
         /// Indicates whether two assembly references are equal.
         /// </summary>
@@ -45,6 +43,6 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <summary>
         /// Gets the instance of the <see cref="AssemblyReferenceDeepEqualityComparer"/>.
         /// </summary>
-        internal static AssemblyReferenceDeepEqualityComparer Instance => _instance;
+        internal static AssemblyReferenceDeepEqualityComparer Instance { get; } = new AssemblyReferenceDeepEqualityComparer();
     }
 }

@@ -10,8 +10,6 @@ namespace Pihrtsoft.Snippets
         private readonly Dictionary<string, Language> _mapTextToEnum;
         private readonly Dictionary<Language, string> _mapEnumToText;
 
-        private static readonly LanguageMapper _instance = new LanguageMapper();
-
         private LanguageMapper()
         {
             _mapTextToEnum = new Dictionary<string, Language>(StringComparer.OrdinalIgnoreCase)
@@ -56,9 +54,6 @@ namespace Pihrtsoft.Snippets
             return Language.None;
         }
 
-        public static LanguageMapper Instance
-        {
-            get { return _instance; }
-        }
+        public static LanguageMapper Instance { get; } = new LanguageMapper();
     }
 }

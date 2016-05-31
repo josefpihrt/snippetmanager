@@ -10,8 +10,6 @@ namespace Pihrtsoft.Snippets.Comparers
     /// </summary>
     public class LiteralDeepEqualityComparer : EqualityComparer<Literal>
     {
-        private static readonly LiteralDeepEqualityComparer _instance = new LiteralDeepEqualityComparer();
-
         /// <summary>
         /// Indicates whether two literals are equal.
         /// </summary>
@@ -57,6 +55,6 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <summary>
         /// Gets the instance of the <see cref="LiteralDeepEqualityComparer"/>.
         /// </summary>
-        internal static LiteralDeepEqualityComparer Instance => _instance;
+        internal static LiteralDeepEqualityComparer Instance { get; } = new LiteralDeepEqualityComparer();
     }
 }

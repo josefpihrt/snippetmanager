@@ -41,11 +41,9 @@ namespace Pihrtsoft.Snippets.Validations
             return rules;
         }
 
-        private static readonly ReadOnlyCollection<ValidationRule> _validationsRules = new ReadOnlyCollection<ValidationRule>(GetValidationRules());
-
         /// <summary>
         /// Gets a collection of predefined validation rules.
         /// </summary>
-        internal static ReadOnlyCollection<ValidationRule> PredefinedRules => _validationsRules;
+        internal static ReadOnlyCollection<ValidationRule> PredefinedRules { get; } = new ReadOnlyCollection<ValidationRule>(GetValidationRules());
     }
 }
