@@ -124,8 +124,8 @@
     <None Include="SnippetManager.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\Pihrtsoft.Snippets\packages\CSharpAnalyzers.0.9.40.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.Common.dll" />
-    <Analyzer Include="..\..\..\Pihrtsoft.Snippets\packages\CSharpAnalyzers.0.9.40.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.CSharp.dll" />
+    <Analyzer Include="..\..\packages\CSharpAnalyzers.0.9.50.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.Common.dll" />
+    <Analyzer Include="..\..\packages\CSharpAnalyzers.0.9.50.0\analyzers\dotnet\cs\Pihrtsoft.CodeAnalysis.CSharp.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">
