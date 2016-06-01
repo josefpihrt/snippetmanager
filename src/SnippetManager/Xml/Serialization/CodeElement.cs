@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Xml;
 using System.Xml.Serialization;
 
@@ -39,7 +38,6 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         /// <summary>
         /// Gets or sets Code element CData section.
         /// </summary>
-        [SuppressMessage("Microsoft.Performance", "CA1819:PropertiesShouldNotReturnArrays")]
         [XmlText]
         public XmlNode[] CodeCData
         {

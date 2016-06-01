@@ -1,7 +1,5 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System.Diagnostics.CodeAnalysis;
-
 namespace Pihrtsoft.Snippets.Xml.Serialization
 {
     /// <summary>
@@ -17,7 +15,6 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         /// <summary>
         /// Gets or sets Url element.
         /// </summary>
-        [SuppressMessage("Microsoft.Design", "CA1056:UriPropertiesShouldNotBeStrings")]
         public string Url { get; set; }
     }
 }
