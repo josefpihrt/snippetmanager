@@ -10,13 +10,6 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
     public sealed class ObjectElement : LiteralElement
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ObjectElement"/> class.
-        /// </summary>
-        public ObjectElement()
-        {
-        }
-
-        /// <summary>
         /// Gets or sets Type element value.
         /// </summary>
         [SuppressMessage("Microsoft.Naming", "CA1721:PropertyNamesShouldNotMatchGetMethods")]
