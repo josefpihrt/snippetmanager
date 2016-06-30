@@ -29,10 +29,7 @@ namespace Pihrtsoft.Snippets
 
             Snippet = snippet;
 
-            snippet.TextChanged += (object sender, EventArgs e) =>
-            {
-                _indexes = null;
-            };
+            snippet.TextChanged += (object sender, EventArgs e) => _indexes = null;
         }
 
         /// <summary>
