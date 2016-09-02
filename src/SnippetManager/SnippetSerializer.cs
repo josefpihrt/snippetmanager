@@ -196,7 +196,8 @@ namespace Pihrtsoft.Snippets
             if (settings == null)
                 throw new ArgumentNullException(nameof(settings));
 
-            Serialize(stream, SnippetMapper.MapToElement(snippet, settings).ToArray(), settings);
+            using (XmlWriter xmlWriter = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
+                Serialize(xmlWriter, snippet, settings);
         }
 
         /// <summary>
@@ -288,7 +289,8 @@ namespace Pihrtsoft.Snippets
             if (settings == null)
                 throw new ArgumentNullException(nameof(settings));
 
-            Serialize(stream, SnippetMapper.MapToElement(snippets, settings).ToArray(), settings);
+            using (XmlWriter xmlWriter = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
+                Serialize(xmlWriter, snippets, settings);
         }
 
         /// <summary>
@@ -317,32 +319,37 @@ namespace Pihrtsoft.Snippets
 
             using (var stream = new MemoryStream())
             {
-                Serialize(stream, SnippetMapper.MapToElement(snippet, settings).ToArray(), settings);
+                Serialize(stream, snippet, settings);
 
                 return _utf8Encoding.GetString(stream.ToArray());
             }
         }
 
-        private static void Serialize(Stream stream, CodeSnippetElement[] elements, SaveSettings settings)
+        private static void Serialize(XmlWriter xmlWriter, Snippet snippet, SaveSettings settings)
         {
-            XmlWriterSettings xmlWriterSettings = GetXmlWriterSettings(settings);
+            Serialize(xmlWriter, SnippetMapper.MapToElement(snippet, settings).ToArray(), settings);
+        }
 
-            using (XmlWriter xmlWriter = XmlWriter.Create(stream, xmlWriterSettings))
+        private static void Serialize(XmlWriter xmlWriter, IEnumerable<Snippet> snippets, SaveSettings settings)
+        {
+            Serialize(xmlWriter, SnippetMapper.MapToElement(snippets, settings).ToArray(), settings);
+        }
+
+        private static void Serialize(XmlWriter xmlWriter, CodeSnippetElement[] elements, SaveSettings settings)
+        {
+            xmlWriter.WriteStartDocument();
+
+            if (!string.IsNullOrEmpty(settings.Comment))
+                xmlWriter.WriteComment(settings.Comment);
+
+            if (settings.OmitCodeSnippetsElement
+                && elements.Length == 1)
             {
-                xmlWriter.WriteStartDocument();
-
-                if (!string.IsNullOrEmpty(settings.Comment))
-                    xmlWriter.WriteComment(settings.Comment);
-
-                if (settings.OmitCodeSnippetsElement
-                    && elements.Length == 1)
-                {
-                    CodeSnippetElementXmlSerializer.Serialize(xmlWriter, elements[0], Namespaces);
-                }
-                else
-                {
-                    CodeSnippetsElementXmlSerializer.Serialize(xmlWriter, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
-                }
+                CodeSnippetElementXmlSerializer.Serialize(xmlWriter, elements[0], Namespaces);
+            }
+            else
+            {
+                CodeSnippetsElementXmlSerializer.Serialize(xmlWriter, new CodeSnippetsElement() { Snippets = elements }, Namespaces);
             }
         }
 
