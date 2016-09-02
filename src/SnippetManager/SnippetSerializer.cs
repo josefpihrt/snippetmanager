@@ -327,7 +327,7 @@ namespace Pihrtsoft.Snippets
 
         private static void Serialize(XmlWriter xmlWriter, Snippet snippet, SaveSettings settings)
         {
-            Serialize(xmlWriter, SnippetMapper.MapToElement(snippet, settings).ToArray(), settings);
+            Serialize(xmlWriter, new CodeSnippetElement[] { SnippetMapper.MapToElement(snippet, settings) }, settings);
         }
 
         private static void Serialize(XmlWriter xmlWriter, IEnumerable<Snippet> snippets, SaveSettings settings)

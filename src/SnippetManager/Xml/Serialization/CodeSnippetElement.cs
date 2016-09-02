@@ -25,7 +25,5 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         /// Gets or sets Snippet element.
         /// </summary>
         public SnippetElement Snippet { get; set; }
-
-        internal CodeSnippetElement[] ToArray() => new CodeSnippetElement[] { this };
     }
 }
