@@ -20,6 +20,12 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         public string Shortcut { get; set; }
 
         /// <summary>
+        /// Gets or sets AlternativeShortcuts element.
+        /// </summary>
+        [XmlArrayItem("Shortcut")]
+        public string[] AlternativeShortcuts { get; set; }
+
+        /// <summary>
         /// Gets or sets Description element value.
         /// </summary>
         public string Description { get; set; }

@@ -1,8 +1,10 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 
 namespace Pihrtsoft.Snippets
 {
@@ -27,6 +29,7 @@ namespace Pihrtsoft.Snippets
         internal static readonly string DefaultFormatVersionText = DefaultFormatVersion.ToString(3);
 
         private KeywordCollection _keywords;
+        private ShortcutCollection _alternativeShortcuts;
         private NamespaceCollection _namespaces;
         private Collection<AssemblyReference> _assemblyReferences;
         private LiteralCollection _literals;
@@ -81,6 +84,20 @@ namespace Pihrtsoft.Snippets
         public void Save(Stream stream, SaveSettings settings)
         {
             SnippetSerializer.Serialize(stream, this, settings);
+        }
+        /// <summary>
+        /// Returns snippet shortcut and all alternative shortcuts, if any.
+        /// </summary>
+        /// <returns>Sequence of all defined shortcut.</returns>
+        public IEnumerable<string> Shortcuts()
+        {
+            yield return Shortcut;
+
+            if (HasAlternativeShortcuts)
+            {
+                foreach (string shortcut in AlternativeShortcuts)
+                    yield return shortcut;
+            }
         }
 
         /// <summary>
@@ -154,6 +171,9 @@ namespace Pihrtsoft.Snippets
 
             foreach (AssemblyReference item in AssemblyReferences)
                 clone.AssemblyReferences.Add((AssemblyReference)item.Clone());
+
+            foreach (string shortcut in AlternativeShortcuts)
+                clone.AlternativeShortcuts.Add(shortcut);
 
             foreach (string keyword in Keywords)
                 clone.Keywords.Add(keyword);
@@ -241,6 +261,28 @@ namespace Pihrtsoft.Snippets
 
                 return _keywords;
             }
+        }
+
+        /// <summary>
+        /// Gets a collection of alternative shortcuts.
+        /// </summary>
+        public ShortcutCollection AlternativeShortcuts
+        {
+            get
+            {
+                if (_alternativeShortcuts == null)
+                    _alternativeShortcuts = new ShortcutCollection();
+
+                return _alternativeShortcuts;
+            }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether snippet contains alternative shortcut.
+        /// </summary>
+        public bool HasAlternativeShortcuts
+        {
+            get { return _alternativeShortcuts?.Count > 0; }
         }
 
         /// <summary>

@@ -278,6 +278,9 @@ namespace Pihrtsoft.Snippets
             if (snippet.Keywords.Count > 0)
                 element.Keywords = snippet.Keywords.ToArray();
 
+            if (snippet.HasAlternativeShortcuts)
+                element.AlternativeShortcuts = snippet.AlternativeShortcuts.ToArray();
+
             return element;
         }
 
@@ -299,6 +302,12 @@ namespace Pihrtsoft.Snippets
             snippet.Description = element.Description;
             snippet.Shortcut = element.Shortcut;
             snippet.Title = element.Title;
+
+            if (element.AlternativeShortcuts != null)
+            {
+                foreach (string shortcut in element.AlternativeShortcuts)
+                    snippet.AlternativeShortcuts.Add(shortcut);
+            }
 
             if (element.HelpUrl != null)
             {

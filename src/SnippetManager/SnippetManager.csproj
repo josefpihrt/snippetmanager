@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyReference.cs" />
+    <Compile Include="Comparers\Comparer.cs" />
     <Compile Include="Comparers\SnippetComparer.cs" />
     <Compile Include="Comparers\SnippetStringComparer.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Comparers\SnippetDeepEqualityComparer.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ShortcutCollection.cs" />
     <Compile Include="LanguageMapper.cs" />
     <Compile Include="LiteralRenamer.cs" />
     <Compile Include="NamespaceCollection.cs" />

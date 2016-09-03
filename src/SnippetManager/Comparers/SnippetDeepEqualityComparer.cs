@@ -60,6 +60,12 @@ namespace Pihrtsoft.Snippets.Comparers
             if (!string.Equals(x.CodeText, y.CodeText, StringComparison.Ordinal))
                 return false;
 
+            if ((x.HasAlternativeShortcuts || y.HasAlternativeShortcuts)
+                && !x.AlternativeShortcuts.SequenceEqual(y.AlternativeShortcuts, Comparer.StringComparer))
+            {
+                return false;
+            }
+
             if (!x.Keywords.SequenceEqual(y.Keywords, _stringComparer))
                 return false;
 
