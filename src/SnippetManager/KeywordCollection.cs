@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Pihrtsoft.Snippets.Comparers;
 
 namespace Pihrtsoft.Snippets
 {
@@ -12,8 +13,6 @@ namespace Pihrtsoft.Snippets
     public class KeywordCollection
         : Collection<string>
     {
-        private static readonly StringComparer _comparer = StringComparer.InvariantCulture;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="KeywordCollection"/> class that is empty.
         /// </summary>
@@ -23,11 +22,11 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Sorts the elements in the entire <see cref="KeywordCollection"/> using the <see cref="StringComparer.InvariantCulture"/> comparer.
+        /// Sorts the elements in the entire <see cref="KeywordCollection"/>.
         /// </summary>
         public void Sort()
         {
-            Sort(_comparer);
+            Sort(Comparer.StringComparer);
         }
 
         /// <summary>

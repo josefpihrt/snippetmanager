@@ -12,7 +12,7 @@ namespace Pihrtsoft.Snippets
     public class NamespaceCollection
         : Collection<string>
     {
-        private static readonly NamespaceComparer _sorter = new NamespaceComparer(placeSystemFirst: true);
+        private static readonly NamespaceComparer _comparer = new NamespaceComparer(placeSystemFirst: true);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="NamespaceCollection"/> class that is empty.
@@ -23,11 +23,11 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Sorts the elements in the entire <see cref="NamespaceCollection"/> using the <see cref="StringComparer.InvariantCulture"/> comparer.
+        /// Sorts the elements in the entire <see cref="NamespaceCollection"/>.
         /// </summary>
         public void Sort()
         {
-            Sort(_sorter);
+            Sort(_comparer);
         }
 
         /// <summary>

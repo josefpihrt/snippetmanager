@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Pihrtsoft.Snippets.Comparers;
 
 namespace Pihrtsoft.Snippets
 {
@@ -39,7 +39,7 @@ namespace Pihrtsoft.Snippets
                 }
             }
 
-            return string.Compare(x, y, StringComparison.InvariantCulture);
+            return string.Compare(x, y, Comparer.StringComparison);
         }
 
         public bool PlaceSystemFirst { get; }

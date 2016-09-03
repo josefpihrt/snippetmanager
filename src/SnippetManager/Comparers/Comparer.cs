@@ -7,5 +7,7 @@ namespace Pihrtsoft.Snippets.Comparers
     internal static class Comparer
     {
         public static StringComparer StringComparer { get; } = StringComparer.CurrentCulture;
+
+        public static StringComparison StringComparison { get; } = StringComparison.CurrentCulture;
     }
 }

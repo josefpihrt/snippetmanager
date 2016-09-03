@@ -22,7 +22,7 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Sorts the elements in the entire <see cref="ShortcutCollection"/> using the <see cref="StringComparer.InvariantCulture"/> comparer.
+        /// Sorts the elements in the entire <see cref="ShortcutCollection"/>.
         /// </summary>
         public void Sort()
         {
