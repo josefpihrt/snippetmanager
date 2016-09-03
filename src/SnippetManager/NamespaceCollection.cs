@@ -12,7 +12,7 @@ namespace Pihrtsoft.Snippets
     public class NamespaceCollection
         : Collection<string>
     {
-        private static readonly NamespaceSorter _sorter = new NamespaceSorter(placeSystemFirst: true);
+        private static readonly NamespaceComparer _sorter = new NamespaceComparer(placeSystemFirst: true);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="NamespaceCollection"/> class that is empty.

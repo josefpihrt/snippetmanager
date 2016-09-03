@@ -6,11 +6,11 @@ using System.Text.RegularExpressions;
 
 namespace Pihrtsoft.Snippets
 {
-    internal class NamespaceSorter : IComparer<string>
+    internal class NamespaceComparer : IComparer<string>
     {
         private static readonly Regex _systemUsingRegex = new Regex(@"\A\s*System\s*(\.|\z)");
 
-        public NamespaceSorter(bool placeSystemFirst = false)
+        public NamespaceComparer(bool placeSystemFirst = false)
         {
             PlaceSystemFirst = placeSystemFirst;
         }

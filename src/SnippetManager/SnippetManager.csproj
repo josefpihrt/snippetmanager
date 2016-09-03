@@ -68,7 +68,7 @@
     <Compile Include="KeywordCollection.cs" />
     <Compile Include="LiteralCollection.cs" />
     <Compile Include="Comparers\LiteralIdentifierComparer.cs" />
-    <Compile Include="NamespaceSorter.cs" />
+    <Compile Include="NamespaceComparer.cs" />
     <Compile Include="Placeholder.cs" />
     <Compile Include="Comparers\LiteralComparer.cs" />
     <Compile Include="SnippetCode.cs" />
