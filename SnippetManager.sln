@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager", "src\SnippetManager\SnippetManager.csproj", "{DD1F8E68-3235-4F96-A404-EE423536EA63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D67F7CD-3816-4924-9526-E09A976D6E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,15 @@ Global
 		{DD1F8E68-3235-4F96-A404-EE423536EA63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1F8E68-3235-4F96-A404-EE423536EA63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1F8E68-3235-4F96-A404-EE423536EA63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7} = {9D67F7CD-3816-4924-9526-E09A976D6E91}
 	EndGlobalSection
 EndGlobal
