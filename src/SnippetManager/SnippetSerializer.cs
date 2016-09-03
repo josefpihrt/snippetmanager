@@ -27,7 +27,7 @@ namespace Pihrtsoft.Snippets
         private static XmlWriterSettings _xmlWriterSettings;
         private static XmlReaderSettings _xmlReaderSettings;
         private static XmlSerializerNamespaces _namespaces;
-        private static readonly Encoding _utf8Encoding = Encoding.UTF8;
+        private static readonly Encoding _utf8EncodingNoBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
         /// <summary>
         /// Returns enumerable collection of <see cref="Snippet"/> deserialized from snippet files in a specified directory.
@@ -317,11 +317,15 @@ namespace Pihrtsoft.Snippets
             if (settings == null)
                 throw new ArgumentNullException(nameof(settings));
 
-            using (var stream = new MemoryStream())
+            using (var memoryStream = new MemoryStream())
             {
-                Serialize(stream, snippet, settings);
+                using (var streamWriter = new StreamWriter(memoryStream, _utf8EncodingNoBom))
+                {
+                    using (XmlWriter xmlWriter = XmlWriter.Create(streamWriter, GetXmlWriterSettings(settings)))
+                        Serialize(xmlWriter, snippet, settings);
+                }
 
-                return _utf8Encoding.GetString(stream.ToArray());
+                return _utf8EncodingNoBom.GetString(memoryStream.ToArray());
             }
         }
 
