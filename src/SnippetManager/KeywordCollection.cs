@@ -23,7 +23,7 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Sorts the elements in the entire <see cref="NamespaceCollection"/> using the <see cref="StringComparer.InvariantCulture"/> comparer.
+        /// Sorts the elements in the entire <see cref="KeywordCollection"/> using the <see cref="StringComparer.InvariantCulture"/> comparer.
         /// </summary>
         public void Sort()
         {
@@ -31,7 +31,7 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Sorts the elements in the entire <see cref="NamespaceCollection"/> using the specified comparer.
+        /// Sorts the elements in the entire <see cref="KeywordCollection"/> using the specified comparer.
         /// </summary>
         /// <param name="comparer">The <see cref="IComparer{String}"/> implementation to use when comparing elements.</param>
         public void Sort(IComparer<string> comparer)
