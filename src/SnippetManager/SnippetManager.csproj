@@ -71,6 +71,7 @@
     <Compile Include="NamespaceComparer.cs" />
     <Compile Include="Placeholder.cs" />
     <Compile Include="Comparers\LiteralComparer.cs" />
+    <Compile Include="DuplicateShortcutInfo.cs" />
     <Compile Include="SnippetCode.cs" />
     <Compile Include="SnippetCollection.cs" />
     <Compile Include="Comparers\SnippetComparerOfT.cs" />
