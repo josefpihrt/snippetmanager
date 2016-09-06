@@ -1,0 +1,1 @@
+* Update SnippetUtility.FindDuplicateShortcuts method so it reflects possible alternative shortcuts
