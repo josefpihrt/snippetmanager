@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
-    /// Represents the set of <see cref="Placeholder"/>. This collection is read-only.
+    /// Represents the set of <see cref="Placeholder"/>s. This collection is read-only.
     /// </summary>
     public class PlaceholderCollection
         : ReadOnlyCollection<Placeholder>

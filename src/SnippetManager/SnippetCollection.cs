@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
-    /// Represents the set of <see cref="Snippet"/>.
+    /// Represents the set of <see cref="Snippet"/>s.
     /// </summary>
     public class SnippetCollection
         : Collection<Snippet>

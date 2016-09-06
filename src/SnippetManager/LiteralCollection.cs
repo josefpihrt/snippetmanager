@@ -7,7 +7,7 @@ using Pihrtsoft.Snippets.Comparers;
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
-    /// Represents the set of <see cref="Literal"/>.
+    /// Represents the set of <see cref="Literal"/>s.
     /// </summary>
     public class LiteralCollection
         : Collection<Literal>
