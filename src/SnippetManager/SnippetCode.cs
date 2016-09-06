@@ -148,6 +148,36 @@ namespace Pihrtsoft.Snippets
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Returns a new <see cref="string"/> where all placeholders with the specified identifier are removed. Escaped $ characters are left intact.
+        /// </summary>
+        /// <param name="identifier">A placeholder identifier</param>
+        /// <returns>A new <see cref="string"/> where all placeholders with the specified identifier are removed.</returns>
+        public string RemoveAllPlaceholders(string identifier)
+        {
+            if (Placeholders.Count == 0)
+                return Text;
+
+            int prevIndex = 0;
+            StringBuilder sb = null;
+
+            foreach (Placeholder placeholder in Placeholders)
+            {
+                if (Literal.IdentifierComparer.Equals(placeholder.Identifier, identifier))
+                {
+                    if (sb == null)
+                        sb = new StringBuilder();
+
+                    sb.Append(Text, prevIndex, placeholder.Index - 1 - prevIndex);
+                    prevIndex = placeholder.EndIndex + 1;
+                }
+            }
+
+            sb.Append(Text, prevIndex, Text.Length - prevIndex);
+
+            return sb.ToString();
+        }
+
         private void Parse()
         {
             _startIndex = -1;
