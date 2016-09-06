@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Pihrtsoft.Snippets.Comparers;
 
 namespace Pihrtsoft.Snippets
@@ -50,6 +51,22 @@ namespace Pihrtsoft.Snippets
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Removes the first occurrence of a literal with a specific identifier
+        /// </summary>
+        /// <param name="identifier">A literal identifier.</param>
+        /// <returns><c>true</c> if item was successfully removed from <see cref="LiteralCollection"/>; otherwise, <c>false</c>.</returns>
+        public bool Remove(string identifier)
+        {
+            foreach (Literal literal in Items)
+            {
+                if (Literal.IdentifierComparer.Equals(literal.Identifier, identifier))
+                    return Items.Remove(literal);
+            }
+
+            return false;
         }
 
         /// <summary>
