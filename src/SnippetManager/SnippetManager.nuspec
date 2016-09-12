@@ -9,8 +9,8 @@
     <licenseUrl>https://github.com/JosefPihrt/SnippetManager/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/JosefPihrt/SnippetManager</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Snippet Manager API enables to work with Visual Studio snippet format.</description>
-    <summary>Snippet Manager API enables to work with Visual Studio snippet format.</summary>
+    <description>Snippet Manager API enables to work with Visual Studio snippets.</description>
+    <summary>Snippet Manager API enables to work with Visual Studio snippets.</summary>
     <copyright>Copyright (c) 2015-2016 Josef Pihrt</copyright>
     <tags>Snippet Snippets CodeSnippet</tags>
   </metadata>
