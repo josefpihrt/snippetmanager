@@ -156,28 +156,32 @@ namespace Pihrtsoft.Snippets
         /// <returns>A new <see cref="string"/> where all placeholders with the specified identifier are replaced.</returns>
         public string ReplacePlaceholders(string identifier, string replacement)
         {
-            if (Placeholders.Count == 0)
-                return Text;
-
-            int prevIndex = 0;
-            StringBuilder sb = null;
-
-            foreach (Placeholder placeholder in Placeholders)
+            if (Placeholders.Count > 0)
             {
-                if (Literal.IdentifierComparer.Equals(placeholder.Identifier, identifier))
-                {
-                    if (sb == null)
-                        sb = new StringBuilder();
+                int prevIndex = 0;
+                StringBuilder sb = null;
 
-                    sb.Append(Text, prevIndex, placeholder.Index - 1 - prevIndex);
-                    sb.Append(replacement);
-                    prevIndex = placeholder.EndIndex + 1;
+                foreach (Placeholder placeholder in Placeholders)
+                {
+                    if (Literal.IdentifierComparer.Equals(placeholder.Identifier, identifier))
+                    {
+                        if (sb == null)
+                            sb = new StringBuilder();
+
+                        sb.Append(Text, prevIndex, placeholder.Index - 1 - prevIndex);
+                        sb.Append(replacement);
+                        prevIndex = placeholder.EndIndex + 1;
+                    }
+                }
+
+                if (sb != null)
+                {
+                    sb.Append(Text, prevIndex, Text.Length - prevIndex);
+                    return sb.ToString();
                 }
             }
 
-            sb.Append(Text, prevIndex, Text.Length - prevIndex);
-
-            return sb.ToString();
+            return Text;
         }
 
         private void Parse()
