@@ -149,11 +149,12 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Returns a new <see cref="string"/> where all placeholders with the specified identifier are removed. Escaped $ characters are left intact.
+        /// Returns a new <see cref="string"/> where all placeholders with the specified identifier are replaced. Escaped $ characters are left intact.
         /// </summary>
-        /// <param name="identifier">A placeholder identifier</param>
-        /// <returns>A new <see cref="string"/> where all placeholders with the specified identifier are removed.</returns>
-        public string RemoveAllPlaceholders(string identifier)
+        /// <param name="identifier">A placeholder identifier.</param>
+        /// <param name="replacement">The string to replace all occurrences of placeholder with the specified identifier.</param>
+        /// <returns>A new <see cref="string"/> where all placeholders with the specified identifier are replaced.</returns>
+        public string ReplacePlaceholders(string identifier, string replacement)
         {
             if (Placeholders.Count == 0)
                 return Text;
@@ -169,6 +170,7 @@ namespace Pihrtsoft.Snippets
                         sb = new StringBuilder();
 
                     sb.Append(Text, prevIndex, placeholder.Index - 1 - prevIndex);
+                    sb.Append(replacement);
                     prevIndex = placeholder.EndIndex + 1;
                 }
             }
