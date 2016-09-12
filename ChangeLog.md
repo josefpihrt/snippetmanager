@@ -1,3 +1,9 @@
+#### 1.2.0 (2016-09-12)
+
+* Add method SnippetCode.ReplacePlaceholders(string, string).
+* Add method LiteralCollection.Remove(string).
+* Update SnippetUtility.FindDuplicateShortcuts method so it reflects possible alternative shortcuts.
+
 #### 1.1.0 (2016-09-03)
 
 * Add support for xml element "AlternativeShortcuts".
