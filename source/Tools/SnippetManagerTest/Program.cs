@@ -7,15 +7,15 @@ using Pihrtsoft.Snippets;
 
 namespace SnippetManagerTest
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string filePath = @"..\..\Snippet.snippet";
 
             SnippetFile snippetFile = SnippetSerializer.DeserializeFile(filePath);
 
-            var snippetCollection = snippetFile.Snippets;
+            SnippetCollection snippetCollection = snippetFile.Snippets;
 
             if (snippetCollection.Count == 1)
             {
@@ -29,12 +29,12 @@ namespace SnippetManagerTest
                     Comment = " comment "
                 };
 
-                var oldValue = File.ReadAllText(filePath, Encoding.UTF8);
+                string oldValue = File.ReadAllText(filePath, Encoding.UTF8);
                 Console.WriteLine(oldValue);
 
                 Console.WriteLine();
 
-                var newValue = SnippetSerializer.CreateXml(snippet, settings);
+                string newValue = SnippetSerializer.CreateXml(snippet, settings);
                 Console.WriteLine(newValue);
 
                 Console.WriteLine();
