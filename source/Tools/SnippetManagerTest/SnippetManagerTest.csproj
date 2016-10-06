@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\source\SnippetManager\SnippetManager.csproj">
+    <ProjectReference Include="..\..\SnippetManager\SnippetManager.csproj">
       <Project>{DD1F8E68-3235-4F96-A404-EE423536EA63}</Project>
       <Name>SnippetManager</Name>
     </ProjectReference>

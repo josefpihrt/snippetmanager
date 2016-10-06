@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager", "source\Sn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D67F7CD-3816-4924-9526-E09A976D6E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "source\Tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
