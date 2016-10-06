@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager", "src\SnippetManager\SnippetManager.csproj", "{DD1F8E68-3235-4F96-A404-EE423536EA63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager", "source\SnippetManager\SnippetManager.csproj", "{DD1F8E68-3235-4F96-A404-EE423536EA63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D67F7CD-3816-4924-9526-E09A976D6E91}"
 EndProject
