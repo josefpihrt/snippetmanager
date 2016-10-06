@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>..\..\SnippetManager.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\SnippetManager.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>bin\Debug\Pihrtsoft.Snippets.xml</DocumentationFile>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
