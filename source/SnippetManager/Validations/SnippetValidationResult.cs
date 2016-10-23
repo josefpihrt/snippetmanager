@@ -1,12 +1,14 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Diagnostics;
 
 namespace Pihrtsoft.Snippets.Validations
 {
     /// <summary>
     /// Represents a result of the <see cref="Snippet"/> validation.
     /// </summary>
+    [DebuggerDisplay("{Code,nq} {Importance} {Description,nq}")]
     public class SnippetValidationResult
     {
         /// <summary>

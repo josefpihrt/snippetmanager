@@ -7,7 +7,7 @@ namespace Pihrtsoft.Snippets
     /// <summary>
     /// Represents a literal placeholder.
     /// </summary>
-    [DebuggerDisplay("Identifier: {Identifier}, Index: {Index}")]
+    [DebuggerDisplay("{Identifier,nq}, Index = {Index}")]
     public class Placeholder
     {
         /// <summary>

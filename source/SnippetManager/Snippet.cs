@@ -3,14 +3,15 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
-using System.Linq;
 
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
     /// Represents a code snippet.
     /// </summary>
+    [DebuggerDisplay("{Language} {Shortcut,nq} {Title,nq} {CodeText,nq}")]
     public class Snippet : ICloneable
     {
         /// <summary>

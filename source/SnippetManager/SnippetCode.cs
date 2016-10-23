@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Pihrtsoft.Snippets.Validations;
@@ -11,6 +12,7 @@ namespace Pihrtsoft.Snippets
     /// <summary>
     /// Represents a code of the <see cref="Snippet"/>.
     /// </summary>
+    [DebuggerDisplay("{Text,nq}")]
     public class SnippetCode
     {
         private PlaceholderCollection _placeholders;

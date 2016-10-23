@@ -1,10 +1,13 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System.Diagnostics;
+
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
     /// Represents a file that has the extension 'snippet' and contains zero or more snippets serialized into xml.
     /// </summary>
+    [DebuggerDisplay("{Snippets.Count} {FullName,nq}")]
     public class SnippetFile
     {
         /// <summary>

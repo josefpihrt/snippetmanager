@@ -2,12 +2,15 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
 
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
     /// Represents the set of <see cref="Placeholder"/>s. This collection is read-only.
     /// </summary>
+    [DebuggerDisplay("Count = {Count} {Identifiers,nq}")]
     public class PlaceholderCollection
         : ReadOnlyCollection<Placeholder>
     {
@@ -90,5 +93,10 @@ namespace Pihrtsoft.Snippets
         /// <param name="identifier">A placeholder identifier.</param>
         /// <returns>First found placeholder with the specified identifier.</returns>
         public Placeholder this[string identifier] => Find(identifier);
+
+        private string Identifiers
+        {
+            get { return string.Join(", ", Items.Select(f => f.Identifier)); }
+        }
     }
 }

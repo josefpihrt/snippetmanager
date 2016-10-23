@@ -1,14 +1,15 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
     /// Represents the set of namespaces.
     /// </summary>
+    [DebuggerDisplay("Count = {Count} {Namespaces,nq}")]
     public class NamespaceCollection
         : Collection<string>
     {
@@ -40,5 +41,10 @@ namespace Pihrtsoft.Snippets
         }
 
         private List<string> List => (List<string>)Items;
+
+        private string Namespaces
+        {
+            get { return string.Join(", ", Items); }
+        }
     }
 }

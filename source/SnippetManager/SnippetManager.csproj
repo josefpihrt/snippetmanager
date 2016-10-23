@@ -60,7 +60,6 @@
     <Compile Include="Comparers\LiteralDeepEqualityComparer.cs" />
     <Compile Include="Comparers\SnippetDeepEqualityComparer.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="ShortcutCollection.cs" />
     <Compile Include="LanguageMapper.cs" />
     <Compile Include="LiteralRenamer.cs" />

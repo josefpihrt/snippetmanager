@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using Pihrtsoft.Snippets.Comparers;
 
@@ -10,6 +11,7 @@ namespace Pihrtsoft.Snippets
     /// <summary>
     /// Represents the set of <see cref="Literal"/>s.
     /// </summary>
+    [DebuggerDisplay("Count = {Count} {Identifiers,nq}")]
     public class LiteralCollection
         : Collection<Literal>
     {
@@ -94,5 +96,10 @@ namespace Pihrtsoft.Snippets
         public Literal this[string identifier] => Find(identifier);
 
         private List<Literal> List => (List<Literal>)Items;
+
+        private string Identifiers
+        {
+            get { return string.Join(", ", Items.Select(f => f.Identifier)); }
+        }
     }
 }

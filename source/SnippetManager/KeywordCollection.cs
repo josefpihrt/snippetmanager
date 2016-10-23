@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Pihrtsoft.Snippets.Comparers;
 
 namespace Pihrtsoft.Snippets
@@ -10,6 +10,7 @@ namespace Pihrtsoft.Snippets
     /// <summary>
     /// Represents the set of keywords.
     /// </summary>
+    [DebuggerDisplay("Count = {Count} {Keywords,nq}")]
     public class KeywordCollection
         : Collection<string>
     {
@@ -36,6 +37,11 @@ namespace Pihrtsoft.Snippets
         public void Sort(IComparer<string> comparer)
         {
             List.Sort(comparer);
+        }
+
+        private string Keywords
+        {
+            get { return string.Join(", ", Items); }
         }
 
         private List<string> List => (List<string>)Items;
