@@ -32,5 +32,57 @@ namespace Pihrtsoft.Snippets
                     yield return new DuplicateShortcutInfo(grouping.Key, grouping.Select(f => f.Snippet));
             }
         }
+
+        /// <summary>
+        /// Removes all literals that do not have corresponding placeholder (placeholder with same identifier).
+        /// </summary>
+        public static void RemoveUnusedLiterals(Snippet snippet)
+        {
+            List<string> identifiers = null;
+
+            foreach (Literal literal in snippet.Literals)
+            {
+                if (!snippet.Code.Placeholders.Contains(literal.Identifier))
+                {
+                    if (identifiers == null)
+                        identifiers = new List<string>();
+
+                    identifiers.Add(literal.Identifier);
+                }
+            }
+
+            if (identifiers != null)
+            {
+                foreach (string identifier in identifiers)
+                    snippet.CodeText = snippet.Code.ReplacePlaceholders(identifier, "");
+            }
+        }
+
+        /// <summary>
+        /// Removes all placeholders that do not have corresponding literal (literal with same identifier).
+        /// </summary>
+        /// <returns></returns>
+        public static void RemoveUnusedPlaceholders(Snippet snippet)
+        {
+            List<string> identifiers = null;
+
+            foreach (Placeholder placeholder in snippet.Code.Placeholders)
+            {
+                if (!placeholder.IsSystemPlaceholder
+                    && !snippet.Literals.Contains(placeholder.Identifier))
+                {
+                    if (identifiers == null)
+                        identifiers = new List<string>();
+
+                    identifiers.Add(placeholder.Identifier);
+                }
+            }
+
+            if (identifiers != null)
+            {
+                foreach (string identifier in identifiers)
+                    snippet.CodeText = snippet.Code.ReplacePlaceholders(identifier, "");
+            }
+        }
     }
 }
