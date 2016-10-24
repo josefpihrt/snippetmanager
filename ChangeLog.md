@@ -1,3 +1,9 @@
+#### 1.2.2 (2016-10-24)
+
+* Add method SnippetUtility.RemoveUnusedLiterals.
+* Add method SnippetUtility.RemoveUnusedPlaceholders.
+* Add DebuggerDisplayAttribute.
+
 #### 1.2.0 (2016-09-12)
 
 * Add method SnippetCode.ReplacePlaceholders(string, string).
