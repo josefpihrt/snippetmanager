@@ -1,0 +1,15 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "System.Collections": "4.3.0",
+    "System.Diagnostics.Debug": "4.3.0",
+    "System.Linq": "4.3.0",
+    "System.Runtime.Extensions": "4.3.0",
+    "System.Text.Encoding.Extensions": "4.3.0",
+    "System.Text.RegularExpressions": "4.3.0",
+    "System.Xml.XmlSerializer": "4.3.0"
+  },
+  "frameworks": {
+    "netstandard1.3": {}
+  }
+}
