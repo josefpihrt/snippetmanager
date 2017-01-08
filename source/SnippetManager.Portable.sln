@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager.Portable", "SnippetManager\SnippetManager.Portable.csproj", "{1D55C3E6-D407-4F6A-A27F-38BFF97D8EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "Tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{7ACE2B47-A491-4573-868E-3922B68D7799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D55C3E6-D407-4F6A-A27F-38BFF97D8EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D55C3E6-D407-4F6A-A27F-38BFF97D8EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D55C3E6-D407-4F6A-A27F-38BFF97D8EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D55C3E6-D407-4F6A-A27F-38BFF97D8EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C569AF67-A410-4378-A6FF-7E27A0B5BEE7} = {7ACE2B47-A491-4573-868E-3922B68D7799}
+	EndGlobalSection
+EndGlobal

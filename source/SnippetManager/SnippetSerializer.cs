@@ -29,6 +29,7 @@ namespace Pihrtsoft.Snippets
         private static XmlSerializerNamespaces _namespaces;
         private static readonly Encoding _utf8EncodingNoBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
+#if NETFRAMEWORK
         /// <summary>
         /// Returns enumerable collection of <see cref="Snippet"/> deserialized from snippet files in a specified directory.
         /// </summary>
@@ -81,13 +82,14 @@ namespace Pihrtsoft.Snippets
                 return file;
             }
         }
+#endif
 
         /// <summary>
         /// Returns enumerable collection of <see cref="Snippet"/> contained by a specified <see cref="Stream"/>.
         /// </summary>
         /// <param name="stream">The <see cref="Stream"/> that contains snippets to deserialize.</param>
         /// <returns>Enumerable collection of snippets being deserialized.</returns>
-        private static IEnumerable<Snippet> Deserialize(Stream stream)
+        public static IEnumerable<Snippet> Deserialize(Stream stream)
         {
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
@@ -138,6 +140,7 @@ namespace Pihrtsoft.Snippets
 #endif
         }
 
+#if NETFRAMEWORK
         /// <summary>
         /// Serializes the specified <see cref="Snippet"/> the the specified snippet file.
         /// </summary>
@@ -168,6 +171,7 @@ namespace Pihrtsoft.Snippets
             using (var stream = new FileStream(filePath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
                 Serialize(stream, snippet, settings);
         }
+#endif
 
         /// <summary>
         /// Serializes the specified <see cref="Snippet"/> the the specified <see cref="Stream"/>.
@@ -200,6 +204,7 @@ namespace Pihrtsoft.Snippets
                 Serialize(xmlWriter, snippet, settings);
         }
 
+#if NETFRAMEWORK
         /// <summary>
         /// Serializes enumerable collection of <see cref="Snippet"/> to the specified snippet file.
         /// </summary>
@@ -261,6 +266,7 @@ namespace Pihrtsoft.Snippets
 
             Serialize(snippetFile.FullName, snippetFile.Snippets, settings);
         }
+#endif
 
         /// <summary>
         /// Serializes enumerable collection of <see cref="Snippet"/> to the specified <see cref="Stream"/>.
@@ -325,7 +331,12 @@ namespace Pihrtsoft.Snippets
                         Serialize(xmlWriter, snippet, settings);
                 }
 
+#if NETFRAMEWORK
                 return _utf8EncodingNoBom.GetString(memoryStream.ToArray());
+#else
+                byte[] bytes = memoryStream.ToArray();
+                return _utf8EncodingNoBom.GetString(bytes, 0, bytes.Length);
+#endif
             }
         }
 

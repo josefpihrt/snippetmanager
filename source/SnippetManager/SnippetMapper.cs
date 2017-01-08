@@ -233,7 +233,7 @@ namespace Pihrtsoft.Snippets
             var element = new CodeElement();
             Snippet snippet = context.Snippet;
 
-            if (!string.IsNullOrEmpty(snippet.CodeText))
+            if (snippet.CodeText != null)
             {
                 if (TextUtility.ContainsCDataEnd(snippet.CodeText))
                     throw new InvalidOperationException("Snippet code cannot contain CDATA ending sequence ']]>'.");
@@ -363,7 +363,7 @@ namespace Pihrtsoft.Snippets
             if (element.Language != null)
                 snippet.Language = LanguageMapper.Instance.MapTextToEnum(element.Language);
 
-            if (!string.IsNullOrEmpty(element.Code))
+            if (element.Code != null)
                 snippet.CodeText = element.Code;
         }
 

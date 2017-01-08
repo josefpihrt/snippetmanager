@@ -2,6 +2,7 @@
 
 using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using Pihrtsoft.Snippets;
 
@@ -13,14 +14,13 @@ namespace SnippetManagerTest
         {
             string filePath = @"..\..\Snippet.snippet";
 
-            SnippetFile snippetFile = SnippetSerializer.DeserializeFile(filePath);
+            Snippet snippet = null;
 
-            SnippetCollection snippetCollection = snippetFile.Snippets;
+            using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                snippet = SnippetSerializer.Deserialize(stream).FirstOrDefault();
 
-            if (snippetCollection.Count == 1)
+            if (snippet != null)
             {
-                Snippet snippet = snippetCollection[0];
-
                 var settings = new SaveSettings()
                 {
                     IndentChars = "  ",

@@ -9,7 +9,10 @@ namespace Pihrtsoft.Snippets
     /// Represents a code snippet literal.
     /// </summary>
     [DebuggerDisplay("{Identifier,nq} Default = {DefaultValue,nq} ToolTip = {ToolTip,nq}")]
-    public class Literal : ICloneable
+    public class Literal
+#if NETFRAMEWORK
+        : ICloneable
+#endif
     {
         private string _identifier;
         private string _defaultValue;

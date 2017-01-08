@@ -11,7 +11,15 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Snippet Manager API enables to work with Visual Studio snippets.</description>
     <summary>Snippet Manager API enables to work with Visual Studio snippets.</summary>
-    <copyright>Copyright (c) 2015-2016 Josef Pihrt</copyright>
+    <copyright>Copyright (c) 2015-2017 Josef Pihrt</copyright>
     <tags>Snippet Snippets CodeSnippet</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETPortable4.5-Profile259" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="*.dll;*.xml" target="lib\net40" exclude="*.pdb" />
+    <file src="Portable\*.dll;Portable\*.xml" target="lib\portable45-net45+win8+wp8+wpa81" exclude="*.pdb" />
+  </files>
 </package>

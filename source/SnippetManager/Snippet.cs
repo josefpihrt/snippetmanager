@@ -12,7 +12,10 @@ namespace Pihrtsoft.Snippets
     /// Represents a code snippet.
     /// </summary>
     [DebuggerDisplay("{Language} {Shortcut,nq} {Title,nq} {CodeText,nq}")]
-    public class Snippet : ICloneable
+    public class Snippet
+#if NETFRAMEWORK
+        : ICloneable
+#endif
     {
         /// <summary>
         /// Represents a default delimiter in a snippet code. This field is a constant.
@@ -49,6 +52,7 @@ namespace Pihrtsoft.Snippets
             Code = new SnippetCode(this);
         }
 
+#if NETFRAMEWORK
         /// <summary>
         /// Serializes the current instance to the specified file.
         /// </summary>
@@ -67,6 +71,7 @@ namespace Pihrtsoft.Snippets
         {
             SnippetSerializer.Serialize(filePath, this, settings);
         }
+#endif
 
         /// <summary>
         /// Serializes the current instance to the specified <see cref="Stream"/>.

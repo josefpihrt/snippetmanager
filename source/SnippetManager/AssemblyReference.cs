@@ -9,7 +9,10 @@ namespace Pihrtsoft.Snippets
     /// Represents a reference to the assembly.
     /// </summary>
     [DebuggerDisplay("{AssemblyName,nq} {Url,nq}")]
-    public class AssemblyReference : ICloneable
+    public class AssemblyReference
+#if NETFRAMEWORK
+        : ICloneable
+#endif
     {
         /// <summary>
         /// Creates a new <see cref="AssemblyReference"/> that is a deep copy of the current instance.
