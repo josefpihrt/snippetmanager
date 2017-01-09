@@ -1,3 +1,8 @@
+#### 1.3.0 (2017-01-09)
+
+* Add support for .NET Standard 1.3
+* Add support for Portable Class Library
+
 #### 1.2.2 (2016-10-24)
 
 * Add method SnippetUtility.RemoveUnusedLiterals.
