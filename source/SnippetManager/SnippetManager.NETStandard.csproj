@@ -71,6 +71,7 @@
     <Compile Include="SnippetFile.cs" />
     <Compile Include="Comparers\SnippetShortcutComparer.cs" />
     <Compile Include="Comparers\SnippetTitleComparer.cs" />
+    <Compile Include="SnippetFileSearcher.cs" />
     <Compile Include="Validations\ErrorCode.cs" />
     <Compile Include="Validations\ResultImportance.cs" />
     <Compile Include="SaveSettings.cs" />

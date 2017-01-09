@@ -29,7 +29,7 @@ namespace Pihrtsoft.Snippets
         private static XmlSerializerNamespaces _namespaces;
         private static readonly Encoding _utf8EncodingNoBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
-#if NETFRAMEWORK
+#if !PORTABLE
         /// <summary>
         /// Returns enumerable collection of <see cref="Snippet"/> deserialized from snippet files in a specified directory.
         /// </summary>
@@ -128,19 +128,19 @@ namespace Pihrtsoft.Snippets
 #if DEBUG
             try
             {
-#endif
                 return (T)xmlSerializer.Deserialize(xmlReader);
-#if DEBUG
             }
             catch (InvalidOperationException ex)
             {
                 Debug.WriteLine(ex.GetBaseException());
                 throw;
             }
+#else
+            return (T)xmlSerializer.Deserialize(xmlReader);
 #endif
         }
 
-#if NETFRAMEWORK
+#if !PORTABLE
         /// <summary>
         /// Serializes the specified <see cref="Snippet"/> the the specified snippet file.
         /// </summary>
@@ -204,7 +204,7 @@ namespace Pihrtsoft.Snippets
                 Serialize(xmlWriter, snippet, settings);
         }
 
-#if NETFRAMEWORK
+#if !PORTABLE
         /// <summary>
         /// Serializes enumerable collection of <see cref="Snippet"/> to the specified snippet file.
         /// </summary>

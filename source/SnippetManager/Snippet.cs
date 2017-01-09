@@ -52,7 +52,7 @@ namespace Pihrtsoft.Snippets
             Code = new SnippetCode(this);
         }
 
-#if NETFRAMEWORK
+#if !PORTABLE
         /// <summary>
         /// Serializes the current instance to the specified file.
         /// </summary>
