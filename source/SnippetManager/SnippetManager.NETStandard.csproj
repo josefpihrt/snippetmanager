@@ -112,7 +112,7 @@
     <Compile Include="Xml\Serialization\CodeSnippetsElement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="project.json" />
+    <None Include="SnippetManager.NETStandard.project.json" />
     <None Include="SnippetManager.nuspec" />
     <None Include="SnippetManager.NETStandard.snk" />
   </ItemGroup>
