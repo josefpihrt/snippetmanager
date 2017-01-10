@@ -25,7 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\Portable\Pihrtsoft.Snippets.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>..\SnippetManager.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\global.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Portable\Pihrtsoft.Snippets.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>..\SnippetManager.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\global.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
