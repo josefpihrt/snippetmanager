@@ -9,6 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D67F7CD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "Tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{6219090A-970F-4348-B043-1C632461C44B}"
+	ProjectSection(SolutionItems) = preProject
+		..\ChangeLog.md = ..\ChangeLog.md
+		..\LICENSE.txt = ..\LICENSE.txt
+		..\README.md = ..\README.md
+		SnippetManager.ruleset = SnippetManager.ruleset
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
