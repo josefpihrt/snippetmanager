@@ -1,8 +1,20 @@
 # Snippet Manager
 
 ## Introduction 
+
 * Snippet Manager is .NET library that enables to work with Visual Studio snippets. 
 * The library is distributed via [NuGet](https://www.nuget.org/packages/SnippetManager).
+
+## Supported Frameworks
+
+* .NET Framework 4.0
+* .NET Standard 1.3
+* Portable Class Library (Profile 259)
+  * .NET Framework 4.5
+  * Windows 8.0
+  * Windows Phone 8.1
+  * Windows Phone 8.0
+  * .NET Standard 1.0
 
 ## Usage 
 
