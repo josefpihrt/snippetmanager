@@ -8,6 +8,7 @@ namespace Pihrtsoft.Snippets.Comparers
     /// <summary>
     /// Represents a <see cref="Snippet"/> comparison operation.
     /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class SnippetComparer<T> : SnippetComparer
     {
         internal abstract IComparer Comparer { get; }

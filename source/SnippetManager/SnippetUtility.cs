@@ -36,6 +36,7 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Removes all literals that do not have corresponding placeholder (placeholder with same identifier).
         /// </summary>
+        /// <param name="snippet"><see cref="Snippet"/> to remove literals from.</param>
         public static void RemoveUnusedLiterals(Snippet snippet)
         {
             List<string> identifiers = null;
@@ -44,10 +45,7 @@ namespace Pihrtsoft.Snippets
             {
                 if (!snippet.Code.Placeholders.Contains(literal.Identifier))
                 {
-                    if (identifiers == null)
-                        identifiers = new List<string>();
-
-                    identifiers.Add(literal.Identifier);
+                    (identifiers ?? (identifiers = new List<string>())).Add(literal.Identifier);
                 }
             }
 
@@ -61,6 +59,7 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Removes all placeholders that do not have corresponding literal (literal with same identifier).
         /// </summary>
+        /// <param name="snippet"><see cref="Snippet"/> to remove placeholders from.</param>
         /// <returns></returns>
         public static void RemoveUnusedPlaceholders(Snippet snippet)
         {
@@ -71,10 +70,7 @@ namespace Pihrtsoft.Snippets
                 if (!placeholder.IsSystemPlaceholder
                     && !snippet.Literals.Contains(placeholder.Identifier))
                 {
-                    if (identifiers == null)
-                        identifiers = new List<string>();
-
-                    identifiers.Add(placeholder.Identifier);
+                    (identifiers ?? (identifiers = new List<string>())).Add(placeholder.Identifier);
                 }
             }
 

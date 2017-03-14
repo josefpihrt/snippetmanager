@@ -89,6 +89,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         /// <param name="stream">The <see cref="Stream"/> that contains snippets to deserialize.</param>
         /// <returns>Enumerable collection of snippets being deserialized.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="stream"/> is <c>null</c>.</exception>
         public static IEnumerable<Snippet> Deserialize(Stream stream)
         {
             if (stream == null)
@@ -157,6 +158,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="filePath">The absolute or relative path to the file.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="filePath"/> or <paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(string filePath, Snippet snippet, SaveSettings settings)
         {
             if (filePath == null)
@@ -189,6 +191,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="stream">The stream to output this <see cref="Snippet"/> to.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="stream"/> or <paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(Stream stream, Snippet snippet, SaveSettings settings)
         {
             if (stream == null)
@@ -221,6 +224,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="filePath">The absolute or relative path to the file.</param>
         /// <param name="snippets">Enumerable collection of <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="filePath"/> or <paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(string filePath, IEnumerable<Snippet> snippets, SaveSettings settings)
         {
             if (filePath == null)
@@ -284,6 +288,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="stream">The stream to output this <see cref="Snippet"/> to.</param>
         /// <param name="snippets">Enumerable collection of <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="stream"/> or <paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(Stream stream, IEnumerable<Snippet> snippets, SaveSettings settings)
         {
             if (stream == null)
@@ -315,6 +320,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
         /// <returns>xml text that represents a specified <see cref="Snippet"/>.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static string CreateXml(Snippet snippet, SaveSettings settings)
         {
             if (snippet == null)
@@ -393,35 +399,17 @@ namespace Pihrtsoft.Snippets
 
         private static XmlSerializer CodeSnippetsElementXmlSerializer
         {
-            get
-            {
-                if (_codeSnippetsElementXmlSerializer == null)
-                    _codeSnippetsElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetsElement), DefaultNamespace);
-
-                return _codeSnippetsElementXmlSerializer;
-            }
+            get { return _codeSnippetsElementXmlSerializer ?? (_codeSnippetsElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetsElement), DefaultNamespace)); }
         }
 
         private static XmlSerializer CodeSnippetElementXmlSerializer
         {
-            get
-            {
-                if (_codeSnippetElementXmlSerializer == null)
-                    _codeSnippetElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetElement), DefaultNamespace);
-
-                return _codeSnippetElementXmlSerializer;
-            }
+            get { return _codeSnippetElementXmlSerializer ?? (_codeSnippetElementXmlSerializer = new XmlSerializer(typeof(CodeSnippetElement), DefaultNamespace)); }
         }
 
         private static XmlWriterSettings XmlWriterSettings
         {
-            get
-            {
-                if (_xmlWriterSettings == null)
-                    _xmlWriterSettings = CreateXmlWriterSettings();
-
-                return _xmlWriterSettings;
-            }
+            get { return _xmlWriterSettings ?? (_xmlWriterSettings = CreateXmlWriterSettings()); }
         }
 
         private static XmlReaderSettings XmlReaderSettings

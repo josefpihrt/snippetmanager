@@ -157,23 +157,23 @@ namespace Pihrtsoft.Snippets
         /// <returns>A new <see cref="Snippet"/> that is a deep copy of the current instance</returns>
         public object Clone()
         {
-            var clone = new Snippet();
-
-            clone.Author = Author;
-            clone.CodeText = CodeText;
-            clone.ContextKind = ContextKind;
-            clone.Delimiter = Delimiter;
-            clone.Description = Description;
-            clone.FormatVersion = FormatVersion;
+            var clone = new Snippet()
+            {
+                Author = Author,
+                CodeText = CodeText,
+                ContextKind = ContextKind,
+                Delimiter = Delimiter,
+                Description = Description,
+                FormatVersion = FormatVersion,
+                Language = Language,
+                Shortcut = Shortcut,
+                SnippetTypes = SnippetTypes,
+                FilePath = FilePath,
+                Title = Title
+            };
 
             if (HelpUrl != null)
                 clone.HelpUrl = new Uri(HelpUrl.OriginalString);
-
-            clone.Language = Language;
-            clone.Shortcut = Shortcut;
-            clone.SnippetTypes = SnippetTypes;
-            clone.FilePath = FilePath;
-            clone.Title = Title;
 
             foreach (AssemblyReference item in AssemblyReferences)
                 clone.AssemblyReferences.Add((AssemblyReference)item.Clone());
@@ -199,9 +199,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="e">An <see cref="EventArgs"/> that contains the event data.</param>
         protected virtual void OnTextChanged(EventArgs e)
         {
-            EventHandler handler = TextChanged;
-            if (handler != null)
-                handler(this, e);
+            TextChanged?.Invoke(this, e);
         }
 
         /// <summary>
@@ -260,13 +258,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public KeywordCollection Keywords
         {
-            get
-            {
-                if (_keywords == null)
-                    _keywords = new KeywordCollection();
-
-                return _keywords;
-            }
+            get { return _keywords ?? (_keywords = new KeywordCollection()); }
         }
 
         /// <summary>
@@ -274,13 +266,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public ShortcutCollection AlternativeShortcuts
         {
-            get
-            {
-                if (_alternativeShortcuts == null)
-                    _alternativeShortcuts = new ShortcutCollection();
-
-                return _alternativeShortcuts;
-            }
+            get { return _alternativeShortcuts ?? (_alternativeShortcuts = new ShortcutCollection()); }
         }
 
         /// <summary>
@@ -296,13 +282,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public NamespaceCollection Namespaces
         {
-            get
-            {
-                if (_namespaces == null)
-                    _namespaces = new NamespaceCollection();
-
-                return _namespaces;
-            }
+            get { return _namespaces ?? (_namespaces = new NamespaceCollection()); }
         }
 
         /// <summary>
@@ -310,13 +290,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public Collection<AssemblyReference> AssemblyReferences
         {
-            get
-            {
-                if (_assemblyReferences == null)
-                    _assemblyReferences = new Collection<AssemblyReference>();
-
-                return _assemblyReferences;
-            }
+            get { return _assemblyReferences ?? (_assemblyReferences = new Collection<AssemblyReference>()); }
         }
 
         /// <summary>
@@ -324,13 +298,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         public LiteralCollection Literals
         {
-            get
-            {
-                if (_literals == null)
-                    _literals = new LiteralCollection();
-
-                return _literals;
-            }
+            get { return _literals ?? (_literals = new LiteralCollection()); }
         }
 
         /// <summary>

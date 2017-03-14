@@ -24,6 +24,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// </summary>
         /// <param name="snippet">A <see cref="Snippet"/> that is being validated.</param>
         /// <returns>A <see cref="SnippetValidationContext"/> that stores data about the validation.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
         {
             if (snippet == null)
@@ -39,6 +40,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// Validates the specified <see cref="Snippet"/> according the the code snippet schema.
         /// </summary>
         /// <param name="context">A <see cref="SnippetValidationContext"/> that stores data about the validation.</param>
+        /// <exception cref="ArgumentNullException"><paramref name="context"/> is <c>null</c>.</exception>
         protected virtual IEnumerable<SnippetValidationResult> Validate(SnippetValidationContext context)
         {
             if (context == null)

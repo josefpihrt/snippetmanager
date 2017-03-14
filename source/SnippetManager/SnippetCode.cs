@@ -109,8 +109,7 @@ namespace Pihrtsoft.Snippets
             {
                 if (Literal.IdentifierComparer.Equals(ph.Identifier, oldIdentifier))
                 {
-                    if (sb == null)
-                        sb = new StringBuilder();
+                    sb = sb ?? new StringBuilder();
 
                     sb.Append(Text, prevIndex, ph.Index - prevIndex);
                     sb.Append(newIdentifier);
@@ -167,8 +166,7 @@ namespace Pihrtsoft.Snippets
                 {
                     if (Literal.IdentifierComparer.Equals(placeholder.Identifier, identifier))
                     {
-                        if (sb == null)
-                            sb = new StringBuilder();
+                        sb = sb ?? new StringBuilder();
 
                         sb.Append(Text, prevIndex, placeholder.Index - 1 - prevIndex);
                         sb.Append(replacement);

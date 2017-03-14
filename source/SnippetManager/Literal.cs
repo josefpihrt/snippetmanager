@@ -78,15 +78,14 @@ namespace Pihrtsoft.Snippets
         /// <returns>A new <see cref="Literal"/> that is a deep copy of the current instance</returns>
         public object Clone()
         {
-            var clone = new Literal(Identifier);
-
-            clone.DefaultValue = DefaultValue;
-            clone.Function = Function;
-            clone.ToolTip = ToolTip;
-            clone.TypeName = TypeName;
-            clone.IsEditable = IsEditable;
-
-            return clone;
+            return new Literal(Identifier)
+            {
+                DefaultValue = DefaultValue,
+                Function = Function,
+                ToolTip = ToolTip,
+                TypeName = TypeName,
+                IsEditable = IsEditable
+            };
         }
 
         /// <summary>
@@ -97,6 +96,7 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Gets or sets literal identifier.
         /// </summary>
+        /// <exception cref="ArgumentNullException"></exception>
         public string Identifier
         {
             get { return _identifier; }

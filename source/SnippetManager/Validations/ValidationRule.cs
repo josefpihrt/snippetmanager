@@ -26,19 +26,18 @@ namespace Pihrtsoft.Snippets.Validations
 
         private static List<ValidationRule> GetValidationRules()
         {
-            var rules = new List<ValidationRule>();
-
-            rules.Add(new FormatVersionValidationRule());
-            rules.Add(new TitleValidationRule());
-            rules.Add(new ShortcutValidationRule());
-            rules.Add(new DescriptionValidationRule());
-            rules.Add(new SnippetTypeValidationRule());
-            rules.Add(new NamespaceValidationRule());
-            rules.Add(new AssemblyReferenceValidationRule());
-            rules.Add(new LiteralValidationRule());
-            rules.Add(new CodeValidationRule());
-
-            return rules;
+            return new List<ValidationRule>()
+            {
+                new FormatVersionValidationRule(),
+                new TitleValidationRule(),
+                new ShortcutValidationRule(),
+                new DescriptionValidationRule(),
+                new SnippetTypeValidationRule(),
+                new NamespaceValidationRule(),
+                new AssemblyReferenceValidationRule(),
+                new LiteralValidationRule(),
+                new CodeValidationRule()
+            };
         }
 
         /// <summary>

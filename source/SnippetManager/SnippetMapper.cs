@@ -21,6 +21,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         /// <param name="element">A <see cref="CodeSnippetElement"/> that contains deserialized snippet data.</param>
         /// <returns>Newly created <see cref="Snippet"/>.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="element"/> is <c>null</c>.</exception>
         public static Snippet MapFromElement(CodeSnippetElement element)
         {
             if (element == null)
@@ -64,6 +65,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
         /// <returns>Newly created <see cref="CodeSnippetElement"/>.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static CodeSnippetElement MapToElement(Snippet snippet, SaveSettings settings)
         {
             if (snippet == null)
@@ -98,6 +100,7 @@ namespace Pihrtsoft.Snippets
         /// <param name="snippets">An enumerable collection of code snippets to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
         /// <returns>An enumerable collection of <see cref="CodeSnippetElement"/>.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="snippets"/> is <c>null</c>.</exception>
         public static IEnumerable<CodeSnippetElement> MapToElement(IEnumerable<Snippet> snippets, SaveSettings settings)
         {
             if (snippets == null)
@@ -382,9 +385,7 @@ namespace Pihrtsoft.Snippets
             {
                 if (!string.IsNullOrEmpty(element.Assembly))
                 {
-                    var reference = new AssemblyReference();
-
-                    reference.AssemblyName = element.Assembly;
+                    var reference = new AssemblyReference() { AssemblyName = element.Assembly };
 
                     if (!string.IsNullOrEmpty(element.Url))
                     {
@@ -411,13 +412,14 @@ namespace Pihrtsoft.Snippets
         {
             foreach (ObjectElement element in elements)
             {
-                var literal = new Literal(element.ID ?? string.Empty);
-
-                literal.DefaultValue = element.Default;
-                literal.IsEditable = element.Editable;
-                literal.Function = element.Function;
-                literal.ToolTip = element.ToolTip;
-                literal.TypeName = element.Type;
+                var literal = new Literal(element.ID ?? string.Empty)
+                {
+                    DefaultValue = element.Default,
+                    IsEditable = element.Editable,
+                    Function = element.Function,
+                    ToolTip = element.ToolTip,
+                    TypeName = element.Type
+                };
 
                 snippet.Literals.Add(literal);
             }
@@ -427,12 +429,13 @@ namespace Pihrtsoft.Snippets
         {
             foreach (LiteralElement element in elements)
             {
-                var literal = new Literal(element.ID ?? string.Empty);
-
-                literal.DefaultValue = element.Default;
-                literal.IsEditable = element.Editable;
-                literal.Function = element.Function;
-                literal.ToolTip = element.ToolTip;
+                var literal = new Literal(element.ID ?? string.Empty)
+                {
+                    DefaultValue = element.Default,
+                    IsEditable = element.Editable,
+                    Function = element.Function,
+                    ToolTip = element.ToolTip
+                };
 
                 snippet.Literals.Add(literal);
             }
