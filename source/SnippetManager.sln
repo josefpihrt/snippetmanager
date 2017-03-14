@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManager", "SnippetManager\SnippetManager.csproj", "{DD1F8E68-3235-4F96-A404-EE423536EA63}"
 EndProject
@@ -9,12 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9D67F7CD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetManagerTest", "Tools\SnippetManagerTest\SnippetManagerTest.csproj", "{C569AF67-A410-4378-A6FF-7E27A0B5BEE7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{6219090A-970F-4348-B043-1C632461C44B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6219090A-970F-4348-B043-1C632461C44B}"
 	ProjectSection(SolutionItems) = preProject
 		..\ChangeLog.md = ..\ChangeLog.md
+		global.ruleset = global.ruleset
 		..\LICENSE.txt = ..\LICENSE.txt
 		..\README.md = ..\README.md
-		global.ruleset = global.ruleset
 	EndProjectSection
 EndProject
 Global
