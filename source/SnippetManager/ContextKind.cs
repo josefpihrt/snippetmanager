@@ -10,31 +10,31 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Specifies that the code snippet has no context defined.
         /// </summary>
-        None,
+        None = 0,
 
         /// <summary>
         /// Specifies that the code snippet can be inserted anywhere.
         /// </summary>
-        Any,
+        Any = 1,
 
         /// <summary>
         /// Specifies that the code snippet is a full code file.
         /// </summary>
-        File,
+        File = 2,
 
         /// <summary>
         /// Specifies that the code snippet is a method body.
         /// </summary>
-        MethodBody,
+        MethodBody = 3,
 
         /// <summary>
         /// Specifies that the code snippet is a method.
         /// </summary>
-        MethodDeclaration,
+        MethodDeclaration = 4,
 
         /// <summary>
         /// Specifies that the code snippet can be inserted anywhere.
         /// </summary>
-        TypeDeclaration,
+        TypeDeclaration = 5,
     }
 }

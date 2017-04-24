@@ -10,51 +10,51 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// No language.
         /// </summary>
-        None,
+        None = 0,
 
         /// <summary>
         /// Visual Basic language.
         /// </summary>
-        VisualBasic,
+        VisualBasic = 1,
 
         /// <summary>
         /// C# language.
         /// </summary>
-        CSharp,
+        CSharp = 2,
 
         /// <summary>
         /// C++ language.
         /// </summary>
-        CPlusPlus,
+        CPlusPlus = 3,
 
         /// <summary>
         /// XML language.
         /// </summary>
-        Xml,
+        Xml = 4,
 
         /// <summary>
         /// XAML language.
         /// </summary>
-        Xaml,
+        Xaml = 5,
 
         /// <summary>
         /// JavaScript language.
         /// </summary>
-        JavaScript,
+        JavaScript = 6,
 
         /// <summary>
         /// SQL language.
         /// </summary>
-        Sql,
+        Sql = 7,
 
         /// <summary>
         /// HTML language.
         /// </summary>
-        Html,
+        Html = 8,
 
         /// <summary>
         /// CSS language.
         /// </summary>
-        Css
+        Css = 9
     }
 }

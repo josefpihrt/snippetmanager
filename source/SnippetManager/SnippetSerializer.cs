@@ -414,18 +414,7 @@ namespace Pihrtsoft.Snippets
 
         private static XmlReaderSettings XmlReaderSettings
         {
-            get
-            {
-                if (_xmlReaderSettings == null)
-                {
-                    _xmlReaderSettings = new XmlReaderSettings()
-                    {
-                        CloseInput = false
-                    };
-                }
-
-                return _xmlReaderSettings;
-            }
+            get { return _xmlReaderSettings ?? (_xmlReaderSettings = new XmlReaderSettings() { CloseInput = false }); }
         }
 
         private static XmlSerializerNamespaces Namespaces

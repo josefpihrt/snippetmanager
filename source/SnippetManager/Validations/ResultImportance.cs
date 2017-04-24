@@ -10,16 +10,16 @@ namespace Pihrtsoft.Snippets.Validations
         /// <summary>
         /// Specifies information level.
         /// </summary>
-        Information,
+        Information = 0,
 
         /// <summary>
         /// Specifies warning level.
         /// </summary>
-        Warning,
+        Warning = 1,
 
         /// <summary>
         /// Specifies error level.
         /// </summary>
-        Error
+        Error = 2
     }
 }

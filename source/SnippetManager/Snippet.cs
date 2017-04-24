@@ -115,9 +115,13 @@ namespace Pihrtsoft.Snippets
             set
             {
                 if (value)
+                {
                     SnippetTypes |= SnippetTypes.Expansion;
+                }
                 else
+                {
                     SnippetTypes &= ~SnippetTypes.Expansion;
+                }
             }
         }
 
@@ -130,9 +134,13 @@ namespace Pihrtsoft.Snippets
             set
             {
                 if (value)
+                {
                     SnippetTypes |= SnippetTypes.SurroundsWith;
+                }
                 else
+                {
                     SnippetTypes &= ~SnippetTypes.SurroundsWith;
+                }
             }
         }
 
@@ -145,9 +153,13 @@ namespace Pihrtsoft.Snippets
             set
             {
                 if (value)
+                {
                     SnippetTypes |= SnippetTypes.Refactoring;
+                }
                 else
+                {
                     SnippetTypes &= ~SnippetTypes.Refactoring;
+                }
             }
         }
 

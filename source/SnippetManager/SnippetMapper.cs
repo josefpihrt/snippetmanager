@@ -116,16 +116,18 @@ namespace Pihrtsoft.Snippets
         private static void SerializeVersion(Version version, SerializationContext context)
         {
             if (ValidationHelper.IsValidVersion(version))
+            {
                 context.Element.Format = version.ToString(3);
+            }
             else if (context.Settings.SetDefaultFormat)
+            {
                 context.Element.Format = Snippet.DefaultFormatVersionText;
+            }
         }
 
         private static SnippetElement CreateSnippetElement(SerializationContext context)
         {
-            var element = new SnippetElement();
-
-            element.Code = CreateCodeElement(context);
+            var element = new SnippetElement() { Code = CreateCodeElement(context) };
 
             if (context.Snippet.Literals.Count > 0)
                 element.Declarations = CreateDeclarationsElement(context);
