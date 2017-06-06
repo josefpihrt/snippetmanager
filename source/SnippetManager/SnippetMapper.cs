@@ -29,15 +29,11 @@ namespace Pihrtsoft.Snippets
 
             var snippet = new Snippet();
 
-            if (element.Format != null)
+            if (element.Format != null
+                && Version.TryParse(element.Format, out Version version)
+                && ValidationHelper.IsValidVersion(version))
             {
-                Version version = null;
-
-                if (Version.TryParse(element.Format, out version)
-                    && ValidationHelper.IsValidVersion(version))
-                {
-                    snippet.FormatVersion = version;
-                }
+                snippet.FormatVersion = version;
             }
 
             if (element.Header != null)
@@ -314,11 +310,10 @@ namespace Pihrtsoft.Snippets
                     snippet.AlternativeShortcuts.Add(shortcut);
             }
 
-            if (element.HelpUrl != null)
+            if (element.HelpUrl != null
+                && Uri.TryCreate(element.HelpUrl, UriKind.RelativeOrAbsolute, out Uri uri))
             {
-                Uri uri;
-                if (Uri.TryCreate(element.HelpUrl, UriKind.RelativeOrAbsolute, out uri))
-                    snippet.HelpUrl = uri;
+                snippet.HelpUrl = uri;
             }
 
             if (element.Keywords != null)
@@ -331,8 +326,7 @@ namespace Pihrtsoft.Snippets
             {
                 foreach (string value in element.SnippetTypes)
                 {
-                    SnippetTypes snippetTypes;
-                    if (Enum.TryParse(value, out snippetTypes))
+                    if (Enum.TryParse(value, out SnippetTypes snippetTypes))
                         snippet.SnippetTypes |= snippetTypes;
                 }
             }
@@ -358,11 +352,10 @@ namespace Pihrtsoft.Snippets
             if (element.Delimiter?.Length == 1)
                 snippet.Delimiter = element.Delimiter[0];
 
-            if (element.Kind != null)
+            if (element.Kind != null
+                && ContextKinds.TryGetValue(element.Kind, out ContextKind kind))
             {
-                ContextKind kind;
-                if (ContextKinds.TryGetValue(element.Kind, out kind))
-                    snippet.ContextKind = kind;
+                snippet.ContextKind = kind;
             }
 
             if (element.Language != null)
@@ -389,11 +382,10 @@ namespace Pihrtsoft.Snippets
                 {
                     var reference = new AssemblyReference() { AssemblyName = element.Assembly };
 
-                    if (!string.IsNullOrEmpty(element.Url))
+                    if (!string.IsNullOrEmpty(element.Url)
+                        && Uri.TryCreate(element.Url, UriKind.RelativeOrAbsolute, out Uri url))
                     {
-                        Uri url;
-                        if (Uri.TryCreate(element.Url, UriKind.RelativeOrAbsolute, out url))
-                            reference.Url = url;
+                        reference.Url = url;
                     }
 
                     snippet.AssemblyReferences.Add(reference);

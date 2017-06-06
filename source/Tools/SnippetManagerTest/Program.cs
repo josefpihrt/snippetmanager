@@ -12,7 +12,7 @@ namespace SnippetManagerTest
     {
         private static void Main(string[] args)
         {
-            string filePath = @"..\..\Snippet.snippet";
+            const string filePath = @"..\..\Snippet.snippet";
 
             Snippet snippet = null;
 

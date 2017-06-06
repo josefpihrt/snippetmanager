@@ -8,6 +8,6 @@ namespace Pihrtsoft.Snippets.Comparers
     {
         public static StringComparer StringComparer { get; } = StringComparer.CurrentCulture;
 
-        public static StringComparison StringComparison { get; } = StringComparison.CurrentCulture;
+        public static StringComparison StringComparison { get; }
     }
 }

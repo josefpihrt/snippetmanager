@@ -47,8 +47,7 @@ namespace Pihrtsoft.Snippets
 
         public Language MapTextToEnum(string value)
         {
-            Language result;
-            if (_mapTextToEnum.TryGetValue(value, out result))
+            if (_mapTextToEnum.TryGetValue(value, out Language result))
                 return result;
 
             return Language.None;
