@@ -115,6 +115,9 @@ namespace Pihrtsoft.Snippets
                         {
                             CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(xmlReader, CodeSnippetsElementXmlSerializer);
 
+                            if (element.Snippets == null)
+                                break;
+
                             for (int i = 0; i < element.Snippets.Length; i++)
                                 yield return SnippetMapper.MapFromElement(element.Snippets[i]);
 
