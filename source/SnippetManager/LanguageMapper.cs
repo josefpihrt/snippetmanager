@@ -22,7 +22,7 @@ namespace Pihrtsoft.Snippets
                 ["JavaScript"] = Language.JavaScript,
                 ["Sql"] = Language.Sql,
                 ["Html"] = Language.Html,
-                ["Css"] = Language.Css,
+                ["Css"] = Language.Css
             };
 
             _mapEnumToText = new Dictionary<Language, string>()
@@ -36,7 +36,7 @@ namespace Pihrtsoft.Snippets
                 [Language.Sql] = "Sql",
                 [Language.Html] = "Html",
                 [Language.Css] = "Css",
-                [Language.None] = string.Empty,
+                [Language.None] = ""
             };
         }
 

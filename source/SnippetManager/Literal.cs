@@ -120,7 +120,7 @@ namespace Pihrtsoft.Snippets
         public string DefaultValue
         {
             get { return _defaultValue; }
-            set { _defaultValue = value ?? string.Empty; }
+            set { _defaultValue = value ?? ""; }
         }
 
         /// <summary>

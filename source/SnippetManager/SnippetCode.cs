@@ -95,7 +95,7 @@ namespace Pihrtsoft.Snippets
 
             if (string.IsNullOrEmpty(newIdentifier))
             {
-                newIdentifier = string.Empty;
+                newIdentifier = "";
             }
             else if (!ValidationHelper.IsValidLiteralIdentifier(newIdentifier))
             {

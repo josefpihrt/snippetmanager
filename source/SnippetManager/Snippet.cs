@@ -37,11 +37,11 @@ namespace Pihrtsoft.Snippets
         private NamespaceCollection _namespaces;
         private Collection<AssemblyReference> _assemblyReferences;
         private LiteralCollection _literals;
-        private string _codeText = string.Empty;
-        private string _shortcut = string.Empty;
-        private string _title = string.Empty;
-        private string _description = string.Empty;
-        private string _author = string.Empty;
+        private string _codeText = "";
+        private string _shortcut = "";
+        private string _title = "";
+        private string _description = "";
+        private string _author = "";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Snippet"/> class.
@@ -225,7 +225,7 @@ namespace Pihrtsoft.Snippets
         public string Title
         {
             get { return _title; }
-            set { _title = value ?? string.Empty; }
+            set { _title = value ?? ""; }
         }
 
         /// <summary>
@@ -234,7 +234,7 @@ namespace Pihrtsoft.Snippets
         public string Shortcut
         {
             get { return _shortcut; }
-            set { _shortcut = value ?? string.Empty; }
+            set { _shortcut = value ?? ""; }
         }
 
         /// <summary>
@@ -243,7 +243,7 @@ namespace Pihrtsoft.Snippets
         public string Description
         {
             get { return _description; }
-            set { _description = value ?? string.Empty; }
+            set { _description = value ?? ""; }
         }
 
         /// <summary>
@@ -252,7 +252,7 @@ namespace Pihrtsoft.Snippets
         public string Author
         {
             get { return _author; }
-            set { _author = value ?? string.Empty; }
+            set { _author = value ?? ""; }
         }
 
         /// <summary>
@@ -351,7 +351,7 @@ namespace Pihrtsoft.Snippets
             get { return _codeText; }
             set
             {
-                value = value ?? string.Empty;
+                value = value ?? "";
                 if (_codeText != value)
                 {
                     _codeText = value;

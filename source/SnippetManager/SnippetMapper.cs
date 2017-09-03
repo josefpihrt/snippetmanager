@@ -406,7 +406,7 @@ namespace Pihrtsoft.Snippets
         {
             foreach (ObjectElement element in elements)
             {
-                var literal = new Literal(element.ID ?? string.Empty)
+                var literal = new Literal(element.ID ?? "")
                 {
                     DefaultValue = element.Default,
                     IsEditable = element.Editable,
@@ -423,7 +423,7 @@ namespace Pihrtsoft.Snippets
         {
             foreach (LiteralElement element in elements)
             {
-                var literal = new Literal(element.ID ?? string.Empty)
+                var literal = new Literal(element.ID ?? "")
                 {
                     DefaultValue = element.Default,
                     IsEditable = element.Editable,
@@ -447,7 +447,7 @@ namespace Pihrtsoft.Snippets
                         ["method decl"] = ContextKind.MethodDeclaration,
                         ["type decl"] = ContextKind.TypeDeclaration,
                         ["file"] = ContextKind.File,
-                        ["any"] = ContextKind.Any,
+                        ["any"] = ContextKind.Any
                     };
                 }
 
