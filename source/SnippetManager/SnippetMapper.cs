@@ -248,7 +248,7 @@ namespace Pihrtsoft.Snippets
             if (snippet.ContextKind != ContextKind.None)
                 element.Kind = snippet.ContextKind.ToString();
 
-            element.Language = LanguageMapper.Instance.MapEnumToText(snippet.Language);
+            element.Language = LanguageMapper.MapEnumToText(snippet.Language);
 
             return element;
         }
@@ -359,7 +359,7 @@ namespace Pihrtsoft.Snippets
             }
 
             if (element.Language != null)
-                snippet.Language = LanguageMapper.Instance.MapTextToEnum(element.Language);
+                snippet.Language = LanguageMapper.MapTextToEnum(element.Language);
 
             if (element.Code != null)
                 snippet.CodeText = element.Code;
