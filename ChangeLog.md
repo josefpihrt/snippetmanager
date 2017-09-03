@@ -1,4 +1,4 @@
-#### 1.3.1 (2017-09-03)
+#### 1.3.2 (2017-09-03)
 
 * Add new languages.
 * Fix bug that occurs when file contains empty CodeSnippets element.
