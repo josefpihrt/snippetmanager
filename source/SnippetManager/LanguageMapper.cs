@@ -16,7 +16,7 @@ namespace Pihrtsoft.Snippets
             {
                 ["VB"] = Language.VisualBasic,
                 ["CSharp"] = Language.CSharp,
-                ["Cpp"] = Language.CPlusPlus,
+                ["Cpp"] = Language.Cpp,
                 ["Xml"] = Language.Xml,
                 ["Xaml"] = Language.Xaml,
                 ["JavaScript"] = Language.JavaScript,
@@ -29,7 +29,7 @@ namespace Pihrtsoft.Snippets
             {
                 [Language.VisualBasic] = "VB",
                 [Language.CSharp] = "CSharp",
-                [Language.CPlusPlus] = "Cpp",
+                [Language.Cpp] = "Cpp",
                 [Language.Xml] = "Xml",
                 [Language.Xaml] = "Xaml",
                 [Language.JavaScript] = "JavaScript",

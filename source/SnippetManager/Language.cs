@@ -1,5 +1,7 @@
 ﻿// Copyright (c) Josef Pihrt. All rights reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System;
+
 namespace Pihrtsoft.Snippets
 {
     /// <summary>
@@ -25,7 +27,13 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// C++ language.
         /// </summary>
+        [Obsolete("Use Language.Cpp instead.")]
         CPlusPlus = 3,
+
+        /// <summary>
+        /// C++ language.
+        /// </summary>
+        Cpp = 3,
 
         /// <summary>
         /// XML language.
