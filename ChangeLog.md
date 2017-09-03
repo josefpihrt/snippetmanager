@@ -1,3 +1,8 @@
+#### 1.3.1 (2017-09-03)
+
+* Add new languages.
+* Fix bug that occurs when file contains empty CodeSnippets element.
+
 #### 1.3.0 (2017-01-09)
 
 * Add support for .NET Standard 1.3
