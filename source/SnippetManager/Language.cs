@@ -27,13 +27,13 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// C++ language.
         /// </summary>
-        [Obsolete("Use Language.Cpp instead.")]
-        CPlusPlus = 3,
+        Cpp = 3,
 
         /// <summary>
         /// C++ language.
         /// </summary>
-        Cpp = 3,
+        [Obsolete("Use Language.Cpp instead.")]
+        CPlusPlus = 3,
 
         /// <summary>
         /// XML language.
