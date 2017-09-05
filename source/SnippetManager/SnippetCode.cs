@@ -233,6 +233,42 @@ namespace Pihrtsoft.Snippets
             }
         }
 
+        /// <summary>
+        /// Gets a placeholder with identifier 'end' or <c>null</c> if it is not present.
+        /// </summary>
+        public Placeholder EndPlaceholder
+        {
+            get
+            {
+                foreach (Placeholder placeholder in Placeholders)
+                {
+                    if (placeholder.IsEndPlaceholder)
+                        return placeholder;
+                }
+
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets a placeholder with identifier 'selected' or <c>null</c> if it is not present.
+        /// </summary>
+        public Placeholder SelectedPlaceholder
+        {
+            get
+            {
+                foreach (Placeholder placeholder in Placeholders)
+                {
+                    if (placeholder.IsSelectedPlaceholder)
+                    {
+                        return placeholder;
+                    }
+                }
+
+                return null;
+            }
+        }
+
         private Dictionary<int, Placeholder> Indexes
         {
             get

@@ -54,6 +54,11 @@ namespace Pihrtsoft.Snippets
         public int Length => Identifier.Length;
 
         /// <summary>
+        /// Gets literal placeholder length including delimiters.
+        /// </summary>
+        public int FullLength => Identifier.Length + 2;
+
+        /// <summary>
         /// Gets literal placeholder end index.
         /// </summary>
         public int EndIndex => Index + Length;
