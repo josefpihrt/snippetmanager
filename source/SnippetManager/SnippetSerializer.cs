@@ -311,7 +311,7 @@ namespace Pihrtsoft.Snippets
         /// Serializes a specified <see cref="Snippet"/> to xml text.
         /// </summary>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
-        /// <returns>xml text that represents a specified <see cref="Snippet"/>.</returns>
+        /// <returns>XML text that represents a specified <see cref="Snippet"/>.</returns>
         public static string CreateXml(Snippet snippet)
         {
             return CreateXml(snippet, new SaveSettings());
@@ -322,7 +322,7 @@ namespace Pihrtsoft.Snippets
         /// </summary>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
-        /// <returns>xml text that represents a specified <see cref="Snippet"/>.</returns>
+        /// <returns>XML text that represents a specified <see cref="Snippet"/>.</returns>
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static string CreateXml(Snippet snippet, SaveSettings settings)
         {
@@ -338,6 +338,48 @@ namespace Pihrtsoft.Snippets
                 {
                     using (XmlWriter xmlWriter = XmlWriter.Create(streamWriter, GetXmlWriterSettings(settings)))
                         Serialize(xmlWriter, snippet, settings);
+                }
+
+#if NETFRAMEWORK
+                return _utf8EncodingNoBom.GetString(memoryStream.ToArray());
+#else
+                byte[] bytes = memoryStream.ToArray();
+                return _utf8EncodingNoBom.GetString(bytes, 0, bytes.Length);
+#endif
+            }
+        }
+
+        /// <summary>
+        /// Serializes enumerable collection of <see cref="Snippet"/> to text.
+        /// </summary>
+        /// <param name="snippets">Enumerable collection of <see cref="Snippet"/> to be serialized.</param>
+        /// <returns>XML text that represents a specified collection of <see cref="Snippet"/>.</returns>
+        public static string CreateXml(IEnumerable<Snippet> snippets)
+        {
+            return CreateXml(snippets, new SaveSettings());
+        }
+
+        /// <summary>
+        /// Serializes enumerable collection of <see cref="Snippet"/> to text, optionally using <see cref="SaveSettings"/> to modify serialization process.
+        /// </summary>
+        /// <param name="snippets">Enumerable collection of <see cref="Snippet"/> to be serialized.</param>
+        /// <param name="settings">A <see cref="SaveSettings"/> that modify serialization process.</param>
+        /// <returns>XML text that represents a specified collection of <see cref="Snippet"/>.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
+        public static string CreateXml(IEnumerable<Snippet> snippets, SaveSettings settings)
+        {
+            if (snippets == null)
+                throw new ArgumentNullException(nameof(snippets));
+
+            if (settings == null)
+                throw new ArgumentNullException(nameof(settings));
+
+            using (var memoryStream = new MemoryStream())
+            {
+                using (var streamWriter = new StreamWriter(memoryStream, _utf8EncodingNoBom))
+                {
+                    using (XmlWriter xmlWriter = XmlWriter.Create(streamWriter, GetXmlWriterSettings(settings)))
+                        Serialize(xmlWriter, snippets, settings);
                 }
 
 #if NETFRAMEWORK
