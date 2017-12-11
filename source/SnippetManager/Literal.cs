@@ -28,10 +28,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="identifier"/> is <c>null</c>.</exception>
         public Literal(string identifier, string toolTip = null, string defaultValue = "")
         {
-            if (identifier == null)
-                throw new ArgumentNullException(nameof(identifier));
-
-            Identifier = identifier;
+            Identifier = identifier ?? throw new ArgumentNullException(nameof(identifier));
             ToolTip = toolTip;
             DefaultValue = defaultValue;
             IsEditable = true;
@@ -100,13 +97,7 @@ namespace Pihrtsoft.Snippets
         public string Identifier
         {
             get { return _identifier; }
-            set
-            {
-                if (value == null)
-                    throw new ArgumentNullException(nameof(value));
-
-                _identifier = value;
-            }
+            set { _identifier = value ?? throw new ArgumentNullException(nameof(value)); }
         }
 
         /// <summary>

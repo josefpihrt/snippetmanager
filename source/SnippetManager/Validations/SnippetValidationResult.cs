@@ -35,10 +35,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public SnippetValidationResult(Snippet snippet, string code, string description, ResultImportance importance, object content)
         {
-            if (snippet == null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            Snippet = snippet;
+            Snippet = snippet ?? throw new ArgumentNullException(nameof(snippet));
             Code = code;
             Description = description;
             Importance = importance;

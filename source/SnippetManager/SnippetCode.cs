@@ -26,10 +26,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public SnippetCode(Snippet snippet)
         {
-            if (snippet == null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            Snippet = snippet;
+            Snippet = snippet ?? throw new ArgumentNullException(nameof(snippet));
 
             snippet.TextChanged += (object sender, EventArgs e) => _indexes = null;
         }

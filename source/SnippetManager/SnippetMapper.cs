@@ -439,19 +439,14 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                if (_contextKinds == null)
+                return _contextKinds ?? (_contextKinds = new Dictionary<string, ContextKind>(StringComparer.OrdinalIgnoreCase)
                 {
-                    _contextKinds = new Dictionary<string, ContextKind>(StringComparer.OrdinalIgnoreCase)
-                    {
-                        ["method body"] = ContextKind.MethodBody,
-                        ["method decl"] = ContextKind.MethodDeclaration,
-                        ["type decl"] = ContextKind.TypeDeclaration,
-                        ["file"] = ContextKind.File,
-                        ["any"] = ContextKind.Any
-                    };
-                }
-
-                return _contextKinds;
+                    ["method body"] = ContextKind.MethodBody,
+                    ["method decl"] = ContextKind.MethodDeclaration,
+                    ["type decl"] = ContextKind.TypeDeclaration,
+                    ["file"] = ContextKind.File,
+                    ["any"] = ContextKind.Any
+                });
             }
         }
     }
