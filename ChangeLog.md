@@ -1,3 +1,8 @@
+#### 1.3.3 (2017-12-12)
+
+* Add overloads for method SnippetSerializer.CreateXml.
+* Add new properties Placeholder.FullLength, SnippetCode.EndPlaceholder and SnippetCode.SelectedPlaceholder.
+
 #### 1.3.2 (2017-09-03)
 
 * Add new languages.
