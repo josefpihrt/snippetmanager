@@ -2,6 +2,8 @@
 
 using System.Xml.Serialization;
 
+#pragma warning disable CA1819 // Properties should not return arrays
+
 namespace Pihrtsoft.Snippets.Xml.Serialization
 {
     /// <summary>

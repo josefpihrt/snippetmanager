@@ -27,7 +27,7 @@ namespace Pihrtsoft.Snippets
         private static XmlWriterSettings _xmlWriterSettings;
         private static XmlReaderSettings _xmlReaderSettings;
         private static XmlSerializerNamespaces _namespaces;
-        private static readonly Encoding _utf8EncodingNoBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+        private static readonly UTF8Encoding _utf8EncodingNoBom = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 
 #if !PORTABLE
         /// <summary>
