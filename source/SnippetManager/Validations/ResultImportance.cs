@@ -20,6 +20,6 @@ namespace Pihrtsoft.Snippets.Validations
         /// <summary>
         /// Specifies error level.
         /// </summary>
-        Error = 2
+        Error = 2,
     }
 }

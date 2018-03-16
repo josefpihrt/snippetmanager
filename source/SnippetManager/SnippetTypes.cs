@@ -28,6 +28,6 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Specifies that the code snippet can be used during refactoring.
         /// </summary>
-        Refactoring = 4
+        Refactoring = 4,
     }
 }
