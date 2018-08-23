@@ -60,7 +60,6 @@ namespace Pihrtsoft.Snippets
         /// Removes all placeholders that do not have corresponding literal (literal with same identifier).
         /// </summary>
         /// <param name="snippet"><see cref="Snippet"/> to remove placeholders from.</param>
-        /// <returns></returns>
         public static void RemoveUnusedPlaceholders(Snippet snippet)
         {
             List<string> identifiers = null;

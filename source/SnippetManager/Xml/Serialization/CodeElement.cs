@@ -34,7 +34,6 @@ namespace Pihrtsoft.Snippets.Xml.Serialization
         /// <summary>
         /// This method is reserved and should not be used.
         /// </summary>
-        /// <returns></returns>
         public XmlSchema GetSchema()
         {
             return null;
