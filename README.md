@@ -3,7 +3,7 @@
 ## Introduction 
 
 * Snippet Manager is .NET library that enables to work with Visual Studio snippets. 
-* The library is distributed via [NuGet](https://www.nuget.org/packages/SnippetManager).
+* The library is distributed as&ensp;[![NuGet](https://img.shields.io/nuget/v/SnippetManager.svg)](https://nuget.org/packages/SnippetManager)
 
 ## Supported Frameworks
 
