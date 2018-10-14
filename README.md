@@ -16,6 +16,10 @@
   * Windows Phone 8.0
   * .NET Standard 1.0
 
+## Documentation
+
+* [Snippet Manager API Reference](docs/api/README.md#_top)
+
 ## Usage 
 
 #### Namespaces
