@@ -91,6 +91,7 @@ namespace Pihrtsoft.Snippets
         {
             SnippetSerializer.Serialize(stream, this, settings);
         }
+
         /// <summary>
         /// Returns snippet shortcut and all alternative shortcuts, if any.
         /// </summary>

@@ -33,7 +33,7 @@ namespace Pihrtsoft.Snippets
         /// C++ language.
         /// </summary>
         [Obsolete("Use Language.Cpp instead.")]
-        CPlusPlus = 3,
+        CPlusPlus = Cpp,
 
         /// <summary>
         /// XML language.
