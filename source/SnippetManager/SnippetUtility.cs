@@ -23,13 +23,18 @@ namespace Pihrtsoft.Snippets
             if (snippets == null)
                 throw new ArgumentNullException(nameof(snippets));
 
-            foreach (var grouping in snippets
-                .SelectMany(snippet => snippet.Shortcuts()
-                    .Select(shortcut => new { Shortcut = shortcut, Snippet = snippet }))
-                .GroupBy(f => f.Shortcut, SnippetComparer.Shortcut.GenericEqualityComparer))
+            return FindDuplicateShortcuts();
+
+            IEnumerable<DuplicateShortcutInfo> FindDuplicateShortcuts()
             {
-                if (grouping.CountExceeds(1))
-                    yield return new DuplicateShortcutInfo(grouping.Key, grouping.Select(f => f.Snippet));
+                foreach (var grouping in snippets
+                    .SelectMany(snippet => snippet.Shortcuts()
+                        .Select(shortcut => new { Shortcut = shortcut, Snippet = snippet }))
+                    .GroupBy(f => f.Shortcut, SnippetComparer.Shortcut.GenericEqualityComparer))
+                {
+                    if (grouping.CountExceeds(1))
+                        yield return new DuplicateShortcutInfo(grouping.Key, grouping.Select(f => f.Snippet));
+                }
             }
         }
 

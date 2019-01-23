@@ -30,10 +30,15 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            var context = new SnippetValidationContext(snippet);
+            return Validate();
 
-            foreach (SnippetValidationResult result in Validate(context))
-                yield return result;
+            IEnumerable<SnippetValidationResult> Validate()
+            {
+                var context = new SnippetValidationContext(snippet);
+
+                foreach (SnippetValidationResult result in this.Validate(context))
+                    yield return result;
+            }
         }
 
         /// <summary>
@@ -46,10 +51,15 @@ namespace Pihrtsoft.Snippets.Validations
             if (context == null)
                 throw new ArgumentNullException(nameof(context));
 
-            foreach (ValidationRule rule in ValidationRules)
+            return Validate();
+
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                foreach (SnippetValidationResult result in rule.Validate(context.Snippet))
-                    yield return result;
+                foreach (ValidationRule rule in ValidationRules)
+                {
+                    foreach (SnippetValidationResult result in rule.Validate(context.Snippet))
+                        yield return result;
+                }
             }
         }
 

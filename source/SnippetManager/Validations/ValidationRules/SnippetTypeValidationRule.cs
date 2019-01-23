@@ -21,13 +21,18 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (snippet.SnippetTypes == SnippetTypes.None)
+            return Validate();
+
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.MissingSnippetType,
-                    "Snippet type is missing.",
-                    ResultImportance.Information);
+                if (snippet.SnippetTypes == SnippetTypes.None)
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingSnippetType,
+                        "Snippet type is missing.",
+                        ResultImportance.Information);
+                }
             }
         }
     }

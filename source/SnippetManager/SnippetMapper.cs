@@ -105,8 +105,13 @@ namespace Pihrtsoft.Snippets
             if (settings == null)
                 throw new ArgumentNullException(nameof(settings));
 
-            foreach (Snippet snippet in snippets)
-                yield return MapToElement(snippet, settings);
+            return MapToElement();
+
+            IEnumerable<CodeSnippetElement> MapToElement()
+            {
+                foreach (Snippet snippet in snippets)
+                    yield return SnippetMapper.MapToElement(snippet, settings);
+            }
         }
 
         private static void SerializeVersion(Version version, SerializationContext context)

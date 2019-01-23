@@ -21,22 +21,27 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (snippet.Title.Length == 0)
-            {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.MissingTitle,
-                    "Snippet title is missing.",
-                    ResultImportance.Error);
-            }
+            return Validate();
 
-            if (string.IsNullOrWhiteSpace(snippet.Title))
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.TitleTitleContainsWhiteSpaceOnly,
-                    "Snippet title contains white-space only.",
-                    ResultImportance.Error);
+                if (snippet.Title.Length == 0)
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingTitle,
+                        "Snippet title is missing.",
+                        ResultImportance.Error);
+                }
+
+                if (string.IsNullOrWhiteSpace(snippet.Title))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.TitleTitleContainsWhiteSpaceOnly,
+                        "Snippet title contains white-space only.",
+                        ResultImportance.Error);
+                }
             }
         }
     }

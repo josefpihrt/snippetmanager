@@ -95,34 +95,39 @@ namespace Pihrtsoft.Snippets
             if (stream == null)
                 throw new ArgumentNullException(nameof(stream));
 
-            using (XmlReader xmlReader = XmlReader.Create(stream, XmlReaderSettings))
+            return Deserialize();
+
+            IEnumerable<Snippet> Deserialize()
             {
-                while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Element)
+                using (XmlReader xmlReader = XmlReader.Create(stream, XmlReaderSettings))
                 {
-                }
+                    while (xmlReader.Read() && xmlReader.NodeType != XmlNodeType.Element)
+                    {
+                    }
 
-                switch (xmlReader.Name)
-                {
-                    case "CodeSnippet":
-                        {
-                            CodeSnippetElement element = Deserialize<CodeSnippetElement>(xmlReader, CodeSnippetElementXmlSerializer);
+                    switch (xmlReader.Name)
+                    {
+                        case "CodeSnippet":
+                            {
+                                CodeSnippetElement element = Deserialize<CodeSnippetElement>(xmlReader, CodeSnippetElementXmlSerializer);
 
-                            yield return SnippetMapper.MapFromElement(element);
+                                yield return SnippetMapper.MapFromElement(element);
 
-                            break;
-                        }
-                    case "CodeSnippets":
-                        {
-                            CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(xmlReader, CodeSnippetsElementXmlSerializer);
-
-                            if (element.Snippets == null)
                                 break;
+                            }
+                        case "CodeSnippets":
+                            {
+                                CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(xmlReader, CodeSnippetsElementXmlSerializer);
 
-                            for (int i = 0; i < element.Snippets.Length; i++)
-                                yield return SnippetMapper.MapFromElement(element.Snippets[i]);
+                                if (element.Snippets == null)
+                                    break;
 
-                            break;
-                        }
+                                for (int i = 0; i < element.Snippets.Length; i++)
+                                    yield return SnippetMapper.MapFromElement(element.Snippets[i]);
+
+                                break;
+                            }
+                    }
                 }
             }
         }

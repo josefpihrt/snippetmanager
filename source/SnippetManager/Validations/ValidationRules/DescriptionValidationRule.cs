@@ -21,13 +21,18 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (string.IsNullOrEmpty(snippet.Description))
+            return Validate();
+
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.MissingDescription,
-                    "Snippet description is missing.",
-                    ResultImportance.Information);
+                if (string.IsNullOrEmpty(snippet.Description))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingDescription,
+                        "Snippet description is missing.",
+                        ResultImportance.Information);
+                }
             }
         }
     }

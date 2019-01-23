@@ -21,22 +21,27 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (snippet.FormatVersion == null)
-            {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.MissingVersion,
-                    "Snippet format version is missing.",
-                    ResultImportance.Error);
-            }
+            return Validate();
 
-            if (!ValidationHelper.IsValidVersion(snippet.FormatVersion))
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.InvalidVersion,
-                    "Snippet format version is has invalid format.",
-                    ResultImportance.Error);
+                if (snippet.FormatVersion == null)
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingVersion,
+                        "Snippet format version is missing.",
+                        ResultImportance.Error);
+                }
+
+                if (!ValidationHelper.IsValidVersion(snippet.FormatVersion))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.InvalidVersion,
+                        "Snippet format version is has invalid format.",
+                        ResultImportance.Error);
+                }
             }
         }
     }

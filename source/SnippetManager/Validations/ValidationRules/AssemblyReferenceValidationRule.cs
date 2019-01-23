@@ -21,16 +21,21 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            foreach (AssemblyReference reference in snippet.AssemblyReferences)
+            return Validate();
+
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                if (string.IsNullOrEmpty(reference.AssemblyName))
+                foreach (AssemblyReference reference in snippet.AssemblyReferences)
                 {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingAssemblyReferenceName,
-                        "Snippet assembly reference name is missing.",
-                        ResultImportance.Error,
-                        reference);
+                    if (string.IsNullOrEmpty(reference.AssemblyName))
+                    {
+                        yield return new SnippetValidationResult(
+                            snippet,
+                            ErrorCode.MissingAssemblyReferenceName,
+                            "Snippet assembly reference name is missing.",
+                            ResultImportance.Error,
+                            reference);
+                    }
                 }
             }
         }

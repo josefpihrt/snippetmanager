@@ -24,15 +24,20 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            foreach (IGrouping<string, string> grp in snippet.Namespaces.GroupBy(f => f, _stringComparer))
+            return Validate();
+
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                if (grp.CountExceeds(1))
+                foreach (IGrouping<string, string> grp in snippet.Namespaces.GroupBy(f => f, _stringComparer))
                 {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.NamespaceDuplicate,
-                        $"Namespace '{grp.Key}' is duplicated.",
-                        ResultImportance.Warning);
+                    if (grp.CountExceeds(1))
+                    {
+                        yield return new SnippetValidationResult(
+                            snippet,
+                            ErrorCode.NamespaceDuplicate,
+                            $"Namespace '{grp.Key}' is duplicated.",
+                            ResultImportance.Warning);
+                    }
                 }
             }
         }

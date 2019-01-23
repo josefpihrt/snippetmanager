@@ -42,10 +42,15 @@ namespace Pihrtsoft.Snippets
             if (directoryPaths == null)
                 throw new ArgumentNullException(nameof(directoryPaths));
 
-            foreach (string directoryPath in directoryPaths)
+            return EnumerateSnippetFiles();
+
+            IEnumerable<string> EnumerateSnippetFiles()
             {
-                foreach (string filePath in EnumerateSnippetFiles(directoryPath, searchOption))
-                    yield return filePath;
+                foreach (string directoryPath in directoryPaths)
+                {
+                    foreach (string filePath in SnippetFileSearcher.EnumerateSnippetFiles(directoryPath, searchOption))
+                        yield return filePath;
+                }
             }
         }
 
@@ -72,35 +77,40 @@ namespace Pihrtsoft.Snippets
             if (directoryPath == null)
                 throw new ArgumentNullException(nameof(directoryPath));
 
-            var stack = new Stack<string>();
-            stack.Push(directoryPath);
+            return EnumerateSnippetFiles();
 
-            while (stack.Count > 0)
+            IEnumerable<string> EnumerateSnippetFiles()
             {
-                string dirPath = stack.Pop();
+                var stack = new Stack<string>();
+                stack.Push(directoryPath);
 
-                if (!Directory.Exists(dirPath))
-                    continue;
-
-                IEnumerator<string> fe = GetFilesEnumerator(dirPath);
-                if (fe != null)
+                while (stack.Count > 0)
                 {
-                    using (fe)
-                    {
-                        while (fe.MoveNext())
-                            yield return fe.Current;
-                    }
-                }
+                    string dirPath = stack.Pop();
 
-                if (searchOption == SearchOption.AllDirectories)
-                {
-                    IEnumerator<string> de = GetDirectoriesEnumerator(dirPath);
-                    if (de != null)
+                    if (!Directory.Exists(dirPath))
+                        continue;
+
+                    IEnumerator<string> fe = GetFilesEnumerator(dirPath);
+                    if (fe != null)
                     {
-                        using (de)
+                        using (fe)
                         {
-                            while (de.MoveNext())
-                                stack.Push(de.Current);
+                            while (fe.MoveNext())
+                                yield return fe.Current;
+                        }
+                    }
+
+                    if (searchOption == SearchOption.AllDirectories)
+                    {
+                        IEnumerator<string> de = GetDirectoriesEnumerator(dirPath);
+                        if (de != null)
+                        {
+                            using (de)
+                            {
+                                while (de.MoveNext())
+                                    stack.Push(de.Current);
+                            }
                         }
                     }
                 }

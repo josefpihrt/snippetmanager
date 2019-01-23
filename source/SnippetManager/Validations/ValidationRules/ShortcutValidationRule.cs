@@ -21,22 +21,27 @@ namespace Pihrtsoft.Snippets.Validations
             if (snippet == null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (string.IsNullOrEmpty(snippet.Shortcut))
-            {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.MissingShortcut,
-                    "Snippet shortcut is missing.",
-                    ResultImportance.Error);
-            }
+            return Validate();
 
-            if (!ValidationHelper.IsValidShortcut(snippet.Shortcut))
+            IEnumerable<SnippetValidationResult> Validate()
             {
-                yield return new SnippetValidationResult(
-                    snippet,
-                    ErrorCode.InvalidShortcut,
-                    "Snippet shortcut is invalid.",
-                    ResultImportance.Error);
+                if (string.IsNullOrEmpty(snippet.Shortcut))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingShortcut,
+                        "Snippet shortcut is missing.",
+                        ResultImportance.Error);
+                }
+
+                if (!ValidationHelper.IsValidShortcut(snippet.Shortcut))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.InvalidShortcut,
+                        "Snippet shortcut is invalid.",
+                        ResultImportance.Error);
+                }
             }
         }
     }
