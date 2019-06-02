@@ -16,15 +16,15 @@ public static Pihrtsoft.Snippets.Literal CreateClassNameLiteral(string identifie
 
 ### Parameters
 
-**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) identifier\.
 
-**toolTip** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**toolTip** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) description\.
 
-**defaultValue** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**defaultValue** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md)default value\.
 
@@ -36,7 +36,7 @@ Pihrtsoft\.Snippets\.[Literal](../README.md)
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **identifier** is `null`\.
 

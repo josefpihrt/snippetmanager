@@ -16,7 +16,7 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.SnippetF
 
 ### Parameters
 
-**directoryPath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**directoryPath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 

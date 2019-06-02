@@ -63,7 +63,7 @@ public void Save(string filePath)
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -79,7 +79,7 @@ public void Save(string filePath, Pihrtsoft.Snippets.SaveSettings settings)
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 

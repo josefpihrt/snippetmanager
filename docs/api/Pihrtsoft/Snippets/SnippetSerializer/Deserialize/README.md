@@ -37,7 +37,7 @@ Enumerable collection of snippets being deserialized\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **stream** is `null`\.
 
@@ -53,7 +53,7 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet>
 
 ### Parameters
 
-**directoryPath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**directoryPath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 

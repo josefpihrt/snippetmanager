@@ -16,5 +16,5 @@ public object Content { get; }
 
 ### Property Value
 
-System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 

@@ -16,27 +16,27 @@ public string RenamePlaceholder(string oldIdentifier, string newIdentifier)
 
 ### Parameters
 
-**oldIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**oldIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The identifier to be replaced\.
 
-**newIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**newIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The idenfier to replace all occurrences of **oldIdentifier**\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A string where all occurrences of **oldIdentifier** are replaced with **newIdentifier**\.
 
 ### Exceptions
 
-System\.[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
+[ArgumentException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception)
 
 **oldIdentifier** is the empty string or **newIdentifier** is invalid\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **oldIdentifier** is `null`\.
 

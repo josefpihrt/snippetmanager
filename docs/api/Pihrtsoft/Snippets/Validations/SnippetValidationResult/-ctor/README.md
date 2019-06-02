@@ -29,11 +29,11 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 A snippet\.
 
-**code** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**code** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**description** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
@@ -43,7 +43,7 @@ Result importance\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippet** is `null`\.
 
@@ -63,11 +63,11 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 A snippet\.
 
-**code** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**code** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**description** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
@@ -75,13 +75,13 @@ Result description\.
 
 Result importance\.
 
-**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 Additional result content\. The value can be `null`\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippet** is `null`\.
 

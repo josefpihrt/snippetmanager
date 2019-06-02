@@ -11,10 +11,10 @@
 Gets or sets url\.
 
 ```csharp
-public System.Uri Url { get; set; }
+public Uri Url { get; set; }
 ```
 
 ### Property Value
 
-System\.[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)
+[Uri](https://docs.microsoft.com/en-us/dotnet/api/system.uri)
 

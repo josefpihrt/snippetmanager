@@ -16,12 +16,12 @@ public bool Contains(string identifier)
 
 ### Parameters
 
-**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A [Placeholder.Identifier](../../Placeholder/Identifier/README.md) to search for\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 `true` if item is found in the [PlaceholderCollection](../README.md); otherwise, `false`\.

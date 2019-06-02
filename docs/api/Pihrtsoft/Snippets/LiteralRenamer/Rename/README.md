@@ -20,17 +20,17 @@ public static void Rename(Pihrtsoft.Snippets.Snippet snippet, string oldIdentifi
 
 [Snippet](../../Snippet/README.md) that contains the literal to rename\.
 
-**oldIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**oldIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Old identifier\.
 
-**newIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**newIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 New identifier\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippet** is `null`\.
 

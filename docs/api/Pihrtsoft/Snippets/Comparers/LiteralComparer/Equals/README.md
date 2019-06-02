@@ -35,7 +35,7 @@ A [Literal](../../../Literal/README.md) to compare to **x**\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 `true` if **x** and **y** refer to the same object, or **x** and **y** are `null`, or **x** and **y** are equal; otherwise, `false`\.
 
@@ -55,17 +55,17 @@ public bool Equals(object x, object y)
 
 ### Parameters
 
-**x** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 `true` if **x** and **y** refer to the same object, or **x** and **y** are both the same type of object and those objects are equal; otherwise, `false`\.
 

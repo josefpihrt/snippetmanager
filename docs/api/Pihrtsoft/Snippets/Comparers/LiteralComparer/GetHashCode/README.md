@@ -31,7 +31,7 @@ A literal\.
 
 ### Returns
 
-System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A 32\-bit signed hash code calculated from the value of the **obj**\.
 
@@ -51,13 +51,13 @@ public int GetHashCode(object obj)
 
 ### Parameters
 
-**obj** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**obj** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object\.
 
 ### Returns
 
-System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A 32\-bit signed hash code calculated from the value of the **obj**\.
 

@@ -16,12 +16,12 @@ public bool Contains(string identifier)
 
 ### Parameters
 
-**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A literal identifier to search for\.
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 `true` if item is found in the [LiteralCollection](../README.md); otherwise, `false`\.

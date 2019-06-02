@@ -16,5 +16,5 @@ public static Pihrtsoft.Snippets.Comparers.SnippetComparer<string> Title { get; 
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../../SnippetComparer-1/README.md)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../../SnippetComparer-1/README.md)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 

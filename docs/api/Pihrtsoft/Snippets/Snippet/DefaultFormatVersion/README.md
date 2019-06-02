@@ -11,10 +11,10 @@
 Represents code snippet default format version\. This field is read\-only\.
 
 ```csharp
-public static readonly System.Version DefaultFormatVersion
+public static readonly Version DefaultFormatVersion
 ```
 
 ### Field Value
 
-System\.[Version](https://docs.microsoft.com/en-us/dotnet/api/system.version)
+[Version](https://docs.microsoft.com/en-us/dotnet/api/system.version)
 

@@ -39,7 +39,7 @@ A snippet file to be serialized\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippetFile** is `null`\.
 
@@ -65,11 +65,11 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippetFile** is `null`\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **settings** is `null`\.
 
@@ -119,7 +119,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **stream** or **snippets** or **settings** is `null`\.
 
@@ -169,7 +169,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **stream** or **snippet** or **settings** is `null`\.
 
@@ -185,7 +185,7 @@ public static void Serialize(string filePath, System.Collections.Generic.IEnumer
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -205,7 +205,7 @@ public static void Serialize(string filePath, System.Collections.Generic.IEnumer
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -219,7 +219,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **filePath** or **snippets** or **settings** is `null`\.
 
@@ -235,7 +235,7 @@ public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -255,7 +255,7 @@ public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet
 
 ### Parameters
 
-**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -269,7 +269,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **filePath** or **snippet** or **settings** is `null`\.
 

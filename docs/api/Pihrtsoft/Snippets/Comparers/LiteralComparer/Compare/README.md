@@ -35,7 +35,7 @@ A [Literal](../../../Literal/README.md) to compare to **x**\.
 
 ### Returns
 
-System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A signed integer that indicates the relative values of **x** and **y**\.
 
@@ -55,17 +55,17 @@ public int Compare(object x, object y)
 
 ### Parameters
 
-**x** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
 ### Returns
 
-System\.[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 A signed integer that indicates the relative values of **x** and **y**\.
 

@@ -35,6 +35,6 @@ public void Sort(System.Collections.Generic.IComparer<string> comparer)
 
 ### Parameters
 
-**comparer** &emsp; System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+**comparer** &emsp; System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 The [IComparer\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1) implementation to use when comparing elements\.

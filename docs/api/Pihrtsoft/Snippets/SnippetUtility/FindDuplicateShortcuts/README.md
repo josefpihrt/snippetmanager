@@ -28,7 +28,7 @@ Enumerable collection of [DuplicateShortcutInfo](../../DuplicateShortcutInfo/REA
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippets** is `null`\.
 

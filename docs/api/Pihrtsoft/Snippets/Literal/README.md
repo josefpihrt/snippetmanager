@@ -11,7 +11,7 @@
 Represents a code snippet literal\.
 
 ```csharp
-public class Literal : System.ICloneable
+public class Literal : ICloneable
 ```
 
 ### Inheritance
@@ -20,7 +20,7 @@ public class Literal : System.ICloneable
 
 ### Implements
 
-* System\.[ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
+* [ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
 
 ## Constructors
 

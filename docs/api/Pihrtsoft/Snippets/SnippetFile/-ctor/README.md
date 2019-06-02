@@ -35,6 +35,6 @@ public SnippetFile(string fullName)
 
 ### Parameters
 
-**fullName** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**fullName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Full name of the snippet file\.

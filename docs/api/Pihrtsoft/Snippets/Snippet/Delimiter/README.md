@@ -16,5 +16,5 @@ public char Delimiter { get; set; }
 
 ### Property Value
 
-System\.[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
+[Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 

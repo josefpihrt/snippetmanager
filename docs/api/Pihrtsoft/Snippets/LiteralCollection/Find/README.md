@@ -16,7 +16,7 @@ public Pihrtsoft.Snippets.Literal Find(string identifier)
 
 ### Parameters
 
-**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A literal identifier\.
 

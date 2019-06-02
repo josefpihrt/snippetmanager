@@ -33,7 +33,7 @@ Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 XML text that represents a specified collection of [Snippet](../../Snippet/README.md)\.
 
@@ -59,13 +59,13 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 XML text that represents a specified collection of [Snippet](../../Snippet/README.md)\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippets** or **settings** is `null`\.
 
@@ -87,7 +87,7 @@ A [Snippet](../../Snippet/README.md) to be serialized\.
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 XML text that represents a specified [Snippet](../../Snippet/README.md)\.
 
@@ -113,13 +113,13 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ### Returns
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 XML text that represents a specified [Snippet](../../Snippet/README.md)\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippet** or **settings** is `null`\.
 

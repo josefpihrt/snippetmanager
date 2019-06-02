@@ -11,10 +11,10 @@
 Gets or sets snippet format version\.
 
 ```csharp
-public System.Version FormatVersion { get; set; }
+public Version FormatVersion { get; set; }
 ```
 
 ### Property Value
 
-System\.[Version](https://docs.microsoft.com/en-us/dotnet/api/system.version)
+[Version](https://docs.microsoft.com/en-us/dotnet/api/system.version)
 

@@ -16,6 +16,6 @@ public bool ContainsSelected()
 
 ### Returns
 
-System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 `true` if item is found in the [PlaceholderCollection](../README.md); otherwise, `false`\.
