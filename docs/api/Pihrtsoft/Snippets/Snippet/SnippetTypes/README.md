@@ -11,7 +11,7 @@
 Gets or sets snippet type\.
 
 ```csharp
-public SnippetTypes SnippetTypes { get; set; }
+public Pihrtsoft.Snippets.SnippetTypes SnippetTypes { get; set; }
 ```
 
 ### Property Value

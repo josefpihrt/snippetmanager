@@ -46,7 +46,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 Compares two snippets and returns an indication of their relative sort order\.
 
 ```csharp
-public override int Compare(Snippet x, Snippet y)
+public override int Compare(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Snippet y)
 ```
 
 ### Parameters

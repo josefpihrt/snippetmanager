@@ -11,7 +11,7 @@
 Gets the hash code for the specified [Snippet](../../../Snippet/README.md)\.
 
 ```csharp
-public override int GetHashCode(Snippet obj)
+public override int GetHashCode(Pihrtsoft.Snippets.Snippet obj)
 ```
 
 ### Parameters

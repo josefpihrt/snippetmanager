@@ -11,7 +11,7 @@
 Gets the importance level\.
 
 ```csharp
-public ResultImportance Importance { get; }
+public Pihrtsoft.Snippets.Validations.ResultImportance Importance { get; }
 ```
 
 ### Property Value

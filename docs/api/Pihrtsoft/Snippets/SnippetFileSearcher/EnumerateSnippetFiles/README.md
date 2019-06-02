@@ -22,7 +22,7 @@
 Returns enumerable collection of snippet file names from a specified directories\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSnippetFiles(IEnumerable<string> directoryPaths)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFiles(System.Collections.Generic.IEnumerable<string> directoryPaths)
 ```
 
 ### Parameters
@@ -33,7 +33,7 @@ Enumerable collection of absolute or relative paths to the directories to search
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns enumerable collection of snippet file names from a specified directories, optionally searching subdirectories\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSnippetFiles(IEnumerable<string> directoryPaths, SearchOption searchOption)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFiles(System.Collections.Generic.IEnumerable<string> directoryPaths, System.IO.SearchOption searchOption)
 ```
 
 ### Parameters
@@ -65,7 +65,7 @@ A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchopt
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -82,7 +82,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns enumerable collection of snippet file names from a specified directory\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSnippetFiles(string directoryPath)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFiles(string directoryPath)
 ```
 
 ### Parameters
@@ -93,7 +93,7 @@ The absolute or relative path to the directory to search\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -110,7 +110,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns enumerable collection of snippet file names from a specified directory, optionally searching subdirectories\.
 
 ```csharp
-public static IEnumerable<string> EnumerateSnippetFiles(string directoryPath, SearchOption searchOption)
+public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFiles(string directoryPath, System.IO.SearchOption searchOption)
 ```
 
 ### Parameters
@@ -125,7 +125,7 @@ A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchopt
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 

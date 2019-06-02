@@ -29,8 +29,8 @@ public abstract class SnippetComparer : System.Collections.IComparer,
 
 * System\.Collections\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer)
 * System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[Snippet](../../Snippet/README.md)>
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[Snippet](../../Snippet/README.md)>
+* System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 ## Constructors
 

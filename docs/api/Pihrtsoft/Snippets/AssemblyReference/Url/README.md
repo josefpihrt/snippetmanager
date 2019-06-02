@@ -11,7 +11,7 @@
 Gets or sets url\.
 
 ```csharp
-public Uri Url { get; set; }
+public System.Uri Url { get; set; }
 ```
 
 ### Property Value

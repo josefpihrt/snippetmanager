@@ -11,7 +11,7 @@
 Represents the validation rule for the snippet shortcut\.
 
 ```csharp
-public class ShortcutValidationRule : ValidationRule
+public class ShortcutValidationRule : Pihrtsoft.Snippets.Validations.ValidationRule
 ```
 
 ### Inheritance

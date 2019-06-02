@@ -11,7 +11,7 @@
 Returns all placeholders with the specified identifier
 
 ```csharp
-public IEnumerable<Placeholder> FindAll(string identifier)
+public System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Placeholder> FindAll(string identifier)
 ```
 
 ### Parameters
@@ -22,6 +22,6 @@ A placeholder identifier\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Placeholder](../../Placeholder/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Placeholder](../../Placeholder/README.md)>
 
 Enumerable collection of placeholders with the specified identifier\.

@@ -11,7 +11,7 @@
 Create new [Literal](../README.md) with function generates switch cases\.
 
 ```csharp
-public static Literal CreateSwitchCasesLiteral(string identifier, string expressionIdentifier, string toolTip = null, string defaultValue = "default:")
+public static Pihrtsoft.Snippets.Literal CreateSwitchCasesLiteral(string identifier, string expressionIdentifier, string toolTip = null, string defaultValue = "default:")
 ```
 
 ### Parameters

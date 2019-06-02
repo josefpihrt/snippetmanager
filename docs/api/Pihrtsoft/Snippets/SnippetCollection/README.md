@@ -11,7 +11,7 @@
 Represents the set of [Snippet](../Snippet/README.md)s\.
 
 ```csharp
-public class SnippetCollection : System.Collections.ObjectModel.Collection<Snippet>
+public class SnippetCollection : System.Collections.ObjectModel.Collection<Pihrtsoft.Snippets.Snippet>
 ```
 
 ### Inheritance
@@ -22,11 +22,9 @@ public class SnippetCollection : System.Collections.ObjectModel.Collection<Snipp
 
 * System\.Collections\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection)
 * System\.Collections\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist)
-* System\.Collections\.Generic\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<[Snippet](../Snippet/README.md)>
-* System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../Snippet/README.md)>
-* System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<[Snippet](../Snippet/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1)\<[Snippet](../Snippet/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1)\<[Snippet](../Snippet/README.md)>
+* System\.Collections\.Generic\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<Pihrtsoft\.Snippets\.[Snippet](../Snippet/README.md)>
+* System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../Snippet/README.md)>
+* System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<Pihrtsoft\.Snippets\.[Snippet](../Snippet/README.md)>
 
 ## Constructors
 

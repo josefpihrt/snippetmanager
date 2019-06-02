@@ -20,7 +20,7 @@
 Initializes a new instance of the [SnippetValidationResult](../README.md) class using the specified snippet, code, description a and importance\.
 
 ```csharp
-public SnippetValidationResult(Snippet snippet, string code, string description, ResultImportance importance)
+public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, string description, Pihrtsoft.Snippets.Validations.ResultImportance importance)
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Initializes a new instance of the [SnippetValidationResult](../README.md) class using the specified snippet, code, description, importance and content\.
 
 ```csharp
-public SnippetValidationResult(Snippet snippet, string code, string description, ResultImportance importance, object content)
+public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, string description, Pihrtsoft.Snippets.Validations.ResultImportance importance, object content)
 ```
 
 ### Parameters

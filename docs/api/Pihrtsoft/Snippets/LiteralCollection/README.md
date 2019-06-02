@@ -11,7 +11,7 @@
 Represents the set of [Literal](../Literal/README.md)s\.
 
 ```csharp
-public class LiteralCollection : System.Collections.ObjectModel.Collection<Literal>
+public class LiteralCollection : System.Collections.ObjectModel.Collection<Pihrtsoft.Snippets.Literal>
 ```
 
 ### Inheritance
@@ -22,11 +22,9 @@ public class LiteralCollection : System.Collections.ObjectModel.Collection<Liter
 
 * System\.Collections\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection)
 * System\.Collections\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist)
-* System\.Collections\.Generic\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<[Literal](../Literal/README.md)>
-* System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Literal](../Literal/README.md)>
-* System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<[Literal](../Literal/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1)\<[Literal](../Literal/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1)\<[Literal](../Literal/README.md)>
+* System\.Collections\.Generic\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<Pihrtsoft\.Snippets\.[Literal](../Literal/README.md)>
+* System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Literal](../Literal/README.md)>
+* System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<Pihrtsoft\.Snippets\.[Literal](../Literal/README.md)>
 
 ## Constructors
 

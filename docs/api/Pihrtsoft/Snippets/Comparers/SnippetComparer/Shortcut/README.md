@@ -11,10 +11,10 @@
 Gets a [SnippetComparer\<T>](../../SnippetComparer-1/README.md) that performs a case\-sensitive ordinal [Snippet.Shortcut](../../../Snippet/Shortcut/README.md) comparison\.
 
 ```csharp
-public static SnippetComparer<string> Shortcut { get; }
+public static Pihrtsoft.Snippets.Comparers.SnippetComparer<string> Shortcut { get; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../../SnippetComparer-1/README.md)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../../SnippetComparer-1/README.md)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 

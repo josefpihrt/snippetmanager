@@ -11,7 +11,7 @@
 Returns first placeholder with the specified identifier
 
 ```csharp
-public Placeholder Find(string identifier)
+public Pihrtsoft.Snippets.Placeholder Find(string identifier)
 ```
 
 ### Parameters

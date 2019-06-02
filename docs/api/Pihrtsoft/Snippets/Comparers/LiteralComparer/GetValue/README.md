@@ -11,7 +11,7 @@
 Returns a value to compare\.
 
 ```csharp
-protected abstract string GetValue(Literal literal)
+protected abstract string GetValue(Pihrtsoft.Snippets.Literal literal)
 ```
 
 ### Parameters

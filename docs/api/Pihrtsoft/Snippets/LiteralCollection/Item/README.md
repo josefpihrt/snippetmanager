@@ -11,7 +11,7 @@
 Returns first literal with the specified identifier
 
 ```csharp
-public Literal this[string identifier] { get; }
+public Pihrtsoft.Snippets.Literal this[string identifier] { get; }
 ```
 
 ### Parameters

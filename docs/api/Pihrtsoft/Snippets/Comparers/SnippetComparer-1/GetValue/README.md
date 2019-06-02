@@ -11,7 +11,7 @@
 Returns a value to compare\.
 
 ```csharp
-protected abstract T GetValue(Snippet snippet)
+protected abstract T GetValue(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters

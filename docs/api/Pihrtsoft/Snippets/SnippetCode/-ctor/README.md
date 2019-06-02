@@ -11,7 +11,7 @@
 Initializes a new instance of the [SnippetCode](../README.md) class with the specified snippet\.
 
 ```csharp
-public SnippetCode(Snippet snippet)
+public SnippetCode(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters

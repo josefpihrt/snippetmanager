@@ -11,7 +11,7 @@
 Specifies how the code snippet can be inserted into code\.
 
 ```csharp
-[System.FlagsAttribute]
+[System.Flags]
 public enum SnippetTypes
 ```
 

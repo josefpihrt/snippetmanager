@@ -11,7 +11,7 @@
 Gets the snippet that contains current instance\.
 
 ```csharp
-public Snippet Snippet { get; }
+public Pihrtsoft.Snippets.Snippet Snippet { get; }
 ```
 
 ### Property Value

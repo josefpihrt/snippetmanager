@@ -11,7 +11,7 @@
 Creates [SnippetValidator](../README.md) that contains validation rules defines in [Validations](../../README.md) namespace\.
 
 ```csharp
-public static SnippetValidator CreateDefaultValidator()
+public static Pihrtsoft.Snippets.Validations.SnippetValidator CreateDefaultValidator()
 ```
 
 ### Returns

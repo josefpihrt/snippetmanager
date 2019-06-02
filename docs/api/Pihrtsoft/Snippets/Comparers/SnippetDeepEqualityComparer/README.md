@@ -21,7 +21,7 @@ public class SnippetDeepEqualityComparer : System.Collections.Generic.EqualityCo
 ### Implements
 
 * System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[Snippet](../../Snippet/README.md)>
+* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 ## Constructors
 

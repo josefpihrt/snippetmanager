@@ -11,7 +11,7 @@
 Gets the [SnippetValidationResult.Snippet](./README.md) the is the source of the result\.
 
 ```csharp
-public Snippet Snippet { get; }
+public Pihrtsoft.Snippets.Snippet Snippet { get; }
 ```
 
 ### Property Value

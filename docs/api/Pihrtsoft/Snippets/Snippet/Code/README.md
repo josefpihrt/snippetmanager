@@ -11,7 +11,7 @@
 Gets the snippet code\.
 
 ```csharp
-public SnippetCode Code { get; }
+public Pihrtsoft.Snippets.SnippetCode Code { get; }
 ```
 
 ### Property Value

@@ -20,7 +20,7 @@
 Compares two literals and returns an indication of their relative sort order\.
 
 ```csharp
-public int Compare(Literal x, Literal y)
+public int Compare(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 ```
 
 ### Parameters

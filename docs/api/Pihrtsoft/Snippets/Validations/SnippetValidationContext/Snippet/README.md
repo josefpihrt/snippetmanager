@@ -11,7 +11,7 @@
 Gets the code snippet that is being validated\.
 
 ```csharp
-public Snippet Snippet { get; }
+public Pihrtsoft.Snippets.Snippet Snippet { get; }
 ```
 
 ### Property Value

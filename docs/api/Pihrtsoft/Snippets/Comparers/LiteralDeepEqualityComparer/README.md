@@ -21,7 +21,7 @@ public class LiteralDeepEqualityComparer : System.Collections.Generic.EqualityCo
 ### Implements
 
 * System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[Literal](../../Literal/README.md)>
+* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[Literal](../../Literal/README.md)>
 
 ## Constructors
 

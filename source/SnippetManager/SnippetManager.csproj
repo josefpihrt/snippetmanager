@@ -137,4 +137,5 @@
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
     </Exec>
   </Target>
+  <Import Project="GenerateDocumentation.targets" />
 </Project>

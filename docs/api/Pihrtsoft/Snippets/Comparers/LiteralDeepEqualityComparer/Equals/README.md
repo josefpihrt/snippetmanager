@@ -11,7 +11,7 @@
 Indicates whether two literals are equal\.
 
 ```csharp
-public override bool Equals(Literal x, Literal y)
+public override bool Equals(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Gets a placeholder with identifier 'end' or `null` if it is not present\.
 
 ```csharp
-public Placeholder EndPlaceholder { get; }
+public Pihrtsoft.Snippets.Placeholder EndPlaceholder { get; }
 ```
 
 ### Property Value

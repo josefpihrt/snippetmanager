@@ -11,7 +11,7 @@
 Gets or sets URL the provides additional information about the current instance\.
 
 ```csharp
-public Uri HelpUrl { get; set; }
+public System.Uri HelpUrl { get; set; }
 ```
 
 ### Property Value

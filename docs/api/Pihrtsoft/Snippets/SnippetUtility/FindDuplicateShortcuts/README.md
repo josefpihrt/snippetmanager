@@ -11,7 +11,7 @@
 Returns enumerable groups of [Snippet](../../Snippet/README.md)s that have same shortcut\. [SnippetComparer.Shortcut](../../Comparers/SnippetComparer/Shortcut/README.md) is used to compare shortcuts\.
 
 ```csharp
-public static IEnumerable<DuplicateShortcutInfo> FindDuplicateShortcuts(IEnumerable<Snippet> snippets)
+public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.DuplicateShortcutInfo> FindDuplicateShortcuts(System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
@@ -22,7 +22,7 @@ Collection of [Snippet](../../Snippet/README.md)s\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md)>
 
 Enumerable collection of [DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md) where each element contains shortcut and snippets with that shortcut\.
 

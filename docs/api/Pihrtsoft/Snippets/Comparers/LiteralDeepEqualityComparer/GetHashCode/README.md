@@ -11,7 +11,7 @@
 Gets the hash code for the specified [Literal](../../../Literal/README.md)\.
 
 ```csharp
-public override int GetHashCode(Literal obj)
+public override int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 ```
 
 ### Parameters

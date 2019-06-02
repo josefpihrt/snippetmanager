@@ -11,7 +11,7 @@
 Represents a [Snippet](../../Snippet/README.md) comparison operation\.
 
 ```csharp
-public abstract class SnippetComparer<T> : SnippetComparer
+public abstract class SnippetComparer<T> : Pihrtsoft.Snippets.Comparers.SnippetComparer
 ```
 
 ### Type Parameters
@@ -26,8 +26,8 @@ public abstract class SnippetComparer<T> : SnippetComparer
 
 * System\.Collections\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer)
 * System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[Snippet](../../Snippet/README.md)>
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[Snippet](../../Snippet/README.md)>
+* System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 ## Constructors
 

@@ -11,7 +11,7 @@
 Gets a collection of snippet namespaces\.
 
 ```csharp
-public NamespaceCollection Namespaces { get; }
+public Pihrtsoft.Snippets.NamespaceCollection Namespaces { get; }
 ```
 
 ### Property Value

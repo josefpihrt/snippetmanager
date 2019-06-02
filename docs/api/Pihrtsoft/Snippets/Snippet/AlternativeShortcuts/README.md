@@ -11,7 +11,7 @@
 Gets a collection of alternative shortcuts\.
 
 ```csharp
-public ShortcutCollection AlternativeShortcuts { get; }
+public Pihrtsoft.Snippets.ShortcutCollection AlternativeShortcuts { get; }
 ```
 
 ### Property Value

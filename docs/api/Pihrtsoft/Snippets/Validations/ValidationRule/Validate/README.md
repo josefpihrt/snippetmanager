@@ -11,7 +11,7 @@
 Validates a specified snippet and returns enumerable collection of [SnippetValidationResult](../../SnippetValidationResult/README.md)\.
 
 ```csharp
-public abstract IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+public abstract System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Validations.SnippetValidationResult> Validate(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
@@ -22,6 +22,6 @@ A snippet to be validated\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 Enumerable collection of [SnippetValidationResult](../../SnippetValidationResult/README.md)\.

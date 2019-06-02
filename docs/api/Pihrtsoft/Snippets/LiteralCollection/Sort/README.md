@@ -30,7 +30,7 @@ public void Sort()
 Sorts the elements in the entire [LiteralCollection](../README.md) using the specified comparer\.
 
 ```csharp
-public void Sort(IComparer<Literal> comparer)
+public void Sort(System.Collections.Generic.IComparer<Pihrtsoft.Snippets.Literal> comparer)
 ```
 
 ### Parameters

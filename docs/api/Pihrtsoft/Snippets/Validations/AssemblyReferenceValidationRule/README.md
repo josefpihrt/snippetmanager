@@ -11,7 +11,7 @@
 Represents a validation rule for the [AssemblyReference](../../AssemblyReference/README.md)\.
 
 ```csharp
-public class AssemblyReferenceValidationRule : ValidationRule
+public class AssemblyReferenceValidationRule : Pihrtsoft.Snippets.Validations.ValidationRule
 ```
 
 ### Inheritance

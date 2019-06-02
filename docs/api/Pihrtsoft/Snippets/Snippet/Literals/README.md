@@ -11,7 +11,7 @@
 Gets a collection of snippet literals\.
 
 ```csharp
-public LiteralCollection Literals { get; }
+public Pihrtsoft.Snippets.LiteralCollection Literals { get; }
 ```
 
 ### Property Value

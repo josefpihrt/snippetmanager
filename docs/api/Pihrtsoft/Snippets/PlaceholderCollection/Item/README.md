@@ -11,7 +11,7 @@
 Returns first placeholder with the specified identifier
 
 ```csharp
-public Placeholder this[string identifier] { get; }
+public Pihrtsoft.Snippets.Placeholder this[string identifier] { get; }
 ```
 
 ### Parameters

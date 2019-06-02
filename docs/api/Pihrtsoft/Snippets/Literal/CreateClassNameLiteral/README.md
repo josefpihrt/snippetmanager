@@ -11,7 +11,7 @@
 Create new [Literal](../README.md) with function that returns containing type name\.
 
 ```csharp
-public static Literal CreateClassNameLiteral(string identifier, string toolTip = null, string defaultValue = "")
+public static Pihrtsoft.Snippets.Literal CreateClassNameLiteral(string identifier, string toolTip = null, string defaultValue = "")
 ```
 
 ### Parameters

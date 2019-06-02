@@ -28,7 +28,7 @@
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file\.
 
 ```csharp
-public static void Serialize(SnippetFile snippetFile)
+public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile)
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(SnippetFile snippetFile, SaveSettings settings)
+public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -80,7 +80,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public static void Serialize(Stream stream, IEnumerable<Snippet> snippets)
+public static void Serialize(System.IO.Stream stream, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
@@ -100,7 +100,7 @@ Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(Stream stream, IEnumerable<Snippet> snippets, SaveSettings settings)
+public static void Serialize(System.IO.Stream stream, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -130,7 +130,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public static void Serialize(Stream stream, Snippet snippet)
+public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
@@ -150,7 +150,7 @@ A [Snippet](../../Snippet/README.md) to be serialized\.
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(Stream stream, Snippet snippet, SaveSettings settings)
+public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -180,7 +180,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file\.
 
 ```csharp
-public static void Serialize(string filePath, IEnumerable<Snippet> snippets)
+public static void Serialize(string filePath, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
@@ -200,7 +200,7 @@ Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(string filePath, IEnumerable<Snippet> snippets, SaveSettings settings)
+public static void Serialize(string filePath, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -230,7 +230,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file\.
 
 ```csharp
-public static void Serialize(string filePath, Snippet snippet)
+public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
@@ -250,7 +250,7 @@ A [Snippet](../../Snippet/README.md) to be serialized\.
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(string filePath, Snippet snippet, SaveSettings settings)
+public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters

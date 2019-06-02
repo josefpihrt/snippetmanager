@@ -11,7 +11,7 @@
 Returns first literal with the specified identifier
 
 ```csharp
-public Literal Find(string identifier)
+public Pihrtsoft.Snippets.Literal Find(string identifier)
 ```
 
 ### Parameters

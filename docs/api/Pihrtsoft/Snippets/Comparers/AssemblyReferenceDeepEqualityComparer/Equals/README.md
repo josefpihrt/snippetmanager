@@ -11,7 +11,7 @@
 Indicates whether two assembly references are equal\.
 
 ```csharp
-public override bool Equals(AssemblyReference x, AssemblyReference y)
+public override bool Equals(Pihrtsoft.Snippets.AssemblyReference x, Pihrtsoft.Snippets.AssemblyReference y)
 ```
 
 ### Parameters

@@ -11,7 +11,7 @@
 Gets a collection of [Snippet](../../Snippet/README.md)\.
 
 ```csharp
-public SnippetCollection Snippets { get; }
+public Pihrtsoft.Snippets.SnippetCollection Snippets { get; }
 ```
 
 ### Property Value

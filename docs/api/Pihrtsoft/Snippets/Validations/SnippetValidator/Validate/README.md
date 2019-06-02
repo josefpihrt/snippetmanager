@@ -20,7 +20,7 @@
 Validates the specified [Snippet](../../../Snippet/README.md) according the the code snippet schema\.
 
 ```csharp
-public IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+public System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Validations.SnippetValidationResult> Validate(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
@@ -31,7 +31,7 @@ A [Snippet](../../../Snippet/README.md) that is being validated\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stores data about the validation\.
 
@@ -48,7 +48,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Validates the specified [Snippet](../../../Snippet/README.md) according the the code snippet schema\.
 
 ```csharp
-protected virtual IEnumerable<SnippetValidationResult> Validate(SnippetValidationContext context)
+protected virtual System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Validations.SnippetValidationResult> Validate(Pihrtsoft.Snippets.Validations.SnippetValidationContext context)
 ```
 
 ### Parameters
@@ -59,7 +59,7 @@ A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stor
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 ### Exceptions
 

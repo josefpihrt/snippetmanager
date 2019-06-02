@@ -11,7 +11,7 @@
 Gets a collection of snippet keywords\.
 
 ```csharp
-public KeywordCollection Keywords { get; }
+public Pihrtsoft.Snippets.KeywordCollection Keywords { get; }
 ```
 
 ### Property Value

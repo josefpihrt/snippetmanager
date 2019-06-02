@@ -11,7 +11,7 @@
 Raises the [Snippet.TextChanged](../TextChanged/README.md) event\.
 
 ```csharp
-protected virtual void OnTextChanged(EventArgs e)
+protected virtual void OnTextChanged(System.EventArgs e)
 ```
 
 ### Parameters

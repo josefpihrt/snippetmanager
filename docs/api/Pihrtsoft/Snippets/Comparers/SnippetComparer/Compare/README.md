@@ -50,7 +50,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 Compares two snippets and returns an indication of their relative sort order\.
 
 ```csharp
-public abstract int Compare(Snippet x, Snippet y)
+public abstract int Compare(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Snippet y)
 ```
 
 ### Parameters

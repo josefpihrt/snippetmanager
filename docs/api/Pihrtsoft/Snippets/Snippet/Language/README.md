@@ -11,7 +11,7 @@
 Gets or sets code snippet programming language\.
 
 ```csharp
-public Language Language { get; set; }
+public Pihrtsoft.Snippets.Language Language { get; set; }
 ```
 
 ### Property Value

@@ -11,7 +11,7 @@
 Represents a validation rule for the snippet formar version\.
 
 ```csharp
-public class FormatVersionValidationRule : ValidationRule
+public class FormatVersionValidationRule : Pihrtsoft.Snippets.Validations.ValidationRule
 ```
 
 ### Inheritance

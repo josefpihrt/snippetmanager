@@ -30,7 +30,7 @@ public void Sort()
 Sorts the elements in the entire [ShortcutCollection](../README.md) using the specified comparer\.
 
 ```csharp
-public void Sort(IComparer<string> comparer)
+public void Sort(System.Collections.Generic.IComparer<string> comparer)
 ```
 
 ### Parameters

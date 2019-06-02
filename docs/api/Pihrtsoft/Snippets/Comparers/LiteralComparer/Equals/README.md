@@ -20,7 +20,7 @@
 Indicates whether two literals are equal\.
 
 ```csharp
-public bool Equals(Literal x, Literal y)
+public bool Equals(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 ```
 
 ### Parameters

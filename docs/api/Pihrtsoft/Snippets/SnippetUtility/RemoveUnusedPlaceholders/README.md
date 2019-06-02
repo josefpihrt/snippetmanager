@@ -11,7 +11,7 @@
 Removes all placeholders that do not have corresponding literal \(literal with same identifier\)\.
 
 ```csharp
-public static void RemoveUnusedPlaceholders(Snippet snippet)
+public static void RemoveUnusedPlaceholders(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters

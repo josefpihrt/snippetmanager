@@ -11,7 +11,7 @@
 Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from a specified snippet file\.
 
 ```csharp
-public static SnippetFile DeserializeFile(string filePath)
+public static Pihrtsoft.Snippets.SnippetFile DeserializeFile(string filePath)
 ```
 
 ### Parameters

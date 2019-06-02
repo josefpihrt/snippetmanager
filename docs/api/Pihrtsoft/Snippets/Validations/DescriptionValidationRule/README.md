@@ -11,7 +11,7 @@
 Represents a validation rule for the snippet description\.
 
 ```csharp
-public class DescriptionValidationRule : ValidationRule
+public class DescriptionValidationRule : Pihrtsoft.Snippets.Validations.ValidationRule
 ```
 
 ### Inheritance

@@ -20,7 +20,7 @@
 Returns enumerable collection of [Snippet](../../Snippet/README.md) contained by a specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public static IEnumerable<Snippet> Deserialize(Stream stream)
+public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> Deserialize(System.IO.Stream stream)
 ```
 
 ### Parameters
@@ -31,7 +31,7 @@ The [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) that 
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of snippets being deserialized\.
 
@@ -48,7 +48,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from snippet files in a specified directory\.
 
 ```csharp
-public static IEnumerable<Snippet> Deserialize(string directoryPath, SearchOption searchOption = TopDirectoryOnly)
+public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> Deserialize(string directoryPath, System.IO.SearchOption searchOption = TopDirectoryOnly)
 ```
 
 ### Parameters
@@ -63,6 +63,6 @@ A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchopt
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
+System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 An enumerable collection [Snippet](../../Snippet/README.md) being deserialized\.

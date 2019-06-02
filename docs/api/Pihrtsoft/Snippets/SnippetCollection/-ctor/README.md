@@ -30,7 +30,7 @@ public SnippetCollection()
 Initializes a new instance of the [SnippetCollection](../README.md) class as a wrapper for the specified list\.
 
 ```csharp
-public SnippetCollection(IList<Snippet> list)
+public SnippetCollection(System.Collections.Generic.IList<Pihrtsoft.Snippets.Snippet> list)
 ```
 
 ### Parameters

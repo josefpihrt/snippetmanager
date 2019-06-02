@@ -11,7 +11,7 @@
 Initializes a new instance of the [PlaceholderCollection](../README.md) class that is a read\-only wrapper around the specified list\.
 
 ```csharp
-public PlaceholderCollection(IList<Placeholder> list)
+public PlaceholderCollection(System.Collections.Generic.IList<Pihrtsoft.Snippets.Placeholder> list)
 ```
 
 ### Parameters

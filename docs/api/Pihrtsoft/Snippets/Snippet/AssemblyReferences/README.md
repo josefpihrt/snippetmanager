@@ -11,10 +11,10 @@
 Gets a collection of snippet assembly references\.
 
 ```csharp
-public Collection<AssemblyReference> AssemblyReferences { get; }
+public System.Collections.ObjectModel.Collection<Pihrtsoft.Snippets.AssemblyReference> AssemblyReferences { get; }
 ```
 
 ### Property Value
 
-System\.Collections\.ObjectModel\.[Collection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.collection-1)\<[AssemblyReference](../../AssemblyReference/README.md)>
+System\.Collections\.ObjectModel\.[Collection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.collection-1)\<Pihrtsoft\.Snippets\.[AssemblyReference](../../AssemblyReference/README.md)>
 

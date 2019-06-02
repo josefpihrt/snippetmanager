@@ -20,7 +20,7 @@
 Gets the hash code for the specified [Literal](../../../Literal/README.md)\.
 
 ```csharp
-public int GetHashCode(Literal obj)
+public int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 ```
 
 ### Parameters

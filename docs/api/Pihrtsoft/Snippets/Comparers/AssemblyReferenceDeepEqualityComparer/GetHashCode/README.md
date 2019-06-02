@@ -11,7 +11,7 @@
 Gets the hash code for the specified [AssemblyReference](../../../AssemblyReference/README.md)\.
 
 ```csharp
-public override int GetHashCode(AssemblyReference obj)
+public override int GetHashCode(Pihrtsoft.Snippets.AssemblyReference obj)
 ```
 
 ### Parameters

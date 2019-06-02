@@ -22,7 +22,7 @@
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to text\.
 
 ```csharp
-public static string CreateXml(IEnumerable<Snippet> snippets)
+public static string CreateXml(System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ XML text that represents a specified collection of [Snippet](../../Snippet/READM
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to text, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static string CreateXml(IEnumerable<Snippet> snippets, SaveSettings settings)
+public static string CreateXml(System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -76,7 +76,7 @@ System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/syst
 Serializes a specified [Snippet](../../Snippet/README.md) to xml text\.
 
 ```csharp
-public static string CreateXml(Snippet snippet)
+public static string CreateXml(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
@@ -98,7 +98,7 @@ XML text that represents a specified [Snippet](../../Snippet/README.md)\.
 Serializes a specified [Snippet](../../Snippet/README.md) to xml text, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static string CreateXml(Snippet snippet, SaveSettings settings)
+public static string CreateXml(Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters

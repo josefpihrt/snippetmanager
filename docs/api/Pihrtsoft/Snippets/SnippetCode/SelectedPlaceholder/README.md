@@ -11,7 +11,7 @@
 Gets a placeholder with identifier 'selected' or `null` if it is not present\.
 
 ```csharp
-public Placeholder SelectedPlaceholder { get; }
+public Pihrtsoft.Snippets.Placeholder SelectedPlaceholder { get; }
 ```
 
 ### Property Value

@@ -11,7 +11,7 @@
 Gets or sets snippet format version\.
 
 ```csharp
-public Version FormatVersion { get; set; }
+public System.Version FormatVersion { get; set; }
 ```
 
 ### Property Value

@@ -11,7 +11,7 @@
 Gets or sets snippet code context\.
 
 ```csharp
-public ContextKind ContextKind { get; set; }
+public Pihrtsoft.Snippets.ContextKind ContextKind { get; set; }
 ```
 
 ### Property Value

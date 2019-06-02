@@ -11,7 +11,7 @@
 Renames snippet literal including its occurrences in the code\.
 
 ```csharp
-public static void Rename(Snippet snippet, string oldIdentifier, string newIdentifier)
+public static void Rename(Pihrtsoft.Snippets.Snippet snippet, string oldIdentifier, string newIdentifier)
 ```
 
 ### Parameters

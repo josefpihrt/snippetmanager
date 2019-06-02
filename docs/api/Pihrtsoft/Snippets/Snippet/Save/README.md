@@ -22,7 +22,7 @@
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public void Save(Stream stream)
+public void Save(System.IO.Stream stream)
 ```
 
 ### Parameters
@@ -38,7 +38,7 @@ The stream to output this [Snippet](../README.md) to\.
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally specifying serialization process\.
 
 ```csharp
-public void Save(Stream stream, SaveSettings settings)
+public void Save(System.IO.Stream stream, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
@@ -74,7 +74,7 @@ The absolute or relative path to the file\.
 Serializes the current instance to the specified file\.
 
 ```csharp
-public void Save(string filePath, SaveSettings settings)
+public void Save(string filePath, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters

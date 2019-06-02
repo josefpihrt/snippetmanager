@@ -11,7 +11,7 @@
 Represents code snippet default format version\. This field is read\-only\.
 
 ```csharp
-public static readonly Version DefaultFormatVersion
+public static readonly System.Version DefaultFormatVersion
 ```
 
 ### Field Value

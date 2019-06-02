@@ -11,6 +11,6 @@
 Occurs when the snippet text changes\.
 
 ```csharp
-public event EventHandler TextChanged
+public event System.EventHandler TextChanged
 ```
 

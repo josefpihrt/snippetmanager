@@ -46,7 +46,7 @@ System\.[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 Indicates whether two snippets are equal\.
 
 ```csharp
-public override bool Equals(Snippet x, Snippet y)
+public override bool Equals(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Snippet y)
 ```
 
 ### Parameters

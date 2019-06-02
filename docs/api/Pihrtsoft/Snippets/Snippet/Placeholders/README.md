@@ -11,7 +11,7 @@
 Gets a collection of literal placeholders\.
 
 ```csharp
-public PlaceholderCollection Placeholders { get; }
+public Pihrtsoft.Snippets.PlaceholderCollection Placeholders { get; }
 ```
 
 ### Property Value
