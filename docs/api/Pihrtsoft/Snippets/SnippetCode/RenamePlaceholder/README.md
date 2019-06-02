@@ -16,11 +16,11 @@ public string RenamePlaceholder(string oldIdentifier, string newIdentifier)
 
 ### Parameters
 
-**oldIdentifier**
+**oldIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The identifier to be replaced\.
 
-**newIdentifier**
+**newIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The idenfier to replace all occurrences of **oldIdentifier**\.
 

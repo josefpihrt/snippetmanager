@@ -16,11 +16,11 @@ public override bool Equals(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Sni
 
 ### Parameters
 
-**x**
+**x** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **y**\.
 
-**y**
+**y** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 

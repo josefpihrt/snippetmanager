@@ -27,7 +27,7 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPaths**
+**directoryPaths** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 Enumerable collection of absolute or relative paths to the directories to search\.
 
@@ -55,11 +55,11 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPaths**
+**directoryPaths** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 Enumerable collection of absolute or relative paths to the directories to search\.
 
-**searchOption**
+**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\. The default value is [SearchOption.TopDirectoryOnly](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption.topdirectoryonly)\.
 
@@ -87,7 +87,7 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPath**
+**directoryPath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
@@ -115,11 +115,11 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPath**
+**directoryPath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
-**searchOption**
+**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\. The default value is [SearchOption.TopDirectoryOnly](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption.topdirectoryonly)\.
 

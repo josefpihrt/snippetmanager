@@ -25,7 +25,7 @@ public System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Validations.Sni
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) that is being validated\.
 
@@ -53,7 +53,7 @@ protected virtual System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Vali
 
 ### Parameters
 
-**context**
+**context** &emsp; Pihrtsoft\.Snippets\.Validations\.[SnippetValidationContext](../../SnippetValidationContext/README.md)
 
 A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stores data about the validation\.
 

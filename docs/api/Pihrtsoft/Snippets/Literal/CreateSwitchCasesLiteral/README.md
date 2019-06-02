@@ -16,19 +16,19 @@ public static Pihrtsoft.Snippets.Literal CreateSwitchCasesLiteral(string identif
 
 ### Parameters
 
-**identifier**
+**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) identifier\.
 
-**expressionIdentifier**
+**expressionIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Identifier of the literal that represent switch expression\.
 
-**toolTip**
+**toolTip** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) description\.
 
-**defaultValue**
+**defaultValue** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md)default value\.
 

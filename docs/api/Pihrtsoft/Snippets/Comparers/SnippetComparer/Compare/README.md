@@ -25,11 +25,11 @@ public abstract int Compare(object x, object y)
 
 ### Parameters
 
-**x**
+**x** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y**
+**y** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
@@ -55,11 +55,11 @@ public abstract int Compare(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Sni
 
 ### Parameters
 
-**x**
+**x** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **y**\.
 
-**y**
+**y** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 

@@ -16,11 +16,11 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.SnippetF
 
 ### Parameters
 
-**directoryPath**
+**directoryPath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
-**searchOption**
+**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\.
 

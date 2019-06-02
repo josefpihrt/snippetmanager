@@ -25,7 +25,7 @@ public int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
 
 A literal\.
 
@@ -51,7 +51,7 @@ public int GetHashCode(object obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object\.
 

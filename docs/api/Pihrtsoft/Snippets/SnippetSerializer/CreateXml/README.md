@@ -27,7 +27,7 @@ public static string CreateXml(System.Collections.Generic.IEnumerable<Pihrtsoft.
 
 ### Parameters
 
-**snippets**
+**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -49,11 +49,11 @@ public static string CreateXml(System.Collections.Generic.IEnumerable<Pihrtsoft.
 
 ### Parameters
 
-**snippets**
+**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -81,7 +81,7 @@ public static string CreateXml(Pihrtsoft.Snippets.Snippet snippet)
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -103,11 +103,11 @@ public static string CreateXml(Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Sni
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 

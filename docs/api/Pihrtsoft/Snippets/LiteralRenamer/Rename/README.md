@@ -16,15 +16,15 @@ public static void Rename(Pihrtsoft.Snippets.Snippet snippet, string oldIdentifi
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
 
 [Snippet](../../Snippet/README.md) that contains the literal to rename\.
 
-**oldIdentifier**
+**oldIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Old identifier\.
 
-**newIdentifier**
+**newIdentifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 New identifier\.
 

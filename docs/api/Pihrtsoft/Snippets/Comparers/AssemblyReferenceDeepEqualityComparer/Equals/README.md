@@ -16,11 +16,11 @@ public override bool Equals(Pihrtsoft.Snippets.AssemblyReference x, Pihrtsoft.Sn
 
 ### Parameters
 
-**x**
+**x** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
 
 A [AssemblyReference](../../../AssemblyReference/README.md) to compare to **y**\.
 
-**y**
+**y** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
 
 A [AssemblyReference](../../../AssemblyReference/README.md) to compare to **x**\.
 

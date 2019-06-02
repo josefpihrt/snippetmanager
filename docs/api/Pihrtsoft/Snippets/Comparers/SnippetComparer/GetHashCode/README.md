@@ -25,7 +25,7 @@ public abstract int GetHashCode(object obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object\.
 
@@ -51,7 +51,7 @@ public abstract int GetHashCode(Pihrtsoft.Snippets.Snippet obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A snippet\.
 

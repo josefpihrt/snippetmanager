@@ -16,7 +16,7 @@ public override int GetHashCode(Pihrtsoft.Snippets.AssemblyReference obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
 
 An assembly reference\.
 

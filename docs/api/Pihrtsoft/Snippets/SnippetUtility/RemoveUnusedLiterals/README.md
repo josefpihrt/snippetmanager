@@ -16,6 +16,6 @@ public static void RemoveUnusedLiterals(Pihrtsoft.Snippets.Snippet snippet)
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
 
 [Snippet](../../Snippet/README.md) to remove literals from\.

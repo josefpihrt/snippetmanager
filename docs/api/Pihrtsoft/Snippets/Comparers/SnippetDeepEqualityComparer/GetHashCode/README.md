@@ -16,7 +16,7 @@ public override int GetHashCode(Pihrtsoft.Snippets.Snippet obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A snipppet\.
 

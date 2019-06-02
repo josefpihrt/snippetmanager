@@ -16,7 +16,7 @@ protected abstract string GetValue(Pihrtsoft.Snippets.Literal literal)
 
 ### Parameters
 
-**literal**
+**literal** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
 
 A literal\.
 

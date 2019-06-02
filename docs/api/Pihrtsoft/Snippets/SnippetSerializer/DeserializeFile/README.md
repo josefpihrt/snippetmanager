@@ -16,7 +16,7 @@ public static Pihrtsoft.Snippets.SnippetFile DeserializeFile(string filePath)
 
 ### Parameters
 
-**filePath**
+**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 

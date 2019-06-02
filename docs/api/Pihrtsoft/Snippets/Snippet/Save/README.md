@@ -27,7 +27,7 @@ public void Save(System.IO.Stream stream)
 
 ### Parameters
 
-**stream**
+**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
@@ -43,11 +43,11 @@ public void Save(System.IO.Stream stream, Pihrtsoft.Snippets.SaveSettings settin
 
 ### Parameters
 
-**stream**
+**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
-**settings**
+**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -63,7 +63,7 @@ public void Save(string filePath)
 
 ### Parameters
 
-**filePath**
+**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -79,10 +79,10 @@ public void Save(string filePath, Pihrtsoft.Snippets.SaveSettings settings)
 
 ### Parameters
 
-**filePath**
+**filePath** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**settings**
+**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.

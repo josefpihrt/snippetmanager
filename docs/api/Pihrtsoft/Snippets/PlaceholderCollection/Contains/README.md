@@ -16,7 +16,7 @@ public bool Contains(string identifier)
 
 ### Parameters
 
-**identifier**
+**identifier** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A [Placeholder.Identifier](../../Placeholder/Identifier/README.md) to search for\.
 

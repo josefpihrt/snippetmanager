@@ -16,6 +16,6 @@ protected virtual void OnTextChanged(System.EventArgs e)
 
 ### Parameters
 
-**e**
+**e** &emsp; System\.[EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs)
 
 An [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs) that contains the event data\.

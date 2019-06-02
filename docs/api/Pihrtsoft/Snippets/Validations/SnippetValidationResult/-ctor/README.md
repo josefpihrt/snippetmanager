@@ -25,19 +25,19 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A snippet\.
 
-**code**
+**code** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description**
+**description** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
-**importance**
+**importance** &emsp; Pihrtsoft\.Snippets\.Validations\.[ResultImportance](../../ResultImportance/README.md)
 
 Result importance\.
 
@@ -59,23 +59,23 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
 
 A snippet\.
 
-**code**
+**code** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description**
+**description** &emsp; System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
-**importance**
+**importance** &emsp; Pihrtsoft\.Snippets\.Validations\.[ResultImportance](../../ResultImportance/README.md)
 
 Result importance\.
 
-**content**
+**content** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 Additional result content\. The value can be `null`\.
 

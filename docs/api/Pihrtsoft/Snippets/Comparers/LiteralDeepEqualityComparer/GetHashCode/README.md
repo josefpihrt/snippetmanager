@@ -16,7 +16,7 @@ public override int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 
 ### Parameters
 
-**obj**
+**obj** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
 
 A literal\.
 

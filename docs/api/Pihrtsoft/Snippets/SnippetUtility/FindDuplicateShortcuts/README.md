@@ -16,7 +16,7 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Duplicat
 
 ### Parameters
 
-**snippets**
+**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
 
 Collection of [Snippet](../../Snippet/README.md)s\.
 

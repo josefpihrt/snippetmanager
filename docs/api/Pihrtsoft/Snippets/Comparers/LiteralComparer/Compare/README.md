@@ -25,11 +25,11 @@ public int Compare(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 
 ### Parameters
 
-**x**
+**x** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **y**\.
 
-**y**
+**y** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **x**\.
 
@@ -55,11 +55,11 @@ public int Compare(object x, object y)
 
 ### Parameters
 
-**x**
+**x** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y**
+**y** &emsp; System\.[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 

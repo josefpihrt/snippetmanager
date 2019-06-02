@@ -16,7 +16,7 @@ public SnippetCode(Pihrtsoft.Snippets.Snippet snippet)
 
 ### Parameters
 
-**snippet**
+**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
 
 A snippet
 
