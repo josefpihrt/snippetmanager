@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,6 +16,6 @@ public System.Collections.Generic.IEnumerable<string> Shortcuts()
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 Sequence of all defined shortcut\.

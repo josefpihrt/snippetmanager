@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[AssemblyReference](../README.md)
+**Containing Type**: [AssemblyReference](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

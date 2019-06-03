@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,7 +25,7 @@ public int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 
 ### Parameters
 
-**obj** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**obj** &ensp; [Literal](../../../Literal/README.md)
 
 A literal\.
 
@@ -37,7 +37,7 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IEqualityComparer\<Literal>.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode)
+* [IEqualityComparer\<Literal>.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode)
 
 ## GetHashCode\(Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_GetHashCode_System_Object_"></a>
 
@@ -51,7 +51,7 @@ public int GetHashCode(object obj)
 
 ### Parameters
 
-**obj** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**obj** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object\.
 
@@ -63,4 +63,4 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ### Implements
 
-* System\.Collections\.[IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)
+* [IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)

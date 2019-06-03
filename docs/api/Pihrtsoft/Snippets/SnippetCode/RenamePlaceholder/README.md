@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetCode](../README.md)
+**Containing Type**: [SnippetCode](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,11 +16,11 @@ public string RenamePlaceholder(string oldIdentifier, string newIdentifier)
 
 ### Parameters
 
-**oldIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**oldIdentifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The identifier to be replaced\.
 
-**newIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**newIdentifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The idenfier to replace all occurrences of **oldIdentifier**\.
 

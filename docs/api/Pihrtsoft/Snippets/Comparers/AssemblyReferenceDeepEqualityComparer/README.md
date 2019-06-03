@@ -20,8 +20,8 @@ public class AssemblyReferenceDeepEqualityComparer : System.Collections.Generic.
 
 ### Implements
 
-* System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[AssemblyReference](../../AssemblyReference/README.md)>
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[AssemblyReference](../../AssemblyReference/README.md)>
 
 ## Constructors
 

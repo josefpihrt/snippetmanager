@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[NamespaceValidationRule](../README.md)
+**Containing Type**: [NamespaceValidationRule](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

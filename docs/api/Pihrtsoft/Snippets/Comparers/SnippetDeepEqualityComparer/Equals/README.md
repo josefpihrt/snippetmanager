@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetDeepEqualityComparer](../README.md)
+**Containing Type**: [SnippetDeepEqualityComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,11 +16,11 @@ public override bool Equals(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Sni
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**x** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**y** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 

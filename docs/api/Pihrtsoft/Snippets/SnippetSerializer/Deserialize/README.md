@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetSerializer](../README.md)
+**Containing Type**: [SnippetSerializer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,13 +25,13 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet>
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) that contains snippets to deserialize\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of snippets being deserialized\.
 
@@ -53,16 +53,16 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet>
 
 ### Parameters
 
-**directoryPath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**directoryPath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
-**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
+**searchOption** &ensp; [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 An enumerable collection [Snippet](../../Snippet/README.md) being deserialized\.

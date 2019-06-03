@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralDeepEqualityComparer](../README.md)
+**Containing Type**: [LiteralDeepEqualityComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

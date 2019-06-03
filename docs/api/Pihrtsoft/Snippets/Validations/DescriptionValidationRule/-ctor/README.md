@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[DescriptionValidationRule](../README.md)
+**Containing Type**: [DescriptionValidationRule](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

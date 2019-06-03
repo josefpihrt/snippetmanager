@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,11 +25,11 @@ public bool Equals(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**x** &ensp; [Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**y** &ensp; [Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **x**\.
 
@@ -41,7 +41,7 @@ A [Literal](../../../Literal/README.md) to compare to **x**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IEqualityComparer\<Literal>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)
+* [IEqualityComparer\<Literal>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)
 
 ## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_System_Object_System_Object_"></a>
 
@@ -55,11 +55,11 @@ public bool Equals(object x, object y)
 
 ### Parameters
 
-**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
@@ -71,4 +71,4 @@ An object to compare to **x**\.
 
 ### Implements
 
-* System\.Collections\.[IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)
+* [IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)

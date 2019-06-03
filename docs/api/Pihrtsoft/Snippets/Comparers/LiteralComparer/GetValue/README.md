@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,7 +16,7 @@ protected abstract string GetValue(Pihrtsoft.Snippets.Literal literal)
 
 ### Parameters
 
-**literal** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**literal** &ensp; [Literal](../../../Literal/README.md)
 
 A literal\.
 

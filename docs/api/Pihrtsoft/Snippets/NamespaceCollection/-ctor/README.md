@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[NamespaceCollection](../README.md)
+**Containing Type**: [NamespaceCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

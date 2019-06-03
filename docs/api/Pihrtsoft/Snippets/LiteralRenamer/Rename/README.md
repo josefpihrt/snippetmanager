@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[LiteralRenamer](../README.md)
+**Containing Type**: [LiteralRenamer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,15 +16,15 @@ public static void Rename(Pihrtsoft.Snippets.Snippet snippet, string oldIdentifi
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 [Snippet](../../Snippet/README.md) that contains the literal to rename\.
 
-**oldIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**oldIdentifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Old identifier\.
 
-**newIdentifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**newIdentifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 New identifier\.
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../README.md)
+**Containing Type**: [SnippetComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,11 +25,11 @@ public abstract int Compare(object x, object y)
 
 ### Parameters
 
-**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
@@ -41,7 +41,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ### Implements
 
-* System\.Collections\.[IComparer.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare)
+* [IComparer.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare)
 
 ## Compare\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Compare_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
@@ -55,11 +55,11 @@ public abstract int Compare(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Sni
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**x** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**y** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 
@@ -71,4 +71,4 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IComparer\<Snippet>.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1.compare)
+* [IComparer\<Snippet>.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1.compare)

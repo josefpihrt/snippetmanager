@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[PlaceholderCollection](../README.md)
+**Containing Type**: [PlaceholderCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,6 +16,6 @@ public PlaceholderCollection(System.Collections.Generic.IList<Pihrtsoft.Snippets
 
 ### Parameters
 
-**list** &emsp; System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<Pihrtsoft\.Snippets\.[Placeholder](../../Placeholder/README.md)>
+**list** &ensp; [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<[Placeholder](../../Placeholder/README.md)>
 
 The list to wrap\.

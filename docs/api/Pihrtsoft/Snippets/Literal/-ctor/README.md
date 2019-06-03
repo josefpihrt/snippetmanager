@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Literal](../README.md)
+**Containing Type**: [Literal](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,15 +16,15 @@ public Literal(string identifier, string toolTip = null, string defaultValue = "
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) identifier\.
 
-**toolTip** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**toolTip** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) description\.
 
-**defaultValue** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**defaultValue** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md)default value\.
 

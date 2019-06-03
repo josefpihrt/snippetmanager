@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../README.md)
+**Containing Type**: [SnippetComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,7 +25,7 @@ public abstract int GetHashCode(object obj)
 
 ### Parameters
 
-**obj** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**obj** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object\.
 
@@ -37,7 +37,7 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ### Implements
 
-* System\.Collections\.[IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)
+* [IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)
 
 ## GetHashCode\(Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_Pihrtsoft_Snippets_Snippet_"></a>
 
@@ -51,7 +51,7 @@ public abstract int GetHashCode(Pihrtsoft.Snippets.Snippet obj)
 
 ### Parameters
 
-**obj** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**obj** &ensp; [Snippet](../../../Snippet/README.md)
 
 A snippet\.
 
@@ -63,4 +63,4 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IEqualityComparer\<Snippet>.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode)
+* [IEqualityComparer\<Snippet>.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode)

@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -27,7 +27,7 @@ public void Save(System.IO.Stream stream)
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
@@ -43,11 +43,11 @@ public void Save(System.IO.Stream stream, Pihrtsoft.Snippets.SaveSettings settin
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -63,7 +63,7 @@ public void Save(string filePath)
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
@@ -79,10 +79,10 @@ public void Save(string filePath, Pihrtsoft.Snippets.SaveSettings settings)
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.

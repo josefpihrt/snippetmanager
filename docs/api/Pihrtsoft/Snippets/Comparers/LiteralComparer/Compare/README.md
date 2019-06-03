@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,11 +25,11 @@ public int Compare(Pihrtsoft.Snippets.Literal x, Pihrtsoft.Snippets.Literal y)
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**x** &ensp; [Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**y** &ensp; [Literal](../../../Literal/README.md)
 
 A [Literal](../../../Literal/README.md) to compare to **x**\.
 
@@ -41,7 +41,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IComparer\<Literal>.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1.compare)
+* [IComparer\<Literal>.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1.compare)
 
 ## Compare\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Compare_System_Object_System_Object_"></a>
 
@@ -55,11 +55,11 @@ public int Compare(object x, object y)
 
 ### Parameters
 
-**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
@@ -71,4 +71,4 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ### Implements
 
-* System\.Collections\.[IComparer.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare)
+* [IComparer.Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare)

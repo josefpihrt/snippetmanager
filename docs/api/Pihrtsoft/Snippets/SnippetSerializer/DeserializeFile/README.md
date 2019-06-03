@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetSerializer](../README.md)
+**Containing Type**: [SnippetSerializer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,12 +16,12 @@ public static Pihrtsoft.Snippets.SnippetFile DeserializeFile(string filePath)
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
 ### Returns
 
-Pihrtsoft\.Snippets\.[SnippetFile](../../SnippetFile/README.md)
+[SnippetFile](../../SnippetFile/README.md)
 
 An enumerable collection [Snippet](../../Snippet/README.md) being deserialized\.

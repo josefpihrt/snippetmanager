@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[ShortcutCollection](../README.md)
+**Containing Type**: [ShortcutCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -35,6 +35,6 @@ public void Sort(System.Collections.Generic.IComparer<string> comparer)
 
 ### Parameters
 
-**comparer** &emsp; System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+**comparer** &ensp; [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 The [IComparer\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1) implementation to use when comparing elements\.

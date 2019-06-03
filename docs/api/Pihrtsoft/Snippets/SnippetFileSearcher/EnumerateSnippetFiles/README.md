@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetFileSearcher](../README.md)
+**Containing Type**: [SnippetFileSearcher](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -27,13 +27,13 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPaths** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+**directoryPaths** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 Enumerable collection of absolute or relative paths to the directories to search\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -55,17 +55,17 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPaths** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+**directoryPaths** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 Enumerable collection of absolute or relative paths to the directories to search\.
 
-**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
+**searchOption** &ensp; [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\. The default value is [SearchOption.TopDirectoryOnly](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption.topdirectoryonly)\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -87,13 +87,13 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**directoryPath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 
@@ -115,17 +115,17 @@ public static System.Collections.Generic.IEnumerable<string> EnumerateSnippetFil
 
 ### Parameters
 
-**directoryPath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**directoryPath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the directory to search\.
 
-**searchOption** &emsp; System\.IO\.[SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
+**searchOption** &ensp; [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption)
 
 A [SearchOption](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption) value that specifies whether the search should include all subdirectories or only current directory\. The default value is [SearchOption.TopDirectoryOnly](https://docs.microsoft.com/en-us/dotnet/api/system.io.searchoption.topdirectoryonly)\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 
 An enumerable collection of snippet file names\.
 

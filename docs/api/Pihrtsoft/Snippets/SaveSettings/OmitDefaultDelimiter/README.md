@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SaveSettings](../README.md)
+**Containing Type**: [SaveSettings](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[SnippetValidator](../README.md)
+**Containing Type**: [SnippetValidator](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,6 +16,6 @@ public static Pihrtsoft.Snippets.Validations.SnippetValidator CreateDefaultValid
 
 ### Returns
 
-Pihrtsoft\.Snippets\.Validations\.[SnippetValidator](../README.md)
+[SnippetValidator](../README.md)
 
 [SnippetValidator](../README.md) with predefined validation rules\.

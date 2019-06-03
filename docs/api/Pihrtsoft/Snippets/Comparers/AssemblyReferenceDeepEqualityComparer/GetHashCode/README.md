@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[AssemblyReferenceDeepEqualityComparer](../README.md)
+**Containing Type**: [AssemblyReferenceDeepEqualityComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,7 +16,7 @@ public override int GetHashCode(Pihrtsoft.Snippets.AssemblyReference obj)
 
 ### Parameters
 
-**obj** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
+**obj** &ensp; [AssemblyReference](../../../AssemblyReference/README.md)
 
 An assembly reference\.
 

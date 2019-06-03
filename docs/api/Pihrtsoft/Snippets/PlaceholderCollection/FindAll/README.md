@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[PlaceholderCollection](../README.md)
+**Containing Type**: [PlaceholderCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,12 +16,12 @@ public System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Placeholder> Fi
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A placeholder identifier\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Placeholder](../../Placeholder/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Placeholder](../../Placeholder/README.md)>
 
 Enumerable collection of placeholders with the specified identifier\.

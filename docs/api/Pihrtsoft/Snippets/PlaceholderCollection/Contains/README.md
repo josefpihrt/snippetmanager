@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[PlaceholderCollection](../README.md)
+**Containing Type**: [PlaceholderCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,7 +16,7 @@ public bool Contains(string identifier)
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A [Placeholder.Identifier](../../Placeholder/Identifier/README.md) to search for\.
 

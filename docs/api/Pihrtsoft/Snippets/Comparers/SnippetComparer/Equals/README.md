@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../README.md)
+**Containing Type**: [SnippetComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,11 +25,11 @@ public abstract bool Equals(object x, object y)
 
 ### Parameters
 
-**x** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**x** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **y**\.
 
-**y** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**y** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 An object to compare to **x**\.
 
@@ -41,7 +41,7 @@ An object to compare to **x**\.
 
 ### Implements
 
-* System\.Collections\.[IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)
+* [IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)
 
 ## Equals\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
@@ -55,11 +55,11 @@ public abstract bool Equals(Pihrtsoft.Snippets.Snippet x, Pihrtsoft.Snippets.Sni
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**x** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**y** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 
@@ -71,4 +71,4 @@ A [Snippet](../../../Snippet/README.md) to compare to **x**\.
 
 ### Implements
 
-* System\.Collections\.Generic\.[IEqualityComparer\<Snippet>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)
+* [IEqualityComparer\<Snippet>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)

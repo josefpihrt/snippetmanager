@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[LiteralCollection](../README.md)
+**Containing Type**: [LiteralCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,12 +16,12 @@ public Pihrtsoft.Snippets.Literal Find(string identifier)
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A literal identifier\.
 
 ### Returns
 
-Pihrtsoft\.Snippets\.[Literal](../../Literal/README.md)
+[Literal](../../Literal/README.md)
 
 First found literal with the specified identifier\.

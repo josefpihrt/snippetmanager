@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Literal](../README.md)
+**Containing Type**: [Literal](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,21 +16,21 @@ public static Pihrtsoft.Snippets.Literal CreateClassNameLiteral(string identifie
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) identifier\.
 
-**toolTip** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**toolTip** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) description\.
 
-**defaultValue** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**defaultValue** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md)default value\.
 
 ### Returns
 
-Pihrtsoft\.Snippets\.[Literal](../README.md)
+[Literal](../README.md)
 
 [Literal](../README.md) with function that returns containing type name\.
 

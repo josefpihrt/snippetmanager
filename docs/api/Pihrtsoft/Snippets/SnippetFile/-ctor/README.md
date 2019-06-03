@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetFile](../README.md)
+**Containing Type**: [SnippetFile](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -35,6 +35,6 @@ public SnippetFile(string fullName)
 
 ### Parameters
 
-**fullName** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**fullName** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Full name of the snippet file\.

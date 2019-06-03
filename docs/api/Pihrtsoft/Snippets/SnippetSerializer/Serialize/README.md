@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetSerializer](../README.md)
+**Containing Type**: [SnippetSerializer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -33,7 +33,7 @@ public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile)
 
 ### Parameters
 
-**snippetFile** &emsp; Pihrtsoft\.Snippets\.[SnippetFile](../../SnippetFile/README.md)
+**snippetFile** &ensp; [SnippetFile](../../SnippetFile/README.md)
 
 A snippet file to be serialized\.
 
@@ -55,11 +55,11 @@ public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile, Pihrtso
 
 ### Parameters
 
-**snippetFile** &emsp; Pihrtsoft\.Snippets\.[SnippetFile](../../SnippetFile/README.md)
+**snippetFile** &ensp; [SnippetFile](../../SnippetFile/README.md)
 
 A snippet file to be serialized\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -85,11 +85,11 @@ public static void Serialize(System.IO.Stream stream, System.Collections.Generic
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -105,15 +105,15 @@ public static void Serialize(System.IO.Stream stream, System.Collections.Generic
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -135,11 +135,11 @@ public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -155,15 +155,15 @@ public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet
 
 ### Parameters
 
-**stream** &emsp; System\.IO\.[Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -185,11 +185,11 @@ public static void Serialize(string filePath, System.Collections.Generic.IEnumer
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -205,15 +205,15 @@ public static void Serialize(string filePath, System.Collections.Generic.IEnumer
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
@@ -235,11 +235,11 @@ public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
@@ -255,15 +255,15 @@ public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet
 
 ### Parameters
 
-**filePath** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings** &emsp; Pihrtsoft\.Snippets\.[SaveSettings](../../SaveSettings/README.md)
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 

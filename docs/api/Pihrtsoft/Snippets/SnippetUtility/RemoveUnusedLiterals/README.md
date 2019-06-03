@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetUtility](../README.md)
+**Containing Type**: [SnippetUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,6 +16,6 @@ public static void RemoveUnusedLiterals(Pihrtsoft.Snippets.Snippet snippet)
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 [Snippet](../../Snippet/README.md) to remove literals from\.

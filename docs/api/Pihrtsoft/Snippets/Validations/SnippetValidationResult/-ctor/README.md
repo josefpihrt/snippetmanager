@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../README.md)
+**Containing Type**: [SnippetValidationResult](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,19 +25,19 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../../Snippet/README.md)
 
 A snippet\.
 
-**code** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**code** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**description** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
-**importance** &emsp; Pihrtsoft\.Snippets\.Validations\.[ResultImportance](../../ResultImportance/README.md)
+**importance** &ensp; [ResultImportance](../../ResultImportance/README.md)
 
 Result importance\.
 
@@ -59,23 +59,23 @@ public SnippetValidationResult(Pihrtsoft.Snippets.Snippet snippet, string code, 
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../../Snippet/README.md)
 
 A snippet\.
 
-**code** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**code** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Alphanumeric code the identifies the result\.
 
-**description** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**description** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Result description\.
 
-**importance** &emsp; Pihrtsoft\.Snippets\.Validations\.[ResultImportance](../../ResultImportance/README.md)
+**importance** &ensp; [ResultImportance](../../ResultImportance/README.md)
 
 Result importance\.
 
-**content** &emsp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**content** &ensp; [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 Additional result content\. The value can be `null`\.
 

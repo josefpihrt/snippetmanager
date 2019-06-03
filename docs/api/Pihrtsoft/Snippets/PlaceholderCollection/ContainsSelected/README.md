@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[PlaceholderCollection](../README.md)
+**Containing Type**: [PlaceholderCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

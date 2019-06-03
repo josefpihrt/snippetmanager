@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,5 +16,5 @@ public static Pihrtsoft.Snippets.Comparers.LiteralComparer Identifier { get; }
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+[LiteralComparer](../README.md)
 

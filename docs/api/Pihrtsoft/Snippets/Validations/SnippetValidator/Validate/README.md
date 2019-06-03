@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[SnippetValidator](../README.md)
+**Containing Type**: [SnippetValidator](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -25,13 +25,13 @@ public System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Validations.Sni
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../../Snippet/README.md)
 
 A [Snippet](../../../Snippet/README.md) that is being validated\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stores data about the validation\.
 
@@ -53,13 +53,13 @@ protected virtual System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Vali
 
 ### Parameters
 
-**context** &emsp; Pihrtsoft\.Snippets\.Validations\.[SnippetValidationContext](../../SnippetValidationContext/README.md)
+**context** &ensp; [SnippetValidationContext](../../SnippetValidationContext/README.md)
 
 A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stores data about the validation\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 ### Exceptions
 

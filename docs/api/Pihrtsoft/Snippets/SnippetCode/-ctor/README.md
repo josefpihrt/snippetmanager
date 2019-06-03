@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetCode](../README.md)
+**Containing Type**: [SnippetCode](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,7 +16,7 @@ public SnippetCode(Pihrtsoft.Snippets.Snippet snippet)
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A snippet
 

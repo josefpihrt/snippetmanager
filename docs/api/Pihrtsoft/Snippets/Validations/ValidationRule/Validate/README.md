@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[ValidationRule](../README.md)
+**Containing Type**: [ValidationRule](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,12 +16,12 @@ public abstract System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Valida
 
 ### Parameters
 
-**snippet** &emsp; Pihrtsoft\.Snippets\.[Snippet](../../../Snippet/README.md)
+**snippet** &ensp; [Snippet](../../../Snippet/README.md)
 
 A snippet to be validated\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../../SnippetValidationResult/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[SnippetValidationResult](../../SnippetValidationResult/README.md)>
 
 Enumerable collection of [SnippetValidationResult](../../SnippetValidationResult/README.md)\.

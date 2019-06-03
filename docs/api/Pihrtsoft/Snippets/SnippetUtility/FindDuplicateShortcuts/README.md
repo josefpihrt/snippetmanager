@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetUtility](../README.md)
+**Containing Type**: [SnippetUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,13 +16,13 @@ public static System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Duplicat
 
 ### Parameters
 
-**snippets** &emsp; System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Collection of [Snippet](../../Snippet/README.md)s\.
 
 ### Returns
 
-System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<Pihrtsoft\.Snippets\.[DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md)>
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md)>
 
 Enumerable collection of [DuplicateShortcutInfo](../../DuplicateShortcutInfo/README.md) where each element contains shortcut and snippets with that shortcut\.
 

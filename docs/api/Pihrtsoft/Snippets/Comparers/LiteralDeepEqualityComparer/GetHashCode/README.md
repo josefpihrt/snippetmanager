@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralDeepEqualityComparer](../README.md)
+**Containing Type**: [LiteralDeepEqualityComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,7 +16,7 @@ public override int GetHashCode(Pihrtsoft.Snippets.Literal obj)
 
 ### Parameters
 
-**obj** &emsp; Pihrtsoft\.Snippets\.[Literal](../../../Literal/README.md)
+**obj** &ensp; [Literal](../../../Literal/README.md)
 
 A literal\.
 

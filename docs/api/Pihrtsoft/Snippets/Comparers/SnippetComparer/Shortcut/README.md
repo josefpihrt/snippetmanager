@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../README.md)
+**Containing Type**: [SnippetComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,5 +16,5 @@ public static Pihrtsoft.Snippets.Comparers.SnippetComparer<string> Shortcut { ge
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../../SnippetComparer-1/README.md)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
+[SnippetComparer](../../SnippetComparer-1/README.md)\<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)>
 

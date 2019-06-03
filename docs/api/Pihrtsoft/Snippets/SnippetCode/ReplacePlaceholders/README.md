@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetCode](../README.md)
+**Containing Type**: [SnippetCode](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,11 +16,11 @@ public string ReplacePlaceholders(string identifier, string replacement)
 
 ### Parameters
 
-**identifier** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A placeholder identifier\.
 
-**replacement** &emsp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+**replacement** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The string to replace all occurrences of placeholder with the specified identifier\.
 

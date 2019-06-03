@@ -24,10 +24,10 @@ public abstract class SnippetComparer<T> : Pihrtsoft.Snippets.Comparers.SnippetC
 
 ### Implements
 
-* System\.Collections\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer)
-* System\.Collections\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
-* System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
-* System\.Collections\.Generic\.[IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<Pihrtsoft\.Snippets\.[Snippet](../../Snippet/README.md)>
+* [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer)
+* [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[Snippet](../../Snippet/README.md)>
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer)
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1)\<[Snippet](../../Snippet/README.md)>
 
 ## Constructors
 

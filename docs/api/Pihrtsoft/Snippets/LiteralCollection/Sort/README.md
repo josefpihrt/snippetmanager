@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[LiteralCollection](../README.md)
+**Containing Type**: [LiteralCollection](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -35,6 +35,6 @@ public void Sort(System.Collections.Generic.IComparer<Pihrtsoft.Snippets.Literal
 
 ### Parameters
 
-**comparer** &emsp; System\.Collections\.Generic\.[IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<Pihrtsoft\.Snippets\.[Literal](../../Literal/README.md)>
+**comparer** &ensp; [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1)\<[Literal](../../Literal/README.md)>
 
 The [IComparer\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icomparer-1) implementation to use when comparing elements\.

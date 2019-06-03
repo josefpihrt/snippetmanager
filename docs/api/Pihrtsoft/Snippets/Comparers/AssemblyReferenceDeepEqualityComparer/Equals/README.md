@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[AssemblyReferenceDeepEqualityComparer](../README.md)
+**Containing Type**: [AssemblyReferenceDeepEqualityComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -16,11 +16,11 @@ public override bool Equals(Pihrtsoft.Snippets.AssemblyReference x, Pihrtsoft.Sn
 
 ### Parameters
 
-**x** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
+**x** &ensp; [AssemblyReference](../../../AssemblyReference/README.md)
 
 A [AssemblyReference](../../../AssemblyReference/README.md) to compare to **y**\.
 
-**y** &emsp; Pihrtsoft\.Snippets\.[AssemblyReference](../../../AssemblyReference/README.md)
+**y** &ensp; [AssemblyReference](../../../AssemblyReference/README.md)
 
 A [AssemblyReference](../../../AssemblyReference/README.md) to compare to **x**\.
 
