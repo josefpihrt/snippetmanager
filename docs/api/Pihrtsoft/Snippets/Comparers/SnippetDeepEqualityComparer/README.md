@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a deep comparison for [Snippet](../../Snippet/README.md)\.
 
 ```csharp

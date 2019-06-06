@@ -15,8 +15,7 @@
 
 ## Equals\(Literal, Literal\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_Pihrtsoft_Snippets_Literal_Pihrtsoft_Snippets_Literal_"></a>
 
-### Summary
-
+\
 Indicates whether two literals are equal\.
 
 ```csharp
@@ -45,8 +44,7 @@ A [Literal](../../../Literal/README.md) to compare to **x**\.
 
 ## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Indicates whether two objects are equal\.
 
 ```csharp

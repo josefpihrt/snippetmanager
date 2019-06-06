@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Determines whether the [PlaceholderCollection](../README.md) contains an item with a specified **identifier**\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Initializes a new instance of the [SnippetValidator](../README.md) class\.
 
 ```csharp

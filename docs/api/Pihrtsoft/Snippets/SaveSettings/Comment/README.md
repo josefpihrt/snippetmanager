@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets an XML comment that will be added to the snippet file\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents search pattern for a snippet file\. This field is a constant\.
 
 ```csharp

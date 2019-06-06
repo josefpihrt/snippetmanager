@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets a value indicating whether the current instance has default delimiter\.
 
 ```csharp

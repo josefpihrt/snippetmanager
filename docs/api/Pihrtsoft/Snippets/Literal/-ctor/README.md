@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Initializes a new instance of the [Literal](../README.md) class with a specified identifier, tooltip and default value\.
 
 ```csharp

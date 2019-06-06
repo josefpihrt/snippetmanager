@@ -15,8 +15,7 @@
 
 ## Sort\(\) <a name="Pihrtsoft_Snippets_NamespaceCollection_Sort"></a>
 
-### Summary
-
+\
 Sorts the elements in the entire [NamespaceCollection](../README.md)\.
 
 ```csharp
@@ -25,8 +24,7 @@ public void Sort()
 
 ## Sort\(IComparer\<String>\) <a name="Pihrtsoft_Snippets_NamespaceCollection_Sort_System_Collections_Generic_IComparer_System_String__"></a>
 
-### Summary
-
+\
 Sorts the elements in the entire [NamespaceCollection](../README.md) using the specified comparer\.
 
 ```csharp

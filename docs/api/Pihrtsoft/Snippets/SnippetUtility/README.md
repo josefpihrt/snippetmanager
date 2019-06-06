@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Provides a set of static methods that are related to [Snippet](../Snippet/README.md)\.
 
 ```csharp

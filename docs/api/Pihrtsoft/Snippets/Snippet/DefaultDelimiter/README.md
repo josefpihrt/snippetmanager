@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a default delimiter in a snippet code\. This field is a constant\.
 
 ```csharp

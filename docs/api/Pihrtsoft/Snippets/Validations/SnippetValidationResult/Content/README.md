@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets the additional content of the result\. The value can be `null`\.
 
 ```csharp

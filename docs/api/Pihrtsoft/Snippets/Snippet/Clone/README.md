@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Creates a new [Snippet](../README.md) that is a deep copy of the current instance\.
 
 ```csharp

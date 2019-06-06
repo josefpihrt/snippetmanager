@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Returns snippet shortcut and all alternative shortcuts, if any\.
 
 ```csharp

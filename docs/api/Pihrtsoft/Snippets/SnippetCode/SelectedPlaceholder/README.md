@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets a placeholder with identifier 'selected' or `null` if it is not present\.
 
 ```csharp

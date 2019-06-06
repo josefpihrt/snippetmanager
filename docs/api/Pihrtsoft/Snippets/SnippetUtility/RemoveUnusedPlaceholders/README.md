@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Removes all placeholders that do not have corresponding literal \(literal with same identifier\)\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets a value indicating whether default format version set is when [Snippet.FormatVersion](../../Snippet/FormatVersion/README.md) value is `null`\.
 
 ```csharp

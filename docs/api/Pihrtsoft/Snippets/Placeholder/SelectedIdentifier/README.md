@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents 'selected' identifier\. This field is a constant\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents the set of [Placeholder](../Placeholder/README.md)s\. This collection is read\-only\.
 
 ```csharp

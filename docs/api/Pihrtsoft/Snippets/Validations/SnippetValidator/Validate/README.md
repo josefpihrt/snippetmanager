@@ -15,8 +15,7 @@
 
 ## Validate\(Snippet\) <a name="Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Validates the specified [Snippet](../../../Snippet/README.md) according the the code snippet schema\.
 
 ```csharp
@@ -43,8 +42,7 @@ A [SnippetValidationContext](../../SnippetValidationContext/README.md) that stor
 
 ## Validate\(SnippetValidationContext\) <a name="Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Validations_SnippetValidationContext_"></a>
 
-### Summary
-
+\
 Validates the specified [Snippet](../../../Snippet/README.md) according the the code snippet schema\.
 
 ```csharp

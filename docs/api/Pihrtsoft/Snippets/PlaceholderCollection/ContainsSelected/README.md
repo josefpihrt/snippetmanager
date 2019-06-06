@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Determines whether the [PlaceholderCollection](../README.md) contains an item with identifier equal to [Placeholder.SelectedIdentifier](../../Placeholder/SelectedIdentifier/README.md)\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents code snippet default format version\. This field is read\-only\.
 
 ```csharp

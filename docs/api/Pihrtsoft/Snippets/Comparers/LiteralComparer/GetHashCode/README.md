@@ -15,8 +15,7 @@
 
 ## GetHashCode\(Literal\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_GetHashCode_Pihrtsoft_Snippets_Literal_"></a>
 
-### Summary
-
+\
 Gets the hash code for the specified [Literal](../../../Literal/README.md)\.
 
 ```csharp
@@ -41,8 +40,7 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ## GetHashCode\(Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_GetHashCode_System_Object_"></a>
 
-### Summary
-
+\
 Gets the hash code for the specified literal\.
 
 ```csharp

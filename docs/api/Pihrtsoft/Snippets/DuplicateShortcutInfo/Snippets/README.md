@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets an enumerable collection of snippets with same shortcut\.
 
 ```csharp

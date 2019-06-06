@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents 'end' identifier\. This field is a constant\.
 
 ```csharp

@@ -17,8 +17,7 @@
 
 ## Save\(Stream\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
@@ -33,8 +32,7 @@ The stream to output this [Snippet](../README.md) to\.
 
 ## Save\(Stream, SaveSettings\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally specifying serialization process\.
 
 ```csharp
@@ -53,8 +51,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 ## Save\(String\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_String_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified file\.
 
 ```csharp
@@ -69,8 +66,7 @@ The absolute or relative path to the file\.
 
 ## Save\(String, SaveSettings\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_String_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified file\.
 
 ```csharp

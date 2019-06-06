@@ -15,8 +15,7 @@
 
 ## Compare\(Literal, Literal\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Compare_Pihrtsoft_Snippets_Literal_Pihrtsoft_Snippets_Literal_"></a>
 
-### Summary
-
+\
 Compares two literals and returns an indication of their relative sort order\.
 
 ```csharp
@@ -45,8 +44,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ## Compare\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Compare_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Compares two objects and returns an indication of their relative sort order\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Specifies snippet file extension\. This field is a constant\.
 
 ```csharp

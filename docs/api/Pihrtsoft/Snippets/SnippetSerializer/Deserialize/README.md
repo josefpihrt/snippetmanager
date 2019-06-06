@@ -15,8 +15,7 @@
 
 ## Deserialize\(Stream\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_IO_Stream_"></a>
 
-### Summary
-
+\
 Returns enumerable collection of [Snippet](../../Snippet/README.md) contained by a specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
@@ -43,8 +42,7 @@ Enumerable collection of snippets being deserialized\.
 
 ## Deserialize\(String, SearchOption\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_String_System_IO_SearchOption_"></a>
 
-### Summary
-
+\
 Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from snippet files in a specified directory\.
 
 ```csharp

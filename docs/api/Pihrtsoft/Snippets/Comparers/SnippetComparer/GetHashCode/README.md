@@ -15,8 +15,7 @@
 
 ## GetHashCode\(Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_System_Object_"></a>
 
-### Summary
-
+\
 Gets the hash code for the specified object\.
 
 ```csharp
@@ -41,8 +40,7 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 ## GetHashCode\(Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Gets the hash code for the specified [Snippet](../../../Snippet/README.md)\.
 
 ```csharp

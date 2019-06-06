@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets the [SnippetValidationResult.Snippet](./README.md) the is the source of the result\.
 
 ```csharp

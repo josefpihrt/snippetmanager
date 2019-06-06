@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Initializes a new instance of the [PlaceholderCollection](../README.md) class that is a read\-only wrapper around the specified list\.
 
 ```csharp

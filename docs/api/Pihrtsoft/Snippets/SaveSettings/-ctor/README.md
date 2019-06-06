@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Initializes a new instance of the [SaveSettings](../README.md) class\.
 
 ```csharp

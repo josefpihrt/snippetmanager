@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents the set of [Snippet](../Snippet/README.md)s\.
 
 ```csharp

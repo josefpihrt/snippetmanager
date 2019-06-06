@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Validates a specified snippet and returns enumerable collection of [SnippetValidationResult](../../SnippetValidationResult/README.md)\.
 
 ```csharp

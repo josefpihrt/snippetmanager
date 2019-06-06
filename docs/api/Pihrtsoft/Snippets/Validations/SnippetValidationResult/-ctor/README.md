@@ -15,8 +15,7 @@
 
 ## SnippetValidationResult\(Snippet, String, String, ResultImportance\) <a name="Pihrtsoft_Snippets_Validations_SnippetValidationResult__ctor_Pihrtsoft_Snippets_Snippet_System_String_System_String_Pihrtsoft_Snippets_Validations_ResultImportance_"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [SnippetValidationResult](../README.md) class using the specified snippet, code, description a and importance\.
 
 ```csharp
@@ -49,8 +48,7 @@ Result importance\.
 
 ## SnippetValidationResult\(Snippet, String, String, ResultImportance, Object\) <a name="Pihrtsoft_Snippets_Validations_SnippetValidationResult__ctor_Pihrtsoft_Snippets_Snippet_System_String_System_String_Pihrtsoft_Snippets_Validations_ResultImportance_System_Object_"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [SnippetValidationResult](../README.md) class using the specified snippet, code, description, importance and content\.
 
 ```csharp

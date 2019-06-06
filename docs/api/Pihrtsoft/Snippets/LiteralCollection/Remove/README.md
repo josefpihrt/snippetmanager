@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Removes the first occurrence of a literal with a specific identifier
 
 ```csharp

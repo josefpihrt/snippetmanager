@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Raises the [Snippet.TextChanged](../TextChanged/README.md) event\.
 
 ```csharp

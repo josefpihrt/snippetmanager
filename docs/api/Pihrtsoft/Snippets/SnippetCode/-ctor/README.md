@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Initializes a new instance of the [SnippetCode](../README.md) class with the specified snippet\.
 
 ```csharp

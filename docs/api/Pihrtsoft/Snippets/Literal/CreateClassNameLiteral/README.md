@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Create new [Literal](../README.md) with function that returns containing type name\.
 
 ```csharp

@@ -15,8 +15,7 @@
 
 ## SnippetCollection\(\) <a name="Pihrtsoft_Snippets_SnippetCollection__ctor"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [SnippetCollection](../README.md) class that is empty\.
 
 ```csharp
@@ -25,8 +24,7 @@ public SnippetCollection()
 
 ## SnippetCollection\(IList\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetCollection__ctor_System_Collections_Generic_IList_Pihrtsoft_Snippets_Snippet__"></a>
 
-### Summary
-
+\
 Initializes a new instance of the [SnippetCollection](../README.md) class as a wrapper for the specified list\.
 
 ```csharp

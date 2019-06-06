@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets the hash code for the specified [Literal](../../../Literal/README.md)\.
 
 ```csharp

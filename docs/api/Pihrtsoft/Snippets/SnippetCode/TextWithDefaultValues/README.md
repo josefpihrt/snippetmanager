@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets snippet text where placeholders are replaced with matching literal's value\.
 System placeholders and placeholders which do not have matching literal are removed\.
 

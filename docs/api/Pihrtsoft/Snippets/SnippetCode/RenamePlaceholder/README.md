@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Returns a new string in which all occurrences of a specified identifier in the current instance are replaced with another specified identifier\.
 
 ```csharp

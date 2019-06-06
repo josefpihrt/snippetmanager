@@ -15,8 +15,7 @@
 
 ## Compare\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Compare_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Compares two objects and returns an indication of their relative sort order\.
 
 ```csharp
@@ -41,8 +40,7 @@ A signed integer that indicates the relative values of **x** and **y**\.
 
 ## Compare\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Compare_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Compares two snippets and returns an indication of their relative sort order\.
 
 ```csharp

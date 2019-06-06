@@ -15,8 +15,7 @@
 
 ## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_System_Object_System_Object_"></a>
 
-### Summary
-
+\
 Indicates whether two objects are equal\.
 
 ```csharp
@@ -45,8 +44,7 @@ An object to compare to **x**\.
 
 ## Equals\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Indicates whether two snippets are equal\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Specifies programming language of a [Snippet](../Snippet/README.md)\.
 
 ```csharp

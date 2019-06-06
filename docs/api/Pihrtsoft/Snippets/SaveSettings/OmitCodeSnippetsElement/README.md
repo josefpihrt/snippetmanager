@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets a value indicating whether to write 'CodeSnippets' XML element\. This option is relevant only if a single snippet is saved to a file\.
 
 ```csharp

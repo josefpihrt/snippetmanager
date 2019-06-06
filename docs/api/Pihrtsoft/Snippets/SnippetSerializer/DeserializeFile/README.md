@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from a specified snippet file\.
 
 ```csharp

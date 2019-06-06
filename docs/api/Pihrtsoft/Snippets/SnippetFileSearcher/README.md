@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Provides a set of static methods that searches for snippet files\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Creates [SnippetValidator](../README.md) that contains validation rules defines in [Validations](../../README.md) namespace\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Defines an importance of [SnippetValidationResult](../SnippetValidationResult/README.md)\.
 
 ```csharp

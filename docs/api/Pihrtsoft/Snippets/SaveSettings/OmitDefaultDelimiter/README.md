@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets a value indicating whether Delimiter attribute with value equal to [Snippet.DefaultDelimiter](../../Snippet/DefaultDelimiter/README.md) will be omitted\. Default value is `true`\.
 
 ```csharp

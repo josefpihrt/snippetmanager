@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Determines whether a [Literal](../../Literal/README.md) with a specified identifier is in the [LiteralCollection](../README.md)\.
 
 ```csharp

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents the rule for a [Snippet](../../Snippet/README.md) validation\. This class is abstract\.
 
 ```csharp

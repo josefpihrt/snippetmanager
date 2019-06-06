@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Returns a new [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) where all placeholders with the specified identifier are replaced\. Escaped $ characters are left intact\.
 
 ```csharp

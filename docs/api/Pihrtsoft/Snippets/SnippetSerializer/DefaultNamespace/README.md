@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents code snippet default xml namespace\. This field is a constant\.
 
 ```csharp

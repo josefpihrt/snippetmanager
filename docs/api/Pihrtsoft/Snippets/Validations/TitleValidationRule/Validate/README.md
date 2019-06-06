@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Validates a title of the specified [Snippet](../../../Snippet/README.md)\.
 
 ```csharp

@@ -17,8 +17,7 @@
 
 ## EnumerateSnippetFiles\(IEnumerable\<String>\) <a name="Pihrtsoft_Snippets_SnippetFileSearcher_EnumerateSnippetFiles_System_Collections_Generic_IEnumerable_System_String__"></a>
 
-### Summary
-
+\
 Returns enumerable collection of snippet file names from a specified directories\.
 
 ```csharp
@@ -45,8 +44,7 @@ An enumerable collection of snippet file names\.
 
 ## EnumerateSnippetFiles\(IEnumerable\<String>, SearchOption\) <a name="Pihrtsoft_Snippets_SnippetFileSearcher_EnumerateSnippetFiles_System_Collections_Generic_IEnumerable_System_String__System_IO_SearchOption_"></a>
 
-### Summary
-
+\
 Returns enumerable collection of snippet file names from a specified directories, optionally searching subdirectories\.
 
 ```csharp
@@ -77,8 +75,7 @@ An enumerable collection of snippet file names\.
 
 ## EnumerateSnippetFiles\(String\) <a name="Pihrtsoft_Snippets_SnippetFileSearcher_EnumerateSnippetFiles_System_String_"></a>
 
-### Summary
-
+\
 Returns enumerable collection of snippet file names from a specified directory\.
 
 ```csharp
@@ -105,8 +102,7 @@ An enumerable collection of snippet file names\.
 
 ## EnumerateSnippetFiles\(String, SearchOption\) <a name="Pihrtsoft_Snippets_SnippetFileSearcher_EnumerateSnippetFiles_System_String_System_IO_SearchOption_"></a>
 
-### Summary
-
+\
 Returns enumerable collection of snippet file names from a specified directory, optionally searching subdirectories\.
 
 ```csharp

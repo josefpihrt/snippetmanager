@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Renames snippet literal including its occurrences in the code\.
 
 ```csharp

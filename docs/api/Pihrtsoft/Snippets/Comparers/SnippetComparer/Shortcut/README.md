@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets a [SnippetComparer\<T>](../../SnippetComparer-1/README.md) that performs a case\-sensitive ordinal [Snippet.Shortcut](../../../Snippet/Shortcut/README.md) comparison\.
 
 ```csharp

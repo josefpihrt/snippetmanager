@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a context that is used during [Snippet](../../Snippet/README.md) validation\.
 
 ```csharp

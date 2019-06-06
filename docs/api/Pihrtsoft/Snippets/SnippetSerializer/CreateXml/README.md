@@ -17,8 +17,7 @@
 
 ## CreateXml\(IEnumerable\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetSerializer_CreateXml_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to text\.
 
 ```csharp
@@ -39,8 +38,7 @@ XML text that represents a specified collection of [Snippet](../../Snippet/READM
 
 ## CreateXml\(IEnumerable\<Snippet>, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_CreateXml_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to text, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
@@ -71,8 +69,7 @@ XML text that represents a specified collection of [Snippet](../../Snippet/READM
 
 ## CreateXml\(Snippet\) <a name="Pihrtsoft_Snippets_SnippetSerializer_CreateXml_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Serializes a specified [Snippet](../../Snippet/README.md) to xml text\.
 
 ```csharp
@@ -93,8 +90,7 @@ XML text that represents a specified [Snippet](../../Snippet/README.md)\.
 
 ## CreateXml\(Snippet, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_CreateXml_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes a specified [Snippet](../../Snippet/README.md) to xml text, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
