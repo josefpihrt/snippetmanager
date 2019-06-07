@@ -55,4 +55,3 @@ public abstract class ValidationRule
 * [ShortcutValidationRule](../ShortcutValidationRule/README.md)
 * [SnippetTypeValidationRule](../SnippetTypeValidationRule/README.md)
 * [TitleValidationRule](../TitleValidationRule/README.md)
-
