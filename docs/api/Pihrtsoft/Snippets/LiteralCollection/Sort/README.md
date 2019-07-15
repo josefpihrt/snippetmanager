@@ -13,7 +13,7 @@
 | [Sort()](#Pihrtsoft_Snippets_LiteralCollection_Sort) | Sorts the elements in the entire [LiteralCollection](../README.md) using the [LiteralComparer.Identifier](../../Comparers/LiteralComparer/Identifier/README.md) comparer\. |
 | [Sort(IComparer\<Literal>)](#Pihrtsoft_Snippets_LiteralCollection_Sort_System_Collections_Generic_IComparer_Pihrtsoft_Snippets_Literal__) | Sorts the elements in the entire [LiteralCollection](../README.md) using the specified comparer\. |
 
-## Sort\(\) <a name="Pihrtsoft_Snippets_LiteralCollection_Sort"></a>
+## Sort\(\) <a id="Pihrtsoft_Snippets_LiteralCollection_Sort"></a>
 
 \
 Sorts the elements in the entire [LiteralCollection](../README.md) using the [LiteralComparer.Identifier](../../Comparers/LiteralComparer/Identifier/README.md) comparer\.
@@ -22,7 +22,7 @@ Sorts the elements in the entire [LiteralCollection](../README.md) using the [Li
 public void Sort()
 ```
 
-## Sort\(IComparer\<Literal>\) <a name="Pihrtsoft_Snippets_LiteralCollection_Sort_System_Collections_Generic_IComparer_Pihrtsoft_Snippets_Literal__"></a>
+## Sort\(IComparer\<Literal>\) <a id="Pihrtsoft_Snippets_LiteralCollection_Sort_System_Collections_Generic_IComparer_Pihrtsoft_Snippets_Literal__"></a>
 
 \
 Sorts the elements in the entire [LiteralCollection](../README.md) using the specified comparer\.

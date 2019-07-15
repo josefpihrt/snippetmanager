@@ -13,7 +13,7 @@
 | [Deserialize(Stream)](#Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_IO_Stream_) | Returns enumerable collection of [Snippet](../../Snippet/README.md) contained by a specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\. |
 | [Deserialize(String, SearchOption)](#Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_String_System_IO_SearchOption_) | Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from snippet files in a specified directory\. |
 
-## Deserialize\(Stream\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_IO_Stream_"></a>
+## Deserialize\(Stream\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_IO_Stream_"></a>
 
 \
 Returns enumerable collection of [Snippet](../../Snippet/README.md) contained by a specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
@@ -40,7 +40,7 @@ Enumerable collection of snippets being deserialized\.
 
 **stream** is `null`\.
 
-## Deserialize\(String, SearchOption\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_String_System_IO_SearchOption_"></a>
+## Deserialize\(String, SearchOption\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Deserialize_System_String_System_IO_SearchOption_"></a>
 
 \
 Returns enumerable collection of [Snippet](../../Snippet/README.md) deserialized from snippet files in a specified directory\.

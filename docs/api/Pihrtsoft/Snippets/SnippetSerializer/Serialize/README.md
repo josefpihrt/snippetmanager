@@ -21,7 +21,7 @@
 | [Serialize(String, Snippet)](#Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_) | Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file\. |
 | [Serialize(String, Snippet, SaveSettings)](#Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_) | Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\. |
 
-## Serialize\(SnippetFile\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_"></a>
+## Serialize\(SnippetFile\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_"></a>
 
 \
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file\.
@@ -42,7 +42,7 @@ A snippet file to be serialized\.
 
 **snippetFile** is `null`\.
 
-## Serialize\(SnippetFile, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(SnippetFile, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_Pihrtsoft_Snippets_SaveSettings_"></a>
 
 \
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
@@ -71,7 +71,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 **settings** is `null`\.
 
-## Serialize\(Stream, IEnumerable\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
+## Serialize\(Stream, IEnumerable\<Snippet>\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
 
 \
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
@@ -90,7 +90,7 @@ The stream to output this [Snippet](../../Snippet/README.md) to\.
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(Stream, IEnumerable\<Snippet>, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(Stream, IEnumerable\<Snippet>, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
 
 \
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
@@ -119,7 +119,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 **stream** or **snippets** or **settings** is `null`\.
 
-## Serialize\(Stream, Snippet\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_"></a>
+## Serialize\(Stream, Snippet\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_"></a>
 
 \
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
@@ -138,7 +138,7 @@ The stream to output this [Snippet](../../Snippet/README.md) to\.
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(Stream, Snippet, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(Stream, Snippet, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
 
 \
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
@@ -167,7 +167,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 **stream** or **snippet** or **settings** is `null`\.
 
-## Serialize\(String, IEnumerable\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
+## Serialize\(String, IEnumerable\<Snippet>\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
 
 \
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file\.
@@ -186,7 +186,7 @@ The absolute or relative path to the file\.
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(String, IEnumerable\<Snippet>, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(String, IEnumerable\<Snippet>, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
 
 \
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
@@ -215,7 +215,7 @@ A [SaveSettings](../../SaveSettings/README.md) that modify serialization process
 
 **filePath** or **snippets** or **settings** is `null`\.
 
-## Serialize\(String, Snippet\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_"></a>
+## Serialize\(String, Snippet\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_"></a>
 
 \
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file\.
@@ -234,7 +234,7 @@ The absolute or relative path to the file\.
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(String, Snippet, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(String, Snippet, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
 
 \
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.

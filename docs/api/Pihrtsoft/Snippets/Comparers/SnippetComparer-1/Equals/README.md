@@ -13,7 +13,7 @@
 | [Equals(Object, Object)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_System_Object_System_Object_) | Indicates whether two objects are equal\. \(Overrides [SnippetComparer.Equals](../../SnippetComparer/Equals/README.md#Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_System_Object_System_Object_)\) |
 | [Equals(Snippet, Snippet)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_) | Indicates whether two snippets are equal\. \(Overrides [SnippetComparer.Equals](../../SnippetComparer/Equals/README.md#Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_)\) |
 
-## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_System_Object_System_Object_"></a>
+## Equals\(Object, Object\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_System_Object_System_Object_"></a>
 
 \
 Indicates whether two objects are equal\.
@@ -38,7 +38,7 @@ An object to compare to **x**\.
 
 `true` if **x** and **y** refer to the same object, or **x** and **y** are both the same type of object and those objects are equal; otherwise, `false`\.
 
-## Equals\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
+## Equals\(Snippet, Snippet\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_1_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
 \
 Indicates whether two snippets are equal\.

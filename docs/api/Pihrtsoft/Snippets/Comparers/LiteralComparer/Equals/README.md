@@ -13,7 +13,7 @@
 | [Equals(Literal, Literal)](#Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_Pihrtsoft_Snippets_Literal_Pihrtsoft_Snippets_Literal_) | Indicates whether two literals are equal\. \(Implements [IEqualityComparer\<Literal>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)\) |
 | [Equals(Object, Object)](#Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_System_Object_System_Object_) | Indicates whether two objects are equal\. \(Implements [IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)\) |
 
-## Equals\(Literal, Literal\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_Pihrtsoft_Snippets_Literal_Pihrtsoft_Snippets_Literal_"></a>
+## Equals\(Literal, Literal\) <a id="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_Pihrtsoft_Snippets_Literal_Pihrtsoft_Snippets_Literal_"></a>
 
 \
 Indicates whether two literals are equal\.
@@ -42,7 +42,7 @@ A [Literal](../../../Literal/README.md) to compare to **x**\.
 
 * [IEqualityComparer\<Literal>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)
 
-## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_System_Object_System_Object_"></a>
+## Equals\(Object, Object\) <a id="Pihrtsoft_Snippets_Comparers_LiteralComparer_Equals_System_Object_System_Object_"></a>
 
 \
 Indicates whether two objects are equal\.

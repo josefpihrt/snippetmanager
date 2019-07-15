@@ -13,7 +13,7 @@
 | [GetHashCode(Object)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_System_Object_) | Gets the hash code for the specified object\. \(Implements [IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)\) |
 | [GetHashCode(Snippet)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_Pihrtsoft_Snippets_Snippet_) | Gets the hash code for the specified [Snippet](../../../Snippet/README.md)\. \(Implements [IEqualityComparer\<Snippet>.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.gethashcode)\) |
 
-## GetHashCode\(Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_System_Object_"></a>
+## GetHashCode\(Object\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_System_Object_"></a>
 
 \
 Gets the hash code for the specified object\.
@@ -38,7 +38,7 @@ A 32\-bit signed hash code calculated from the value of the **obj**\.
 
 * [IEqualityComparer.GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.gethashcode)
 
-## GetHashCode\(Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_Pihrtsoft_Snippets_Snippet_"></a>
+## GetHashCode\(Snippet\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_GetHashCode_Pihrtsoft_Snippets_Snippet_"></a>
 
 \
 Gets the hash code for the specified [Snippet](../../../Snippet/README.md)\.

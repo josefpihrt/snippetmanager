@@ -13,7 +13,7 @@
 | [Equals(Object, Object)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_System_Object_System_Object_) | Indicates whether two objects are equal\. \(Implements [IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)\) |
 | [Equals(Snippet, Snippet)](#Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_) | Indicates whether two snippets are equal\. \(Implements [IEqualityComparer\<Snippet>.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iequalitycomparer-1.equals)\) |
 
-## Equals\(Object, Object\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_System_Object_System_Object_"></a>
+## Equals\(Object, Object\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_System_Object_System_Object_"></a>
 
 \
 Indicates whether two objects are equal\.
@@ -42,7 +42,7 @@ An object to compare to **x**\.
 
 * [IEqualityComparer.Equals](https://docs.microsoft.com/en-us/dotnet/api/system.collections.iequalitycomparer.equals)
 
-## Equals\(Snippet, Snippet\) <a name="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
+## Equals\(Snippet, Snippet\) <a id="Pihrtsoft_Snippets_Comparers_SnippetComparer_Equals_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_Snippet_"></a>
 
 \
 Indicates whether two snippets are equal\.

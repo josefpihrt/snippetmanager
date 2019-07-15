@@ -13,7 +13,7 @@
 | [Sort()](#Pihrtsoft_Snippets_KeywordCollection_Sort) | Sorts the elements in the entire [KeywordCollection](../README.md)\. |
 | [Sort(IComparer\<String>)](#Pihrtsoft_Snippets_KeywordCollection_Sort_System_Collections_Generic_IComparer_System_String__) | Sorts the elements in the entire [KeywordCollection](../README.md) using the specified comparer\. |
 
-## Sort\(\) <a name="Pihrtsoft_Snippets_KeywordCollection_Sort"></a>
+## Sort\(\) <a id="Pihrtsoft_Snippets_KeywordCollection_Sort"></a>
 
 \
 Sorts the elements in the entire [KeywordCollection](../README.md)\.
@@ -22,7 +22,7 @@ Sorts the elements in the entire [KeywordCollection](../README.md)\.
 public void Sort()
 ```
 
-## Sort\(IComparer\<String>\) <a name="Pihrtsoft_Snippets_KeywordCollection_Sort_System_Collections_Generic_IComparer_System_String__"></a>
+## Sort\(IComparer\<String>\) <a id="Pihrtsoft_Snippets_KeywordCollection_Sort_System_Collections_Generic_IComparer_System_String__"></a>
 
 \
 Sorts the elements in the entire [KeywordCollection](../README.md) using the specified comparer\.

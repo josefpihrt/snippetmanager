@@ -10,43 +10,43 @@
 
 ## Class Hierarchy
 
-* \([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\)
-* &emsp; [AssemblyReference](Pihrtsoft/Snippets/AssemblyReference/README.md)
-* &emsp; \([Collection\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.collection-1)\)
-* &emsp; \| &emsp; [KeywordCollection](Pihrtsoft/Snippets/KeywordCollection/README.md)
-* &emsp; \| &emsp; [LiteralCollection](Pihrtsoft/Snippets/LiteralCollection/README.md)
-* &emsp; \| &emsp; [NamespaceCollection](Pihrtsoft/Snippets/NamespaceCollection/README.md)
-* &emsp; \| &emsp; [ShortcutCollection](Pihrtsoft/Snippets/ShortcutCollection/README.md)
-* &emsp; \| &emsp; [SnippetCollection](Pihrtsoft/Snippets/SnippetCollection/README.md)
-* &emsp; [DuplicateShortcutInfo](Pihrtsoft/Snippets/DuplicateShortcutInfo/README.md)
-* &emsp; \([EqualityComparer\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.equalitycomparer-1)\)
-* &emsp; \| &emsp; [AssemblyReferenceDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/AssemblyReferenceDeepEqualityComparer/README.md)
-* &emsp; \| &emsp; [LiteralDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/LiteralDeepEqualityComparer/README.md)
-* &emsp; \| &emsp; [SnippetDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/SnippetDeepEqualityComparer/README.md)
-* &emsp; [Literal](Pihrtsoft/Snippets/Literal/README.md)
-* &emsp; [LiteralComparer](Pihrtsoft/Snippets/Comparers/LiteralComparer/README.md)
-* &emsp; [Placeholder](Pihrtsoft/Snippets/Placeholder/README.md)
-* &emsp; \([ReadOnlyCollection\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1)\)
-* &emsp; \| &emsp; [PlaceholderCollection](Pihrtsoft/Snippets/PlaceholderCollection/README.md)
-* &emsp; [SaveSettings](Pihrtsoft/Snippets/SaveSettings/README.md)
-* &emsp; [Snippet](Pihrtsoft/Snippets/Snippet/README.md)
-* &emsp; [SnippetCode](Pihrtsoft/Snippets/SnippetCode/README.md)
-* &emsp; [SnippetComparer](Pihrtsoft/Snippets/Comparers/SnippetComparer/README.md)
-* &emsp; \| &emsp; [SnippetComparer\<T>](Pihrtsoft/Snippets/Comparers/SnippetComparer-1/README.md)
-* &emsp; [SnippetFile](Pihrtsoft/Snippets/SnippetFile/README.md)
-* &emsp; [SnippetValidationContext](Pihrtsoft/Snippets/Validations/SnippetValidationContext/README.md)
-* &emsp; [SnippetValidationResult](Pihrtsoft/Snippets/Validations/SnippetValidationResult/README.md)
-* &emsp; [SnippetValidator](Pihrtsoft/Snippets/Validations/SnippetValidator/README.md)
-* &emsp; [ValidationRule](Pihrtsoft/Snippets/Validations/ValidationRule/README.md)
-* &emsp; \| &emsp; [AssemblyReferenceValidationRule](Pihrtsoft/Snippets/Validations/AssemblyReferenceValidationRule/README.md)
-* &emsp; \| &emsp; [CodeValidationRule](Pihrtsoft/Snippets/Validations/CodeValidationRule/README.md)
-* &emsp; \| &emsp; [DescriptionValidationRule](Pihrtsoft/Snippets/Validations/DescriptionValidationRule/README.md)
-* &emsp; \| &emsp; [FormatVersionValidationRule](Pihrtsoft/Snippets/Validations/FormatVersionValidationRule/README.md)
-* &emsp; \| &emsp; [LiteralValidationRule](Pihrtsoft/Snippets/Validations/LiteralValidationRule/README.md)
-* &emsp; \| &emsp; [NamespaceValidationRule](Pihrtsoft/Snippets/Validations/NamespaceValidationRule/README.md)
-* &emsp; \| &emsp; [ShortcutValidationRule](Pihrtsoft/Snippets/Validations/ShortcutValidationRule/README.md)
-* &emsp; \| &emsp; [SnippetTypeValidationRule](Pihrtsoft/Snippets/Validations/SnippetTypeValidationRule/README.md)
-* &emsp; \| &emsp; [TitleValidationRule](Pihrtsoft/Snippets/Validations/TitleValidationRule/README.md)
+* &ensp; \([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\)<a id="class-hierarchy-System_Object"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [AssemblyReference](Pihrtsoft/Snippets/AssemblyReference/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_AssemblyReference"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; \([Collection\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.collection-1)\)<a id="class-hierarchy-System_Collections_ObjectModel_Collection_1"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_Collection_1 "Collection<T>") &ensp; [KeywordCollection](Pihrtsoft/Snippets/KeywordCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_KeywordCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_Collection_1 "Collection<T>") &ensp; [LiteralCollection](Pihrtsoft/Snippets/LiteralCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_LiteralCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_Collection_1 "Collection<T>") &ensp; [NamespaceCollection](Pihrtsoft/Snippets/NamespaceCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_NamespaceCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_Collection_1 "Collection<T>") &ensp; [ShortcutCollection](Pihrtsoft/Snippets/ShortcutCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_ShortcutCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_Collection_1 "Collection<T>") &ensp; [SnippetCollection](Pihrtsoft/Snippets/SnippetCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_SnippetCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [DuplicateShortcutInfo](Pihrtsoft/Snippets/DuplicateShortcutInfo/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_DuplicateShortcutInfo"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; \([EqualityComparer\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.equalitycomparer-1)\)<a id="class-hierarchy-System_Collections_Generic_EqualityComparer_1"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_Generic_EqualityComparer_1 "EqualityComparer<T>") &ensp; [AssemblyReferenceDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/AssemblyReferenceDeepEqualityComparer/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_AssemblyReferenceDeepEqualityComparer"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_Generic_EqualityComparer_1 "EqualityComparer<T>") &ensp; [LiteralDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/LiteralDeepEqualityComparer/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_LiteralDeepEqualityComparer"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_Generic_EqualityComparer_1 "EqualityComparer<T>") &ensp; [SnippetDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/SnippetDeepEqualityComparer/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_SnippetDeepEqualityComparer"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [Literal](Pihrtsoft/Snippets/Literal/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Literal"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [LiteralComparer](Pihrtsoft/Snippets/Comparers/LiteralComparer/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_LiteralComparer"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [Placeholder](Pihrtsoft/Snippets/Placeholder/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Placeholder"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; \([ReadOnlyCollection\<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlycollection-1)\)<a id="class-hierarchy-System_Collections_ObjectModel_ReadOnlyCollection_1"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-System_Collections_ObjectModel_ReadOnlyCollection_1 "ReadOnlyCollection<T>") &ensp; [PlaceholderCollection](Pihrtsoft/Snippets/PlaceholderCollection/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_PlaceholderCollection"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SaveSettings](Pihrtsoft/Snippets/SaveSettings/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_SaveSettings"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [Snippet](Pihrtsoft/Snippets/Snippet/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Snippet"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetCode](Pihrtsoft/Snippets/SnippetCode/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_SnippetCode"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetComparer](Pihrtsoft/Snippets/Comparers/SnippetComparer/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_SnippetComparer"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Comparers_SnippetComparer "SnippetComparer") &ensp; [SnippetComparer\<T>](Pihrtsoft/Snippets/Comparers/SnippetComparer-1/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Comparers_SnippetComparer_1"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetFile](Pihrtsoft/Snippets/SnippetFile/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_SnippetFile"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetValidationContext](Pihrtsoft/Snippets/Validations/SnippetValidationContext/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_SnippetValidationContext"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetValidationResult](Pihrtsoft/Snippets/Validations/SnippetValidationResult/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_SnippetValidationResult"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [SnippetValidator](Pihrtsoft/Snippets/Validations/SnippetValidator/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_SnippetValidator"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [ValidationRule](Pihrtsoft/Snippets/Validations/ValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [AssemblyReferenceValidationRule](Pihrtsoft/Snippets/Validations/AssemblyReferenceValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_AssemblyReferenceValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [CodeValidationRule](Pihrtsoft/Snippets/Validations/CodeValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_CodeValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [DescriptionValidationRule](Pihrtsoft/Snippets/Validations/DescriptionValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_DescriptionValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [FormatVersionValidationRule](Pihrtsoft/Snippets/Validations/FormatVersionValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_FormatVersionValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [LiteralValidationRule](Pihrtsoft/Snippets/Validations/LiteralValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_LiteralValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [NamespaceValidationRule](Pihrtsoft/Snippets/Validations/NamespaceValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_NamespaceValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [ShortcutValidationRule](Pihrtsoft/Snippets/Validations/ShortcutValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_ShortcutValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [SnippetTypeValidationRule](Pihrtsoft/Snippets/Validations/SnippetTypeValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_SnippetTypeValidationRule"></a>
+* &ensp; [&bull;](#class-hierarchy-System_Object "Object") &ensp; [&bull;](#class-hierarchy-Pihrtsoft_Snippets_Validations_ValidationRule "ValidationRule") &ensp; [TitleValidationRule](Pihrtsoft/Snippets/Validations/TitleValidationRule/README.md)<a id="class-hierarchy-Pihrtsoft_Snippets_Validations_TitleValidationRule"></a>
 
 ## [Pihrtsoft.Snippets](Pihrtsoft/Snippets/README.md) Namespace
 
