@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -15,46 +15,43 @@
 | [Save(String)](#Pihrtsoft_Snippets_Snippet_Save_System_String_) | Serializes the current instance to the specified file\. |
 | [Save(String, SaveSettings)](#Pihrtsoft_Snippets_Snippet_Save_System_String_Pihrtsoft_Snippets_SaveSettings_) | Serializes the current instance to the specified file\. |
 
-## Save\(Stream\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_"></a>
+## Save\(Stream\) <a id="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public void Save(Stream stream)
+public void Save(System.IO.Stream stream)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
-## Save\(Stream, SaveSettings\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Save\(Stream, SaveSettings\) <a id="Pihrtsoft_Snippets_Snippet_Save_System_IO_Stream_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally specifying serialization process\.
 
 ```csharp
-public void Save(Stream stream, SaveSettings settings)
+public void Save(System.IO.Stream stream, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../README.md) to\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
-## Save\(String\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_String_"></a>
+## Save\(String\) <a id="Pihrtsoft_Snippets_Snippet_Save_System_String_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified file\.
 
 ```csharp
@@ -63,26 +60,25 @@ public void Save(string filePath)
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-## Save\(String, SaveSettings\) <a name="Pihrtsoft_Snippets_Snippet_Save_System_String_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Save\(String, SaveSettings\) <a id="Pihrtsoft_Snippets_Snippet_Save_System_String_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the current instance to the specified file\.
 
 ```csharp
-public void Save(string filePath, SaveSettings settings)
+public void Save(string filePath, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.

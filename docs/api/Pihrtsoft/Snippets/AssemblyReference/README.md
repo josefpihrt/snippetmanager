@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a reference to the assembly\.
 
 ```csharp
-public class AssemblyReference : System.ICloneable
+public class AssemblyReference : ICloneable
 ```
 
 ### Inheritance
@@ -20,7 +19,7 @@ public class AssemblyReference : System.ICloneable
 
 ### Implements
 
-* System\.[ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
+* [ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
 
 ## Constructors
 

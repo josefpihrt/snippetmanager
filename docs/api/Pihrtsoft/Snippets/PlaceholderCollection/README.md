@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents the set of [Placeholder](../Placeholder/README.md)s\. This collection is read\-only\.
 
 ```csharp
-public class PlaceholderCollection : System.Collections.ObjectModel.ReadOnlyCollection<Placeholder>
+public class PlaceholderCollection : System.Collections.ObjectModel.ReadOnlyCollection<Pihrtsoft.Snippets.Placeholder>
 ```
 
 ### Inheritance
@@ -20,13 +19,11 @@ public class PlaceholderCollection : System.Collections.ObjectModel.ReadOnlyColl
 
 ### Implements
 
-* System\.Collections\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection)
-* System\.Collections\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist)
-* System\.Collections\.Generic\.[ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<[Placeholder](../Placeholder/README.md)>
-* System\.Collections\.Generic\.[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Placeholder](../Placeholder/README.md)>
-* System\.Collections\.Generic\.[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<[Placeholder](../Placeholder/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlycollection-1)\<[Placeholder](../Placeholder/README.md)>
-* System\.Collections\.Generic\.[IReadOnlyList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlylist-1)\<[Placeholder](../Placeholder/README.md)>
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection)
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1)\<[Placeholder](../Placeholder/README.md)>
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Placeholder](../Placeholder/README.md)>
+* [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist)
+* [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ilist-1)\<[Placeholder](../Placeholder/README.md)>
 
 ## Constructors
 

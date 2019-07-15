@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a result of the [SnippetValidationResult.Snippet](Snippet/README.md) validation\.
 
 ```csharp

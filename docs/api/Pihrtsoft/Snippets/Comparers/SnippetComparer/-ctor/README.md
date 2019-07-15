@@ -2,7 +2,7 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer](../README.md)
+**Containing Type**: [SnippetComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 

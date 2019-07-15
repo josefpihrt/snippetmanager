@@ -2,19 +2,18 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets a collection of snippet keywords\.
 
 ```csharp
-public KeywordCollection Keywords { get; }
+public Pihrtsoft.Snippets.KeywordCollection Keywords { get; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.[KeywordCollection](../../KeywordCollection/README.md)
+[KeywordCollection](../../KeywordCollection/README.md)
 

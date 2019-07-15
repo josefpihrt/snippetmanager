@@ -2,45 +2,44 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Literal](../README.md)
+**Containing Type**: [Literal](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Create new [Literal](../README.md) with function generates switch cases\.
 
 ```csharp
-public static Literal CreateSwitchCasesLiteral(string identifier, string expressionIdentifier, string toolTip = null, string defaultValue = "default:")
+public static Pihrtsoft.Snippets.Literal CreateSwitchCasesLiteral(string identifier, string expressionIdentifier, string toolTip = null, string defaultValue = "default:")
 ```
 
 ### Parameters
 
-**identifier**
+**identifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) identifier\.
 
-**expressionIdentifier**
+**expressionIdentifier** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 Identifier of the literal that represent switch expression\.
 
-**toolTip**
+**toolTip** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md) description\.
 
-**defaultValue**
+**defaultValue** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The [Literal](../README.md)default value\.
 
 ### Returns
 
-Pihrtsoft\.Snippets\.[Literal](../README.md)
+[Literal](../README.md)
 
 [Literal](../README.md) with function that generates switch cases\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **identifier** is `null`\.
 

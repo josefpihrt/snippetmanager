@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a code snippet\.
 
 ```csharp
-public class Snippet : System.ICloneable
+public class Snippet : ICloneable
 ```
 
 ### Inheritance
@@ -20,7 +19,7 @@ public class Snippet : System.ICloneable
 
 ### Implements
 
-* System\.[ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
+* [ICloneable](https://docs.microsoft.com/en-us/dotnet/api/system.icloneable)
 
 ## Constructors
 

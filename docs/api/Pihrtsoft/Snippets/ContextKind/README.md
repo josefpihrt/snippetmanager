@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Specifies the location at which a code snippet can be inserted\.
 
 ```csharp

@@ -2,19 +2,18 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets snippet code context\.
 
 ```csharp
-public ContextKind ContextKind { get; set; }
+public Pihrtsoft.Snippets.ContextKind ContextKind { get; set; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.[ContextKind](../../ContextKind/README.md)
+[ContextKind](../../ContextKind/README.md)
 

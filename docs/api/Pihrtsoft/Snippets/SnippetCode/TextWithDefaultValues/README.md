@@ -2,12 +2,11 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetCode](../README.md)
+**Containing Type**: [SnippetCode](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets snippet text where placeholders are replaced with matching literal's value\.
 System placeholders and placeholders which do not have matching literal are removed\.
 
@@ -17,5 +16,5 @@ public string TextWithDefaultValues { get; }
 
 ### Property Value
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

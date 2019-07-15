@@ -2,12 +2,11 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetSerializer](../README.md)
+**Containing Type**: [SnippetSerializer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents code snippet default xml namespace\. This field is a constant\.
 
 ```csharp
@@ -16,5 +15,5 @@ public const string DefaultNamespace = "http://schemas.microsoft.com/VisualStudi
 
 ### Field Value
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Manages code snippet serialization and deserialization\.
 
 ```csharp

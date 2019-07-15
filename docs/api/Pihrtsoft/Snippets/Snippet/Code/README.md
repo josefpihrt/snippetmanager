@@ -2,19 +2,18 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[Snippet](../README.md)
+**Containing Type**: [Snippet](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets the snippet code\.
 
 ```csharp
-public SnippetCode Code { get; }
+public Pihrtsoft.Snippets.SnippetCode Code { get; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.[SnippetCode](../../SnippetCode/README.md)
+[SnippetCode](../../SnippetCode/README.md)
 

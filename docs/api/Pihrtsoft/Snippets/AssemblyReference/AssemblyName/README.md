@@ -2,12 +2,11 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[AssemblyReference](../README.md)
+**Containing Type**: [AssemblyReference](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets or sets assembly name\.
 
 ```csharp
@@ -16,5 +15,5 @@ public string AssemblyName { get; set; }
 
 ### Property Value
 
-System\.[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 

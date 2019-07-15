@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents a file that has the extension 'snippet' and contains zero or more snippets serialized into xml\.
 
 ```csharp

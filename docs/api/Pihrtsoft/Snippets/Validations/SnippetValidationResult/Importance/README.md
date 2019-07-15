@@ -2,19 +2,18 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Validations\.[SnippetValidationResult](../README.md)
+**Containing Type**: [SnippetValidationResult](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets the importance level\.
 
 ```csharp
-public ResultImportance Importance { get; }
+public Pihrtsoft.Snippets.Validations.ResultImportance Importance { get; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Validations\.[ResultImportance](../../ResultImportance/README.md)
+[ResultImportance](../../ResultImportance/README.md)
 

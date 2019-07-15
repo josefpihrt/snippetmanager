@@ -6,12 +6,11 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Specifies how the code snippet can be inserted into code\.
 
 ```csharp
-[System.FlagsAttribute]
+[Flags]
 public enum SnippetTypes
 ```
 
@@ -21,7 +20,7 @@ public enum SnippetTypes
 
 ### Attributes
 
-* System\.[FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
+* [FlagsAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.flagsattribute)
 
 ## Fields
 

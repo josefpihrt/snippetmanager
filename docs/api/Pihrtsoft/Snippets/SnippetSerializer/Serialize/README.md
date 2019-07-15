@@ -2,7 +2,7 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetSerializer](../README.md)
+**Containing Type**: [SnippetSerializer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
@@ -21,255 +21,245 @@
 | [Serialize(String, Snippet)](#Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_) | Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file\. |
 | [Serialize(String, Snippet, SaveSettings)](#Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_) | Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\. |
 
-## Serialize\(SnippetFile\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_"></a>
+## Serialize\(SnippetFile\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_"></a>
 
-### Summary
-
+\
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file\.
 
 ```csharp
-public static void Serialize(SnippetFile snippetFile)
+public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile)
 ```
 
 ### Parameters
 
-**snippetFile**
+**snippetFile** &ensp; [SnippetFile](../../SnippetFile/README.md)
 
 A snippet file to be serialized\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippetFile** is `null`\.
 
-## Serialize\(SnippetFile, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(SnippetFile, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_Pihrtsoft_Snippets_SnippetFile_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the specified [SnippetFile](../../SnippetFile/README.md) to the file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(SnippetFile snippetFile, SaveSettings settings)
+public static void Serialize(Pihrtsoft.Snippets.SnippetFile snippetFile, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**snippetFile**
+**snippetFile** &ensp; [SnippetFile](../../SnippetFile/README.md)
 
 A snippet file to be serialized\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **snippetFile** is `null`\.
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **settings** is `null`\.
 
-## Serialize\(Stream, IEnumerable\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
+## Serialize\(Stream, IEnumerable\<Snippet>\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public static void Serialize(Stream stream, IEnumerable<Snippet> snippets)
+public static void Serialize(System.IO.Stream stream, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippets**
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(Stream, IEnumerable\<Snippet>, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(Stream, IEnumerable\<Snippet>, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(Stream stream, IEnumerable<Snippet> snippets, SaveSettings settings)
+public static void Serialize(System.IO.Stream stream, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippets**
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **stream** or **snippets** or **settings** is `null`\.
 
-## Serialize\(Stream, Snippet\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_"></a>
+## Serialize\(Stream, Snippet\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)\.
 
 ```csharp
-public static void Serialize(Stream stream, Snippet snippet)
+public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippet**
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(Stream, Snippet, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(Stream, Snippet, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_IO_Stream_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream), optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(Stream stream, Snippet snippet, SaveSettings settings)
+public static void Serialize(System.IO.Stream stream, Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**stream**
+**stream** &ensp; [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream)
 
 The stream to output this [Snippet](../../Snippet/README.md) to\.
 
-**snippet**
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **stream** or **snippet** or **settings** is `null`\.
 
-## Serialize\(String, IEnumerable\<Snippet>\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
+## Serialize\(String, IEnumerable\<Snippet>\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file\.
 
 ```csharp
-public static void Serialize(string filePath, IEnumerable<Snippet> snippets)
+public static void Serialize(string filePath, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets)
 ```
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippets**
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(String, IEnumerable\<Snippet>, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(String, IEnumerable\<Snippet>, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_System_Collections_Generic_IEnumerable_Pihrtsoft_Snippets_Snippet__Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes enumerable collection of [Snippet](../../Snippet/README.md) to the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(string filePath, IEnumerable<Snippet> snippets, SaveSettings settings)
+public static void Serialize(string filePath, System.Collections.Generic.IEnumerable<Pihrtsoft.Snippets.Snippet> snippets, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippets**
+**snippets** &ensp; [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1)\<[Snippet](../../Snippet/README.md)>
 
 Enumerable collection of [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **filePath** or **snippets** or **settings** is `null`\.
 
-## Serialize\(String, Snippet\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_"></a>
+## Serialize\(String, Snippet\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_"></a>
 
-### Summary
-
+\
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file\.
 
 ```csharp
-public static void Serialize(string filePath, Snippet snippet)
+public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippet**
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-## Serialize\(String, Snippet, SaveSettings\) <a name="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
+## Serialize\(String, Snippet, SaveSettings\) <a id="Pihrtsoft_Snippets_SnippetSerializer_Serialize_System_String_Pihrtsoft_Snippets_Snippet_Pihrtsoft_Snippets_SaveSettings_"></a>
 
-### Summary
-
+\
 Serializes the specified [Snippet](../../Snippet/README.md) the the specified snippet file, optionally using [SaveSettings](../../SaveSettings/README.md) to modify serialization process\.
 
 ```csharp
-public static void Serialize(string filePath, Snippet snippet, SaveSettings settings)
+public static void Serialize(string filePath, Pihrtsoft.Snippets.Snippet snippet, Pihrtsoft.Snippets.SaveSettings settings)
 ```
 
 ### Parameters
 
-**filePath**
+**filePath** &ensp; [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The absolute or relative path to the file\.
 
-**snippet**
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 A [Snippet](../../Snippet/README.md) to be serialized\.
 
-**settings**
+**settings** &ensp; [SaveSettings](../../SaveSettings/README.md)
 
 A [SaveSettings](../../SaveSettings/README.md) that modify serialization process\.
 
 ### Exceptions
 
-System\.[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
+[ArgumentNullException](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 
 **filePath** or **snippet** or **settings** is `null`\.
 

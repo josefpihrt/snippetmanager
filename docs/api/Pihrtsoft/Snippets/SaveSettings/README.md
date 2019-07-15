@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Specifies a set of options that enables to modify code snippet serialization process\.
 
 ```csharp

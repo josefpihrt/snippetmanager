@@ -2,19 +2,18 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+**Containing Type**: [LiteralComparer](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Gets a [LiteralComparer](../README.md) that performs a case\-sensitive ordinal [Literal.Identifier](../../../Literal/Identifier/README.md) comparison\.
 
 ```csharp
-public static LiteralComparer Identifier { get; }
+public static Pihrtsoft.Snippets.Comparers.LiteralComparer Identifier { get; }
 ```
 
 ### Property Value
 
-Pihrtsoft\.Snippets\.Comparers\.[LiteralComparer](../README.md)
+[LiteralComparer](../README.md)
 

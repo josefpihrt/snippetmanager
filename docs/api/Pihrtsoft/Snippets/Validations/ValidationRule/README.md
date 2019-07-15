@@ -6,8 +6,7 @@
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Represents the rule for a [Snippet](../../Snippet/README.md) validation\. This class is abstract\.
 
 ```csharp
@@ -20,11 +19,11 @@ public abstract class ValidationRule
 
 ### Derived
 
-* Pihrtsoft\.Snippets\.Validations\.[AssemblyReferenceValidationRule](../AssemblyReferenceValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[CodeValidationRule](../CodeValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[DescriptionValidationRule](../DescriptionValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[FormatVersionValidationRule](../FormatVersionValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[LiteralValidationRule](../LiteralValidationRule/README.md)
+* [AssemblyReferenceValidationRule](../AssemblyReferenceValidationRule/README.md)
+* [CodeValidationRule](../CodeValidationRule/README.md)
+* [DescriptionValidationRule](../DescriptionValidationRule/README.md)
+* [FormatVersionValidationRule](../FormatVersionValidationRule/README.md)
+* [LiteralValidationRule](../LiteralValidationRule/README.md)
 * [...](#derived-all "See all derived types")
 
 ## Constructors
@@ -46,14 +45,13 @@ public abstract class ValidationRule
 
 ## Derived \(All\)
 
-* Pihrtsoft\.Snippets\.Validations\.[AssemblyReferenceValidationRule](../AssemblyReferenceValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[CodeValidationRule](../CodeValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[DescriptionValidationRule](../DescriptionValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[FormatVersionValidationRule](../FormatVersionValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[LiteralValidationRule](../LiteralValidationRule/README.md)
+* [AssemblyReferenceValidationRule](../AssemblyReferenceValidationRule/README.md)
+* [CodeValidationRule](../CodeValidationRule/README.md)
+* [DescriptionValidationRule](../DescriptionValidationRule/README.md)
+* [FormatVersionValidationRule](../FormatVersionValidationRule/README.md)
+* [LiteralValidationRule](../LiteralValidationRule/README.md)
 * &mdash;&mdash;&mdash;&mdash;&mdash;
-* Pihrtsoft\.Snippets\.Validations\.[NamespaceValidationRule](../NamespaceValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[ShortcutValidationRule](../ShortcutValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[SnippetTypeValidationRule](../SnippetTypeValidationRule/README.md)
-* Pihrtsoft\.Snippets\.Validations\.[TitleValidationRule](../TitleValidationRule/README.md)
-
+* [NamespaceValidationRule](../NamespaceValidationRule/README.md)
+* [ShortcutValidationRule](../ShortcutValidationRule/README.md)
+* [SnippetTypeValidationRule](../SnippetTypeValidationRule/README.md)
+* [TitleValidationRule](../TitleValidationRule/README.md)

@@ -2,21 +2,20 @@
 
 [Home](../../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.Comparers\.[SnippetComparer\<T>](../README.md)
+**Containing Type**: [SnippetComparer\<T>](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Returns a value to compare\.
 
 ```csharp
-protected abstract T GetValue(Snippet snippet)
+protected abstract T GetValue(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
 
-**snippet**
+**snippet** &ensp; [Snippet](../../../Snippet/README.md)
 
 A snippet\.
 

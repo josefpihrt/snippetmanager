@@ -2,20 +2,19 @@
 
 [Home](../../../../README.md)
 
-**Containing Type**: Pihrtsoft\.Snippets\.[SnippetUtility](../README.md)
+**Containing Type**: [SnippetUtility](../README.md)
 
 **Assembly**: Pihrtsoft\.Snippets\.dll
 
-## Summary
-
+\
 Removes all placeholders that do not have corresponding literal \(literal with same identifier\)\.
 
 ```csharp
-public static void RemoveUnusedPlaceholders(Snippet snippet)
+public static void RemoveUnusedPlaceholders(Pihrtsoft.Snippets.Snippet snippet)
 ```
 
 ### Parameters
 
-**snippet**
+**snippet** &ensp; [Snippet](../../Snippet/README.md)
 
 [Snippet](../../Snippet/README.md) to remove placeholders from\.
