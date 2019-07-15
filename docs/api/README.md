@@ -48,7 +48,7 @@
 * &emsp; \| &emsp; [SnippetTypeValidationRule](Pihrtsoft/Snippets/Validations/SnippetTypeValidationRule/README.md)
 * &emsp; \| &emsp; [TitleValidationRule](Pihrtsoft/Snippets/Validations/TitleValidationRule/README.md)
 
-## Pihrtsoft\.Snippets Namespace
+## [Pihrtsoft.Snippets](Pihrtsoft/Snippets/README.md) Namespace
 
 ### Classes
 
@@ -77,7 +77,7 @@
 * [Language](Pihrtsoft/Snippets/Language/README.md)
 * [SnippetTypes](Pihrtsoft/Snippets/SnippetTypes/README.md)
 
-## Pihrtsoft\.Snippets\.Comparers Namespace
+## [Pihrtsoft.Snippets.Comparers](Pihrtsoft/Snippets/Comparers/README.md) Namespace
 
 ### Classes
 
@@ -88,7 +88,7 @@
 * [SnippetComparer\<T>](Pihrtsoft/Snippets/Comparers/SnippetComparer-1/README.md)
 * [SnippetDeepEqualityComparer](Pihrtsoft/Snippets/Comparers/SnippetDeepEqualityComparer/README.md)
 
-## Pihrtsoft\.Snippets\.Validations Namespace
+## [Pihrtsoft.Snippets.Validations](Pihrtsoft/Snippets/Validations/README.md) Namespace
 
 ### Classes
 
