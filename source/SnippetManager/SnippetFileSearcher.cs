@@ -123,10 +123,8 @@ namespace Pihrtsoft.Snippets
             {
                 return Directory.EnumerateFiles(directoryPath, Pattern, SearchOption.TopDirectoryOnly).GetEnumerator();
             }
-            catch (Exception ex)
+            catch (Exception ex) when (IsAllowedException(ex))
             {
-                if (!IsAllowedException(ex))
-                    throw;
             }
 
             return null;
@@ -138,10 +136,8 @@ namespace Pihrtsoft.Snippets
             {
                 return Directory.EnumerateDirectories(directoryPath, "*", SearchOption.TopDirectoryOnly).GetEnumerator();
             }
-            catch (Exception ex)
+            catch (Exception ex) when (IsAllowedException(ex))
             {
-                if (!IsAllowedException(ex))
-                    throw;
             }
 
             return null;
