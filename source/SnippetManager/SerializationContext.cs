@@ -10,7 +10,7 @@ namespace Pihrtsoft.Snippets
     internal class SerializationContext
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SerializationContext"/> class with a specified code snippet and and settings.
+        /// Initializes a new instance of the <see cref="SerializationContext"/> class with a specified code snippet and settings.
         /// </summary>
         /// <param name="snippet">A <see cref="Snippet"/> instance to serialize.</param>
         /// <param name="settings">A <see cref="SaveSettings"/> that enables to modify code snippet serialization process.</param>

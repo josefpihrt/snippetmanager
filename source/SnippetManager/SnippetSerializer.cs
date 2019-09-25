@@ -151,7 +151,7 @@ namespace Pihrtsoft.Snippets
 
 #if !PORTABLE
         /// <summary>
-        /// Serializes the specified <see cref="Snippet"/> the the specified snippet file.
+        /// Serializes the specified <see cref="Snippet"/> the specified snippet file.
         /// </summary>
         /// <param name="filePath">The absolute or relative path to the file.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
@@ -161,7 +161,7 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Serializes the specified <see cref="Snippet"/> the the specified snippet file, optionally using <see cref="SaveSettings"/> to modify serialization process.
+        /// Serializes the specified <see cref="Snippet"/> the specified snippet file, optionally using <see cref="SaveSettings"/> to modify serialization process.
         /// </summary>
         /// <param name="filePath">The absolute or relative path to the file.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
@@ -184,7 +184,7 @@ namespace Pihrtsoft.Snippets
 #endif
 
         /// <summary>
-        /// Serializes the specified <see cref="Snippet"/> the the specified <see cref="Stream"/>.
+        /// Serializes the specified <see cref="Snippet"/> the specified <see cref="Stream"/>.
         /// </summary>
         /// <param name="stream">The stream to output this <see cref="Snippet"/> to.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
@@ -194,7 +194,7 @@ namespace Pihrtsoft.Snippets
         }
 
         /// <summary>
-        /// Serializes the specified <see cref="Snippet"/> the the specified <see cref="Stream"/>, optionally using <see cref="SaveSettings"/> to modify serialization process.
+        /// Serializes the specified <see cref="Snippet"/> the specified <see cref="Stream"/>, optionally using <see cref="SaveSettings"/> to modify serialization process.
         /// </summary>
         /// <param name="stream">The stream to output this <see cref="Snippet"/> to.</param>
         /// <param name="snippet">A <see cref="Snippet"/> to be serialized.</param>
