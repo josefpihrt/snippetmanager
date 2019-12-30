@@ -39,6 +39,6 @@ public class SnippetValidator
 | [GetType()](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype) |  \(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\) |
 | [MemberwiseClone()](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone) |  \(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\) |
 | [ToString()](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring) |  \(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)\) |
-| [Validate(Snippet)](Validate/README.md#Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Snippet_) | Validates the specified [Snippet](../../Snippet/README.md) according the the code snippet schema\. |
-| [Validate(SnippetValidationContext)](Validate/README.md#Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Validations_SnippetValidationContext_) | Validates the specified [Snippet](../../Snippet/README.md) according the the code snippet schema\. |
+| [Validate(Snippet)](Validate/README.md#Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Snippet_) | Validates the specified [Snippet](../../Snippet/README.md) according to the code snippet schema\. |
+| [Validate(SnippetValidationContext)](Validate/README.md#Pihrtsoft_Snippets_Validations_SnippetValidator_Validate_Pihrtsoft_Snippets_Validations_SnippetValidationContext_) | Validates the specified [Snippet](../../Snippet/README.md) according to the code snippet schema\. |
 
