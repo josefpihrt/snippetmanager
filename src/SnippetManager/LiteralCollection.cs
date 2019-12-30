@@ -12,8 +12,7 @@ namespace Pihrtsoft.Snippets
     /// Represents the set of <see cref="Literal"/>s.
     /// </summary>
     [DebuggerDisplay("Count = {Count} {Identifiers,nq}")]
-    public class LiteralCollection
-        : Collection<Literal>
+    public class LiteralCollection : Collection<Literal>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="LiteralCollection"/> class that is empty.

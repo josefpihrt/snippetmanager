@@ -10,8 +10,7 @@ namespace Pihrtsoft.Snippets
     /// Represents the set of namespaces.
     /// </summary>
     [DebuggerDisplay("Count = {Count} {Namespaces,nq}")]
-    public class NamespaceCollection
-        : Collection<string>
+    public class NamespaceCollection : Collection<string>
     {
         private static readonly NamespaceComparer _comparer = new NamespaceComparer(placeSystemFirst: true);
 

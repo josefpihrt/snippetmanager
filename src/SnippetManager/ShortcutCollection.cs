@@ -11,8 +11,7 @@ namespace Pihrtsoft.Snippets
     /// Represents the set of shortcuts.
     /// </summary>
     [DebuggerDisplay("Count = {Count} {Shortcuts,nq}")]
-    public class ShortcutCollection
-        : Collection<string>
+    public class ShortcutCollection : Collection<string>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ShortcutCollection"/> class that is empty.

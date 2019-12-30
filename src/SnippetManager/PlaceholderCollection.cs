@@ -11,8 +11,7 @@ namespace Pihrtsoft.Snippets
     /// Represents the set of <see cref="Placeholder"/>s. This collection is read-only.
     /// </summary>
     [DebuggerDisplay("Count = {Count} {Identifiers,nq}")]
-    public class PlaceholderCollection
-        : ReadOnlyCollection<Placeholder>
+    public class PlaceholderCollection : ReadOnlyCollection<Placeholder>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="PlaceholderCollection"/> class that is a read-only wrapper around the specified list.

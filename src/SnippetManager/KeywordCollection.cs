@@ -11,8 +11,7 @@ namespace Pihrtsoft.Snippets
     /// Represents the set of keywords.
     /// </summary>
     [DebuggerDisplay("Count = {Count} {Keywords,nq}")]
-    public class KeywordCollection
-        : Collection<string>
+    public class KeywordCollection : Collection<string>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="KeywordCollection"/> class that is empty.

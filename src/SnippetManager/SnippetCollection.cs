@@ -8,8 +8,7 @@ namespace Pihrtsoft.Snippets
     /// <summary>
     /// Represents the set of <see cref="Snippet"/>s.
     /// </summary>
-    public class SnippetCollection
-        : Collection<Snippet>
+    public class SnippetCollection : Collection<Snippet>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="SnippetCollection"/> class that is empty.
