@@ -58,10 +58,11 @@ namespace Pihrtsoft.Snippets.Validations
 
                 foreach (Placeholder placeholder in snippet.Placeholders)
                 {
-                    if (!placeholder.IsSystemPlaceholder && !snippet.Literals
-                        .Distinct(LiteralComparer.Identifier)
-                        .Select(f => f.Identifier)
-                        .Contains(placeholder.Identifier, _stringComparer))
+                    if (!placeholder.IsSystemPlaceholder
+                        && !snippet.Literals
+                            .Distinct(LiteralComparer.Identifier)
+                            .Select(f => f.Identifier)
+                            .Contains(placeholder.Identifier, _stringComparer))
                     {
                         yield return new SnippetValidationResult(
                             snippet,

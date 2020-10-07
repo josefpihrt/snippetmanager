@@ -444,14 +444,15 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                return _contextKinds ?? (_contextKinds = new Dictionary<string, ContextKind>(StringComparer.OrdinalIgnoreCase)
-                {
-                    ["method body"] = ContextKind.MethodBody,
-                    ["method decl"] = ContextKind.MethodDeclaration,
-                    ["type decl"] = ContextKind.TypeDeclaration,
-                    ["file"] = ContextKind.File,
-                    ["any"] = ContextKind.Any
-                });
+                return _contextKinds
+                    ?? (_contextKinds = new Dictionary<string, ContextKind>(StringComparer.OrdinalIgnoreCase)
+                        {
+                            ["method body"] = ContextKind.MethodBody,
+                            ["method decl"] = ContextKind.MethodDeclaration,
+                            ["type decl"] = ContextKind.TypeDeclaration,
+                            ["file"] = ContextKind.File,
+                            ["any"] = ContextKind.Any
+                        });
             }
         }
     }
