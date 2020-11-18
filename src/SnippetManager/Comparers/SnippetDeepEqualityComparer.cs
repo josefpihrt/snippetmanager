@@ -84,7 +84,7 @@ namespace Pihrtsoft.Snippets.Comparers
         /// <summary>
         /// Gets the hash code for the specified <see cref="Snippet"/>.
         /// </summary>
-        /// <param name="obj">A snipppet.</param>
+        /// <param name="obj">A snippet.</param>
         /// <returns>A 32-bit signed hash code calculated from the value of the <paramref name="obj"/>.</returns>
         public override int GetHashCode(Snippet obj) => 0;
     }

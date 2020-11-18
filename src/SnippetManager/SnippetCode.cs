@@ -78,7 +78,7 @@ namespace Pihrtsoft.Snippets
         /// Returns a new string in which all occurrences of a specified identifier in the current instance are replaced with another specified identifier.
         /// </summary>
         /// <param name="oldIdentifier">The identifier to be replaced.</param>
-        /// <param name="newIdentifier">The idenfier to replace all occurrences of <paramref name="oldIdentifier"/>.</param>
+        /// <param name="newIdentifier">The identifier to replace all occurrences of <paramref name="oldIdentifier"/>.</param>
         /// <returns>A string where all occurrences of <paramref name="oldIdentifier"/> are replaced with <paramref name="newIdentifier"/>.</returns>
         /// <exception cref="ArgumentNullException"><paramref name="oldIdentifier"/> is <c>null</c>.</exception>
         /// <exception cref="ArgumentException"><paramref name="oldIdentifier"/> is the empty string or <paramref name="newIdentifier"/> is invalid.</exception>

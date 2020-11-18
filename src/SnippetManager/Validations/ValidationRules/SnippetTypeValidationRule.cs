@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Pihrtsoft.Snippets.Validations
 {
     /// <summary>
-    /// Represents a validation rule for the snippet formar version.
+    /// Represents a validation rule for the snippet format version.
     /// </summary>
     public class SnippetTypeValidationRule : ValidationRule
     {
