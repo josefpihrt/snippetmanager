@@ -30,13 +30,19 @@
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="SnippetManager.snk" />
+    <None Include="docs\NuGetReadme.md" Pack="true" PackagePath="docs\README.md" />
+  </ItemGroup>
+
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>SnippetManager.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  
   <ItemGroup>
-    <None Include="SnippetManager.snk" />
   </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="Roslynator.Analyzers" Version="4.3.0">
       <PrivateAssets>all</PrivateAssets>
@@ -47,4 +53,5 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+
 </Project>
