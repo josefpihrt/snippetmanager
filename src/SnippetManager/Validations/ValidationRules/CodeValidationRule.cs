@@ -5,115 +5,114 @@ using System.Collections.Generic;
 using System.Linq;
 using Pihrtsoft.Snippets.Comparers;
 
-namespace Pihrtsoft.Snippets.Validations
+namespace Pihrtsoft.Snippets.Validations;
+
+/// <summary>
+/// Represents a validation rule for the snippet code.
+/// </summary>
+public class CodeValidationRule : ValidationRule
 {
+    private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+
     /// <summary>
-    /// Represents a validation rule for the snippet code.
+    /// Validates a code of the specified <see cref="Snippet"/>.
     /// </summary>
-    public class CodeValidationRule : ValidationRule
+    /// <param name="snippet">A snippet to be validated.</param>
+    /// <returns>Enumerable collection of validation results.</returns>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
     {
-        private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
 
-        /// <summary>
-        /// Validates a code of the specified <see cref="Snippet"/>.
-        /// </summary>
-        /// <param name="snippet">A snippet to be validated.</param>
-        /// <returns>Enumerable collection of validation results.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+        return Validate();
+
+        IEnumerable<SnippetValidationResult> Validate()
         {
-            if (snippet is null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return Validate();
-
-            IEnumerable<SnippetValidationResult> Validate()
+            if (string.IsNullOrEmpty(snippet.CodeText))
             {
-                if (string.IsNullOrEmpty(snippet.CodeText))
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingCode,
-                        "Snippet code is missing.",
-                        ResultImportance.Error);
-                }
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingCode,
+                    "Snippet code is missing.",
+                    ResultImportance.Error);
+            }
 
-                if (TextUtility.ContainsCDataEnd(snippet.CodeText))
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.InvalidCode,
-                        "Snippet code may not contain CData end sequence.",
-                        ResultImportance.Error);
-                }
+            if (TextUtility.ContainsCDataEnd(snippet.CodeText))
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.InvalidCode,
+                    "Snippet code may not contain CData end sequence.",
+                    ResultImportance.Error);
+            }
 
-                if (snippet.Code.ContainsUnclosedDelimiter)
+            if (snippet.Code.ContainsUnclosedDelimiter)
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.UnclosedDelimiter,
+                    "Snippet code contains unclosed delimiter.",
+                    ResultImportance.Warning);
+            }
+
+            foreach (Placeholder placeholder in snippet.Placeholders)
+            {
+                if (!placeholder.IsSystemPlaceholder
+                    && !snippet.Literals
+                        .Distinct(LiteralComparer.Identifier)
+                        .Select(f => f.Identifier)
+                        .Contains(placeholder.Identifier, _stringComparer))
                 {
                     yield return new SnippetValidationResult(
                         snippet,
-                        ErrorCode.UnclosedDelimiter,
-                        "Snippet code contains unclosed delimiter.",
+                        ErrorCode.PlaceholderWithoutLiteral,
+                        $"Snippet code placeholder '{placeholder.Identifier}' does not have a corresponding literal.",
                         ResultImportance.Warning);
                 }
+            }
 
-                foreach (Placeholder placeholder in snippet.Placeholders)
-                {
-                    if (!placeholder.IsSystemPlaceholder
-                        && !snippet.Literals
-                            .Distinct(LiteralComparer.Identifier)
-                            .Select(f => f.Identifier)
-                            .Contains(placeholder.Identifier, _stringComparer))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.PlaceholderWithoutLiteral,
-                            $"Snippet code placeholder '{placeholder.Identifier}' does not have a corresponding literal.",
-                            ResultImportance.Warning);
-                    }
-                }
+            if (!snippet.Placeholders.ContainsEnd())
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingEndPlaceholder,
+                    "Snippet code does not contain end placeholder.",
+                    ResultImportance.Warning);
+            }
+            else if (snippet.Placeholders.FindAll(Placeholder.EndIdentifier).CountExceeds(1))
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MultipleEndPlaceholders,
+                    "Snippet code contain multiple end placeholders.",
+                    ResultImportance.Warning);
+            }
 
-                if (!snippet.Placeholders.ContainsEnd())
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingEndPlaceholder,
-                        "Snippet code does not contain end placeholder.",
-                        ResultImportance.Warning);
-                }
-                else if (snippet.Placeholders.FindAll(Placeholder.EndIdentifier).CountExceeds(1))
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MultipleEndPlaceholders,
-                        "Snippet code contain multiple end placeholders.",
-                        ResultImportance.Warning);
-                }
+            if (snippet.IsSurroundsWith && !snippet.Placeholders.ContainsSelected())
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingSelectedPlaceholder,
+                    "Snippet code does not contains selected placeholder.",
+                    ResultImportance.Warning);
+            }
+            else if (snippet.IsSurroundsWith && snippet.Placeholders.FindAll(Placeholder.SelectedIdentifier).CountExceeds(1))
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MultipleSelectedPlaceholders,
+                    "Snippet code contains multiple selected placeholders.",
+                    ResultImportance.Warning);
+            }
 
-                if (snippet.IsSurroundsWith && !snippet.Placeholders.ContainsSelected())
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingSelectedPlaceholder,
-                        "Snippet code does not contains selected placeholder.",
-                        ResultImportance.Warning);
-                }
-                else if (snippet.IsSurroundsWith && snippet.Placeholders.FindAll(Placeholder.SelectedIdentifier).CountExceeds(1))
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MultipleSelectedPlaceholders,
-                        "Snippet code contains multiple selected placeholders.",
-                        ResultImportance.Warning);
-                }
-
-                if (snippet.Language == Language.None)
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingLanguage,
-                        "Snippet language is missing.",
-                        ResultImportance.Error);
-                }
+            if (snippet.Language == Language.None)
+            {
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingLanguage,
+                    "Snippet language is missing.",
+                    ResultImportance.Error);
             }
         }
     }

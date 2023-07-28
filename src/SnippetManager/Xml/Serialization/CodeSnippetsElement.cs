@@ -4,18 +4,17 @@ using System.Xml.Serialization;
 
 #pragma warning disable CA1819 // Properties should not return arrays
 
-namespace Pihrtsoft.Snippets.Xml.Serialization
+namespace Pihrtsoft.Snippets.Xml.Serialization;
+
+/// <summary>
+/// Represents CodeSnippets element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+/// </summary>
+[XmlRoot("CodeSnippets")]
+public sealed class CodeSnippetsElement
 {
     /// <summary>
-    /// Represents CodeSnippets element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+    /// Gets or sets array of CodeSnippet elements.
     /// </summary>
-    [XmlRoot("CodeSnippets")]
-    public sealed class CodeSnippetsElement
-    {
-        /// <summary>
-        /// Gets or sets array of CodeSnippet elements.
-        /// </summary>
-        [XmlElement("CodeSnippet")]
-        public CodeSnippetElement[] Snippets { get; set; }
-    }
+    [XmlElement("CodeSnippet")]
+    public CodeSnippetElement[] Snippets { get; set; }
 }

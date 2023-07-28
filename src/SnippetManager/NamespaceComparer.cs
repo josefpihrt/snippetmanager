@@ -4,44 +4,43 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Pihrtsoft.Snippets.Comparers;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+internal class NamespaceComparer : IComparer<string>
 {
-    internal class NamespaceComparer : IComparer<string>
+    private static readonly Regex _systemUsingRegex = new(@"\A\s*System\s*(\.|\z)");
+
+    public NamespaceComparer(bool placeSystemFirst = false)
     {
-        private static readonly Regex _systemUsingRegex = new Regex(@"\A\s*System\s*(\.|\z)");
-
-        public NamespaceComparer(bool placeSystemFirst = false)
-        {
-            PlaceSystemFirst = placeSystemFirst;
-        }
-
-        public int Compare(string x, string y)
-        {
-            if (object.ReferenceEquals(x, y))
-                return 0;
-
-            if (x is null)
-                return -1;
-
-            if (y is null)
-                return 1;
-
-            if (PlaceSystemFirst)
-            {
-                if (_systemUsingRegex.IsMatch(x))
-                {
-                    if (!_systemUsingRegex.IsMatch(y))
-                        return -1;
-                }
-                else if (_systemUsingRegex.IsMatch(y))
-                {
-                    return 1;
-                }
-            }
-
-            return string.Compare(x, y, Comparer.StringComparison);
-        }
-
-        public bool PlaceSystemFirst { get; }
+        PlaceSystemFirst = placeSystemFirst;
     }
+
+    public int Compare(string x, string y)
+    {
+        if (object.ReferenceEquals(x, y))
+            return 0;
+
+        if (x is null)
+            return -1;
+
+        if (y is null)
+            return 1;
+
+        if (PlaceSystemFirst)
+        {
+            if (_systemUsingRegex.IsMatch(x))
+            {
+                if (!_systemUsingRegex.IsMatch(y))
+                    return -1;
+            }
+            else if (_systemUsingRegex.IsMatch(y))
+            {
+                return 1;
+            }
+        }
+
+        return string.Compare(x, y, Comparer.StringComparison);
+    }
+
+    public bool PlaceSystemFirst { get; }
 }

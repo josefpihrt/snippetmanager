@@ -5,44 +5,43 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Pihrtsoft.Snippets.Comparers;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Represents the set of keywords.
+/// </summary>
+[DebuggerDisplay("Count = {Count} {Keywords,nq}")]
+public class KeywordCollection : Collection<string>
 {
     /// <summary>
-    /// Represents the set of keywords.
+    /// Initializes a new instance of the <see cref="KeywordCollection"/> class that is empty.
     /// </summary>
-    [DebuggerDisplay("Count = {Count} {Keywords,nq}")]
-    public class KeywordCollection : Collection<string>
+    public KeywordCollection()
+        : base(new List<string>())
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="KeywordCollection"/> class that is empty.
-        /// </summary>
-        public KeywordCollection()
-            : base(new List<string>())
-        {
-        }
-
-        /// <summary>
-        /// Sorts the elements in the entire <see cref="KeywordCollection"/>.
-        /// </summary>
-        public void Sort()
-        {
-            Sort(Comparer.StringComparer);
-        }
-
-        /// <summary>
-        /// Sorts the elements in the entire <see cref="KeywordCollection"/> using the specified comparer.
-        /// </summary>
-        /// <param name="comparer">The <see cref="IComparer{String}"/> implementation to use when comparing elements.</param>
-        public void Sort(IComparer<string> comparer)
-        {
-            List.Sort(comparer);
-        }
-
-        private string Keywords
-        {
-            get { return string.Join(", ", Items); }
-        }
-
-        private List<string> List => (List<string>)Items;
     }
+
+    /// <summary>
+    /// Sorts the elements in the entire <see cref="KeywordCollection"/>.
+    /// </summary>
+    public void Sort()
+    {
+        Sort(Comparer.StringComparer);
+    }
+
+    /// <summary>
+    /// Sorts the elements in the entire <see cref="KeywordCollection"/> using the specified comparer.
+    /// </summary>
+    /// <param name="comparer">The <see cref="IComparer{String}"/> implementation to use when comparing elements.</param>
+    public void Sort(IComparer<string> comparer)
+    {
+        List.Sort(comparer);
+    }
+
+    private string Keywords
+    {
+        get { return string.Join(", ", Items); }
+    }
+
+    private List<string> List => (List<string>)Items;
 }

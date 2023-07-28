@@ -3,36 +3,35 @@
 using System;
 using System.Collections.Generic;
 
-namespace Pihrtsoft.Snippets.Validations
+namespace Pihrtsoft.Snippets.Validations;
+
+/// <summary>
+/// Represents a validation rule for the snippet description.
+/// </summary>
+public class DescriptionValidationRule : ValidationRule
 {
     /// <summary>
-    /// Represents a validation rule for the snippet description.
+    /// Validates a description of the specified <see cref="Snippet"/>.
     /// </summary>
-    public class DescriptionValidationRule : ValidationRule
+    /// <param name="snippet">A snippet to be validated.</param>
+    /// <returns>Enumerable collection of validation results.</returns>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
     {
-        /// <summary>
-        /// Validates a description of the specified <see cref="Snippet"/>.
-        /// </summary>
-        /// <param name="snippet">A snippet to be validated.</param>
-        /// <returns>Enumerable collection of validation results.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
+
+        return Validate();
+
+        IEnumerable<SnippetValidationResult> Validate()
         {
-            if (snippet is null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return Validate();
-
-            IEnumerable<SnippetValidationResult> Validate()
+            if (string.IsNullOrEmpty(snippet.Description))
             {
-                if (string.IsNullOrEmpty(snippet.Description))
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingDescription,
-                        "Snippet description is missing.",
-                        ResultImportance.Information);
-                }
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingDescription,
+                    "Snippet description is missing.",
+                    ResultImportance.Information);
             }
         }
     }

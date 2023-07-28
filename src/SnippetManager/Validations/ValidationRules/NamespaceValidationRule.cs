@@ -4,40 +4,39 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pihrtsoft.Snippets.Validations
+namespace Pihrtsoft.Snippets.Validations;
+
+/// <summary>
+/// Represents a validation rule for the snippet namespaces.
+/// </summary>
+public class NamespaceValidationRule : ValidationRule
 {
+    private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+
     /// <summary>
-    /// Represents a validation rule for the snippet namespaces.
+    /// Validates namespaces of the specified <see cref="Snippet"/>.
     /// </summary>
-    public class NamespaceValidationRule : ValidationRule
+    /// <param name="snippet">A snippet to be validated.</param>
+    /// <returns>Enumerable collection of validation results.</returns>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
     {
-        private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
 
-        /// <summary>
-        /// Validates namespaces of the specified <see cref="Snippet"/>.
-        /// </summary>
-        /// <param name="snippet">A snippet to be validated.</param>
-        /// <returns>Enumerable collection of validation results.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+        return Validate();
+
+        IEnumerable<SnippetValidationResult> Validate()
         {
-            if (snippet is null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return Validate();
-
-            IEnumerable<SnippetValidationResult> Validate()
+            foreach (IGrouping<string, string> grp in snippet.Namespaces.GroupBy(f => f, _stringComparer))
             {
-                foreach (IGrouping<string, string> grp in snippet.Namespaces.GroupBy(f => f, _stringComparer))
+                if (grp.CountExceeds(1))
                 {
-                    if (grp.CountExceeds(1))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.NamespaceDuplicate,
-                            $"Namespace '{grp.Key}' is duplicated.",
-                            ResultImportance.Warning);
-                    }
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.NamespaceDuplicate,
+                        $"Namespace '{grp.Key}' is duplicated.",
+                        ResultImportance.Warning);
                 }
             }
         }

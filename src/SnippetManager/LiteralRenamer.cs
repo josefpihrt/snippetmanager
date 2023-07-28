@@ -2,33 +2,32 @@
 
 using System;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Supports renaming of snippet literal including its occurrences in the code.
+/// </summary>
+public static class LiteralRenamer
 {
     /// <summary>
-    /// Supports renaming of snippet literal including its occurrences in the code.
+    /// Renames snippet literal including its occurrences in the code.
     /// </summary>
-    public static class LiteralRenamer
+    /// <param name="snippet"><see cref="Snippet"/> that contains the literal to rename.</param>
+    /// <param name="oldIdentifier">Old identifier.</param>
+    /// <param name="newIdentifier">New identifier.</param>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public static void Rename(Snippet snippet, string oldIdentifier, string newIdentifier)
     {
-        /// <summary>
-        /// Renames snippet literal including its occurrences in the code.
-        /// </summary>
-        /// <param name="snippet"><see cref="Snippet"/> that contains the literal to rename.</param>
-        /// <param name="oldIdentifier">Old identifier.</param>
-        /// <param name="newIdentifier">New identifier.</param>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public static void Rename(Snippet snippet, string oldIdentifier, string newIdentifier)
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
+
+        Literal literal = snippet.Literals[oldIdentifier];
+
+        if (literal is not null)
         {
-            if (snippet is null)
-                throw new ArgumentNullException(nameof(snippet));
+            literal.Identifier = newIdentifier;
 
-            Literal literal = snippet.Literals[oldIdentifier];
-
-            if (literal != null)
-            {
-                literal.Identifier = newIdentifier;
-
-                snippet.CodeText = snippet.Code.RenamePlaceholder(oldIdentifier, newIdentifier);
-            }
+            snippet.CodeText = snippet.Code.RenamePlaceholder(oldIdentifier, newIdentifier);
         }
     }
 }

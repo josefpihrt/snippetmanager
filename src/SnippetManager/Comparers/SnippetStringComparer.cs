@@ -4,18 +4,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Pihrtsoft.Snippets.Comparers
+namespace Pihrtsoft.Snippets.Comparers;
+
+internal abstract class SnippetStringComparer : SnippetComparer<string>
 {
-    internal abstract class SnippetStringComparer : SnippetComparer<string>
-    {
-        internal abstract StringComparer StringComparer { get; }
+    internal abstract StringComparer StringComparer { get; }
 
-        internal override IComparer<string> GenericComparer => StringComparer;
+    internal override IComparer<string> GenericComparer => StringComparer;
 
-        internal override IEqualityComparer<string> GenericEqualityComparer => StringComparer;
+    internal override IEqualityComparer<string> GenericEqualityComparer => StringComparer;
 
-        internal override IComparer Comparer => StringComparer;
+    internal override IComparer Comparer => StringComparer;
 
-        internal override IEqualityComparer EqualityComparer => StringComparer;
-    }
+    internal override IEqualityComparer EqualityComparer => StringComparer;
 }

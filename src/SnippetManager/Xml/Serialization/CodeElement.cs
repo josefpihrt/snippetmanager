@@ -4,73 +4,72 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace Pihrtsoft.Snippets.Xml.Serialization
+namespace Pihrtsoft.Snippets.Xml.Serialization;
+
+/// <summary>
+/// Represents Code element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+/// </summary>
+public sealed class CodeElement : IXmlSerializable
 {
     /// <summary>
-    /// Represents Code element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+    /// Gets or sets Delimiter attribute value.
     /// </summary>
-    public sealed class CodeElement : IXmlSerializable
+    public string Delimiter { get; set; }
+
+    /// <summary>
+    /// Gets or sets Kind attribute value.
+    /// </summary>
+    public string Kind { get; set; }
+
+    /// <summary>
+    /// Gets or sets Language attribute value.
+    /// </summary>
+    public string Language { get; set; }
+
+    /// <summary>
+    /// Gets or sets Code element value.
+    /// </summary>
+    public string Code { get; set; }
+
+    /// <summary>
+    /// This method is reserved and should not be used.
+    /// </summary>
+    public XmlSchema GetSchema()
     {
-        /// <summary>
-        /// Gets or sets Delimiter attribute value.
-        /// </summary>
-        public string Delimiter { get; set; }
+        return null;
+    }
 
-        /// <summary>
-        /// Gets or sets Kind attribute value.
-        /// </summary>
-        public string Kind { get; set; }
+    /// <summary>
+    /// Generates an object from its XML representation.
+    /// </summary>
+    /// <param name="reader"></param>
+    public void ReadXml(XmlReader reader)
+    {
+        Delimiter = reader.GetAttribute(nameof(Delimiter));
 
-        /// <summary>
-        /// Gets or sets Language attribute value.
-        /// </summary>
-        public string Language { get; set; }
+        Kind = reader.GetAttribute(nameof(Kind));
 
-        /// <summary>
-        /// Gets or sets Code element value.
-        /// </summary>
-        public string Code { get; set; }
+        Language = reader.GetAttribute(nameof(Language));
 
-        /// <summary>
-        /// This method is reserved and should not be used.
-        /// </summary>
-        public XmlSchema GetSchema()
-        {
-            return null;
-        }
+        Code = reader.ReadElementContentAsString();
+    }
 
-        /// <summary>
-        /// Generates an object from its XML representation.
-        /// </summary>
-        /// <param name="reader"></param>
-        public void ReadXml(XmlReader reader)
-        {
-            Delimiter = reader.GetAttribute(nameof(Delimiter));
+    /// <summary>
+    /// Converts an object into its XML representation.
+    /// </summary>
+    /// <param name="writer"></param>
+    public void WriteXml(XmlWriter writer)
+    {
+        if (Delimiter is not null)
+            writer.WriteAttributeString(nameof(Delimiter), Delimiter);
 
-            Kind = reader.GetAttribute(nameof(Kind));
+        if (Kind is not null)
+            writer.WriteAttributeString(nameof(Kind), Kind);
 
-            Language = reader.GetAttribute(nameof(Language));
+        if (Language is not null)
+            writer.WriteAttributeString(nameof(Language), Language);
 
-            Code = reader.ReadElementContentAsString();
-        }
-
-        /// <summary>
-        /// Converts an object into its XML representation.
-        /// </summary>
-        /// <param name="writer"></param>
-        public void WriteXml(XmlWriter writer)
-        {
-            if (Delimiter != null)
-                writer.WriteAttributeString(nameof(Delimiter), Delimiter);
-
-            if (Kind != null)
-                writer.WriteAttributeString(nameof(Kind), Kind);
-
-            if (Language != null)
-                writer.WriteAttributeString(nameof(Language), Language);
-
-            if (Code != null)
-                writer.WriteCData(Code);
-        }
+        if (Code is not null)
+            writer.WriteCData(Code);
     }
 }

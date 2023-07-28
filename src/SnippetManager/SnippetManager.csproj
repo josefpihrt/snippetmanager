@@ -12,6 +12,7 @@
     <RootNamespace>Pihrtsoft.Snippets</RootNamespace>
     <AssemblyName>Pihrtsoft.Snippets</AssemblyName>
     <DocumentationFile>bin\$(Configuration)\Pihrtsoft.Snippets.xml</DocumentationFile>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
