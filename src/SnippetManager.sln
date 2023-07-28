@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnippetManager", "SnippetMa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6219090A-970F-4348-B043-1C632461C44B}"
 	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
 		..\ChangeLog.md = ..\ChangeLog.md
 		..\README.md = ..\README.md
 	EndProjectSection
