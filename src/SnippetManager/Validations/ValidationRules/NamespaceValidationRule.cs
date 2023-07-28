@@ -21,7 +21,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
             return Validate();

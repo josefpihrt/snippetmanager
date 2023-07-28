@@ -23,11 +23,11 @@ namespace Pihrtsoft.Snippets
         /// <summary>
         /// Specifies that the code snippet can be placed around a block of code.
         /// </summary>
-        SurroundsWith = 2,
+        SurroundsWith = 1 << 1,
 
         /// <summary>
         /// Specifies that the code snippet can be used during refactoring.
         /// </summary>
-        Refactoring = 4,
+        Refactoring = 1 << 2,
     }
 }

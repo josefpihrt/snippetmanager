@@ -39,7 +39,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="directoryPaths"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateSnippetFiles(IEnumerable<string> directoryPaths, SearchOption searchOption)
         {
-            if (directoryPaths == null)
+            if (directoryPaths is null)
                 throw new ArgumentNullException(nameof(directoryPaths));
 
             return EnumerateSnippetFiles();
@@ -74,7 +74,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="directoryPath"/> is <c>null</c>.</exception>
         public static IEnumerable<string> EnumerateSnippetFiles(string directoryPath, SearchOption searchOption)
         {
-            if (directoryPath == null)
+            if (directoryPath is null)
                 throw new ArgumentNullException(nameof(directoryPath));
 
             return EnumerateSnippetFiles();

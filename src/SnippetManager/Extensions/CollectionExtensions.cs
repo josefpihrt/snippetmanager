@@ -9,10 +9,10 @@ namespace Pihrtsoft.Snippets
     {
         public static void AddRange<TSource>(this ICollection<TSource> collection, IEnumerable<TSource> itemsToAdd)
         {
-            if (collection == null)
+            if (collection is null)
                 throw new ArgumentNullException(nameof(collection));
 
-            if (itemsToAdd == null)
+            if (itemsToAdd is null)
                 throw new ArgumentNullException(nameof(itemsToAdd));
 
             foreach (TSource item in itemsToAdd)

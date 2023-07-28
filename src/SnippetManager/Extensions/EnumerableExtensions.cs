@@ -9,7 +9,7 @@ namespace Pihrtsoft.Snippets
     {
         public static bool CountExceeds<TSource>(this IEnumerable<TSource> collection, int value)
         {
-            if (collection == null)
+            if (collection is null)
                 throw new ArgumentNullException(nameof(collection));
 
             if (value < 0)
@@ -34,7 +34,7 @@ namespace Pihrtsoft.Snippets
 
         public static List<TSource> ToList<TSource>(this IEnumerable<TSource> collection, int capacity)
         {
-            if (collection == null)
+            if (collection is null)
                 throw new ArgumentNullException(nameof(collection));
 
             var list = new List<TSource>(capacity);

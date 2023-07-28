@@ -24,7 +24,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="element"/> is <c>null</c>.</exception>
         public static Snippet MapFromElement(CodeSnippetElement element)
         {
-            if (element == null)
+            if (element is null)
                 throw new ArgumentNullException(nameof(element));
 
             var snippet = new Snippet();
@@ -64,10 +64,10 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static CodeSnippetElement MapToElement(Snippet snippet, SaveSettings settings)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             var context = new SerializationContext(snippet, settings);
@@ -99,10 +99,10 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippets"/> is <c>null</c>.</exception>
         public static IEnumerable<CodeSnippetElement> MapToElement(IEnumerable<Snippet> snippets, SaveSettings settings)
         {
-            if (snippets == null)
+            if (snippets is null)
                 throw new ArgumentNullException(nameof(snippets));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             return MapToElement();
@@ -446,13 +446,13 @@ namespace Pihrtsoft.Snippets
             {
                 return _contextKinds
                     ?? (_contextKinds = new Dictionary<string, ContextKind>(StringComparer.OrdinalIgnoreCase)
-                        {
-                            ["method body"] = ContextKind.MethodBody,
-                            ["method decl"] = ContextKind.MethodDeclaration,
-                            ["type decl"] = ContextKind.TypeDeclaration,
-                            ["file"] = ContextKind.File,
-                            ["any"] = ContextKind.Any
-                        });
+                    {
+                        ["method body"] = ContextKind.MethodBody,
+                        ["method decl"] = ContextKind.MethodDeclaration,
+                        ["type decl"] = ContextKind.TypeDeclaration,
+                        ["file"] = ContextKind.File,
+                        ["any"] = ContextKind.Any
+                    });
             }
         }
     }

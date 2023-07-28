@@ -6,33 +6,32 @@ using System.Text;
 using Pihrtsoft.Snippets;
 using Xunit;
 
-namespace SnippetManager.Tests
+namespace SnippetManager.Tests;
+
+public class SnippetTests
 {
-    public class SnippetTests
+    [Fact]
+    public void Snippet_Deserialize()
     {
-        [Fact]
-        public void Snippet_Deserialize()
+        const string filePath = @"..\..\..\Snippet.snippet";
+
+        Snippet snippet = null;
+
+        using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            snippet = SnippetSerializer.Deserialize(stream).FirstOrDefault();
+
+        var settings = new SaveSettings()
         {
-            const string filePath = @"..\..\..\Snippet.snippet";
+            IndentChars = "  ",
+            OmitCodeSnippetsElement = true,
+            OmitXmlDeclaration = true,
+            Comment = " comment "
+        };
 
-            Snippet snippet = null;
+        string oldValue = File.ReadAllText(filePath, Encoding.UTF8);
 
-            using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-                snippet = SnippetSerializer.Deserialize(stream).FirstOrDefault();
+        string newValue = SnippetSerializer.CreateXml(snippet, settings);
 
-            var settings = new SaveSettings()
-            {
-                IndentChars = "  ",
-                OmitCodeSnippetsElement = true,
-                OmitXmlDeclaration = true,
-                Comment = " comment "
-            };
-
-            string oldValue = File.ReadAllText(filePath, Encoding.UTF8);
-
-            string newValue = SnippetSerializer.CreateXml(snippet, settings);
-
-            Assert.Equal(oldValue, newValue);
-        }
+        Assert.Equal(oldValue, newValue);
     }
 }

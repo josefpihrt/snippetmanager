@@ -59,7 +59,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <returns><c>true</c> if <paramref name="version"/> is valid snippet format version; Otherwise, <c>false</c>.</returns>
         public static bool IsValidVersion(Version version)
         {
-            if (version == null)
+            if (version is null)
                 return false;
 
             if (version.Major == -1)

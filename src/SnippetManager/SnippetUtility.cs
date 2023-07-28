@@ -20,7 +20,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippets"/> is <c>null</c>.</exception>
         public static IEnumerable<DuplicateShortcutInfo> FindDuplicateShortcuts(IEnumerable<Snippet> snippets)
         {
-            if (snippets == null)
+            if (snippets is null)
                 throw new ArgumentNullException(nameof(snippets));
 
             return FindDuplicateShortcuts();

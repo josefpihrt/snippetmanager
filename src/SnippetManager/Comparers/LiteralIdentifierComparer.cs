@@ -8,7 +8,7 @@ namespace Pihrtsoft.Snippets.Comparers
     {
         protected override string GetValue(Literal literal)
         {
-            if (literal == null)
+            if (literal is null)
                 throw new ArgumentNullException(nameof(literal));
 
             return literal.Identifier;

@@ -10,7 +10,7 @@ namespace Pihrtsoft.Snippets
 
         public static bool ContainsCDataEnd(string value)
         {
-            if (value == null)
+            if (value is null)
                 throw new ArgumentNullException(nameof(value));
 
             return value.IndexOf(CDataEnd, StringComparison.Ordinal) != -1;

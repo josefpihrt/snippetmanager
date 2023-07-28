@@ -27,7 +27,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
             return Validate();
@@ -48,7 +48,7 @@ namespace Pihrtsoft.Snippets.Validations
         /// <exception cref="ArgumentNullException"><paramref name="context"/> is <c>null</c>.</exception>
         protected virtual IEnumerable<SnippetValidationResult> Validate(SnippetValidationContext context)
         {
-            if (context == null)
+            if (context is null)
                 throw new ArgumentNullException(nameof(context));
 
             return Validate();

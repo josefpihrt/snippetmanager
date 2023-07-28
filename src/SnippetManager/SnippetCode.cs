@@ -84,7 +84,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentException"><paramref name="oldIdentifier"/> is the empty string or <paramref name="newIdentifier"/> is invalid.</exception>
         public string RenamePlaceholder(string oldIdentifier, string newIdentifier)
         {
-            if (oldIdentifier == null)
+            if (oldIdentifier is null)
                 throw new ArgumentNullException(nameof(oldIdentifier));
 
             if (oldIdentifier.Length == 0)
@@ -223,7 +223,7 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                if (_indexes == null)
+                if (_indexes is null)
                     Parse();
 
                 return _placeholders;
@@ -270,7 +270,7 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                if (_indexes == null)
+                if (_indexes is null)
                     Parse();
 
                 return _indexes;
@@ -284,7 +284,7 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                if (_indexes == null)
+                if (_indexes is null)
                     Parse();
 
                 return _startIndex != -1;

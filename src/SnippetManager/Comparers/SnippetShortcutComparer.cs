@@ -10,7 +10,7 @@ namespace Pihrtsoft.Snippets.Comparers
 
         protected override string GetValue(Snippet snippet)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
             return snippet.Shortcut;

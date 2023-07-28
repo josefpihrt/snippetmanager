@@ -18,7 +18,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
         public static void Rename(Snippet snippet, string oldIdentifier, string newIdentifier)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
             Literal literal = snippet.Literals[oldIdentifier];

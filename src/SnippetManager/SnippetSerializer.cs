@@ -92,7 +92,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="stream"/> is <c>null</c>.</exception>
         public static IEnumerable<Snippet> Deserialize(Stream stream)
         {
-            if (stream == null)
+            if (stream is null)
                 throw new ArgumentNullException(nameof(stream));
 
             return Deserialize();
@@ -119,7 +119,7 @@ namespace Pihrtsoft.Snippets
                             {
                                 CodeSnippetsElement element = Deserialize<CodeSnippetsElement>(xmlReader, CodeSnippetsElementXmlSerializer);
 
-                                if (element.Snippets == null)
+                                if (element.Snippets is null)
                                     break;
 
                                 for (int i = 0; i < element.Snippets.Length; i++)
@@ -169,13 +169,13 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="filePath"/> or <paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(string filePath, Snippet snippet, SaveSettings settings)
         {
-            if (filePath == null)
+            if (filePath is null)
                 throw new ArgumentNullException(nameof(filePath));
 
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (var stream = new FileStream(filePath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
@@ -202,13 +202,13 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="stream"/> or <paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(Stream stream, Snippet snippet, SaveSettings settings)
         {
-            if (stream == null)
+            if (stream is null)
                 throw new ArgumentNullException(nameof(stream));
 
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (XmlWriter xmlWriter = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
@@ -235,13 +235,13 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="filePath"/> or <paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(string filePath, IEnumerable<Snippet> snippets, SaveSettings settings)
         {
-            if (filePath == null)
+            if (filePath is null)
                 throw new ArgumentNullException(nameof(filePath));
 
-            if (snippets == null)
+            if (snippets is null)
                 throw new ArgumentNullException(nameof(snippets));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (var stream = new FileStream(filePath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
@@ -255,7 +255,7 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippetFile"/> is <c>null</c>.</exception>
         public static void Serialize(SnippetFile snippetFile)
         {
-            if (snippetFile == null)
+            if (snippetFile is null)
                 throw new ArgumentNullException(nameof(snippetFile));
 
             Serialize(snippetFile.FullName, snippetFile.Snippets, new SaveSettings());
@@ -270,10 +270,10 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(SnippetFile snippetFile, SaveSettings settings)
         {
-            if (snippetFile == null)
+            if (snippetFile is null)
                 throw new ArgumentNullException(nameof(snippetFile));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             Serialize(snippetFile.FullName, snippetFile.Snippets, settings);
@@ -299,13 +299,13 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="stream"/> or <paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static void Serialize(Stream stream, IEnumerable<Snippet> snippets, SaveSettings settings)
         {
-            if (stream == null)
+            if (stream is null)
                 throw new ArgumentNullException(nameof(stream));
 
-            if (snippets == null)
+            if (snippets is null)
                 throw new ArgumentNullException(nameof(snippets));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (XmlWriter xmlWriter = XmlWriter.Create(stream, GetXmlWriterSettings(settings)))
@@ -331,10 +331,10 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippet"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static string CreateXml(Snippet snippet, SaveSettings settings)
         {
-            if (snippet == null)
+            if (snippet is null)
                 throw new ArgumentNullException(nameof(snippet));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (var memoryStream = new MemoryStream())
@@ -373,10 +373,10 @@ namespace Pihrtsoft.Snippets
         /// <exception cref="ArgumentNullException"><paramref name="snippets"/> or <paramref name="settings"/> is <c>null</c>.</exception>
         public static string CreateXml(IEnumerable<Snippet> snippets, SaveSettings settings)
         {
-            if (snippets == null)
+            if (snippets is null)
                 throw new ArgumentNullException(nameof(snippets));
 
-            if (settings == null)
+            if (settings is null)
                 throw new ArgumentNullException(nameof(settings));
 
             using (var memoryStream = new MemoryStream())
@@ -471,7 +471,7 @@ namespace Pihrtsoft.Snippets
         {
             get
             {
-                if (_namespaces == null)
+                if (_namespaces is null)
                 {
                     _namespaces = new XmlSerializerNamespaces();
                     _namespaces.Add("", DefaultNamespace);

@@ -21,7 +21,7 @@ namespace Pihrtsoft.Snippets.Comparers
             if (object.ReferenceEquals(x, y))
                 return true;
 
-            if (x == null || y == null)
+            if (x is null || y is null)
                 return false;
 
             if (x.IsEditable != y.IsEditable)
