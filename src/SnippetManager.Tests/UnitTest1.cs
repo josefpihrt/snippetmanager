@@ -13,7 +13,7 @@ public class SnippetTests
     [Fact]
     public void Snippet_Deserialize()
     {
-        const string filePath = @"..\..\..\Snippet.snippet";
+        const string filePath = "../../../Snippet.snippet";
 
         Snippet snippet = null;
 
