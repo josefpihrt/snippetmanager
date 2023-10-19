@@ -47,7 +47,7 @@ public class Literal
         return new Literal(identifier, toolTip, defaultValue)
         {
             Function = "ClassName()",
-            IsEditable = false
+            IsEditable = false,
         };
     }
 
@@ -65,7 +65,7 @@ public class Literal
         return new Literal(identifier, toolTip, defaultValue)
         {
             Function = $"GenerateSwitchCases(${expressionIdentifier}$)",
-            IsEditable = false
+            IsEditable = false,
         };
     }
 
@@ -81,7 +81,7 @@ public class Literal
             Function = Function,
             ToolTip = ToolTip,
             TypeName = TypeName,
-            IsEditable = IsEditable
+            IsEditable = IsEditable,
         };
     }
 

@@ -182,7 +182,7 @@ public class Snippet
             Shortcut = Shortcut,
             SnippetTypes = SnippetTypes,
             FilePath = FilePath,
-            Title = Title
+            Title = Title,
         };
 
         if (HelpUrl is not null)

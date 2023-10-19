@@ -417,7 +417,7 @@ internal static class SnippetMapper
                 IsEditable = element.Editable,
                 Function = element.Function,
                 ToolTip = element.ToolTip,
-                TypeName = element.Type
+                TypeName = element.Type,
             };
 
             snippet.Literals.Add(literal);
@@ -433,7 +433,7 @@ internal static class SnippetMapper
                 DefaultValue = element.Default,
                 IsEditable = element.Editable,
                 Function = element.Function,
-                ToolTip = element.ToolTip
+                ToolTip = element.ToolTip,
             };
 
             snippet.Literals.Add(literal);
@@ -451,7 +451,7 @@ internal static class SnippetMapper
                     ["method decl"] = ContextKind.MethodDeclaration,
                     ["type decl"] = ContextKind.TypeDeclaration,
                     ["file"] = ContextKind.File,
-                    ["any"] = ContextKind.Any
+                    ["any"] = ContextKind.Any,
                 };
         }
     }

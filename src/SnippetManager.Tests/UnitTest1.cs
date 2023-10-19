@@ -25,7 +25,7 @@ public class SnippetTests
             IndentChars = "  ",
             OmitCodeSnippetsElement = true,
             OmitXmlDeclaration = true,
-            Comment = " comment "
+            Comment = " comment ",
         };
 
         string oldValue = File.ReadAllText(filePath, Encoding.UTF8);

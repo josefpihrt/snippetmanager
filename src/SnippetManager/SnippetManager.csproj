@@ -12,15 +12,12 @@
   <PropertyGroup>
     <RootNamespace>Pihrtsoft.Snippets</RootNamespace>
     <AssemblyName>Pihrtsoft.Snippets</AssemblyName>
-    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>1.3.3</Version>
+    <IsPackable>true</IsPackable>
     <PackageId>SnippetManager</PackageId>
     <Description>Snippet Manager API enables to work with Visual Studio snippets.</Description>
-    <Copyright>Copyright (c) 2015-2023 Josef Pihrt</Copyright>
-    <Authors>Josef Pihrt</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>http://github.com/josefpihrt/snippetmanager</PackageProjectUrl>
@@ -32,27 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="SnippetManager.snk" />
     <None Include="docs\NuGetReadme.md" Pack="true" PackagePath="docs\README.md" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>SnippetManager.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-  
-  <ItemGroup>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Roslynator.Analyzers" Version="4.3.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.3.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
   </ItemGroup>
 
 </Project>

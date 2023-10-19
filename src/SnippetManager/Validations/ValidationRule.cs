@@ -36,7 +36,7 @@ public abstract class ValidationRule
             new NamespaceValidationRule(),
             new AssemblyReferenceValidationRule(),
             new LiteralValidationRule(),
-            new CodeValidationRule()
+            new CodeValidationRule(),
         };
     }
 

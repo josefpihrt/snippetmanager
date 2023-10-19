@@ -443,7 +443,7 @@ public static class SnippetSerializer
         return new XmlWriterSettings()
         {
             IndentChars = "    ",
-            Indent = true
+            Indent = true,
         };
     }
 
