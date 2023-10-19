@@ -5,42 +5,41 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Pihrtsoft.Snippets.Comparers;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Represents the set of shortcuts.
+/// </summary>
+[DebuggerDisplay("Count = {Count} {Shortcuts,nq}")]
+public class ShortcutCollection : Collection<string>
 {
     /// <summary>
-    /// Represents the set of shortcuts.
+    /// Initializes a new instance of the <see cref="ShortcutCollection"/> class that is empty.
     /// </summary>
-    [DebuggerDisplay("Count = {Count} {Shortcuts,nq}")]
-    public class ShortcutCollection : Collection<string>
+    public ShortcutCollection()
+        : base(new List<string>())
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ShortcutCollection"/> class that is empty.
-        /// </summary>
-        public ShortcutCollection()
-            : base(new List<string>())
-        {
-        }
+    }
 
-        /// <summary>
-        /// Sorts the elements in the entire <see cref="ShortcutCollection"/>.
-        /// </summary>
-        public void Sort()
-        {
-            Sort(Comparer.StringComparer);
-        }
+    /// <summary>
+    /// Sorts the elements in the entire <see cref="ShortcutCollection"/>.
+    /// </summary>
+    public void Sort()
+    {
+        Sort(Comparer.StringComparer);
+    }
 
-        /// <summary>
-        /// Sorts the elements in the entire <see cref="ShortcutCollection"/> using the specified comparer.
-        /// </summary>
-        /// <param name="comparer">The <see cref="IComparer{String}"/> implementation to use when comparing elements.</param>
-        public void Sort(IComparer<string> comparer)
-        {
-            ((List<string>)Items).Sort(comparer);
-        }
+    /// <summary>
+    /// Sorts the elements in the entire <see cref="ShortcutCollection"/> using the specified comparer.
+    /// </summary>
+    /// <param name="comparer">The <see cref="IComparer{String}"/> implementation to use when comparing elements.</param>
+    public void Sort(IComparer<string> comparer)
+    {
+        ((List<string>)Items).Sort(comparer);
+    }
 
-        private string Shortcuts
-        {
-            get { return string.Join(", ", Items); }
-        }
+    private string Shortcuts
+    {
+        get { return string.Join(", ", Items); }
     }
 }

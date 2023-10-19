@@ -3,27 +3,26 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Represents the set of <see cref="Snippet"/>s.
+/// </summary>
+public class SnippetCollection : Collection<Snippet>
 {
     /// <summary>
-    /// Represents the set of <see cref="Snippet"/>s.
+    /// Initializes a new instance of the <see cref="SnippetCollection"/> class that is empty.
     /// </summary>
-    public class SnippetCollection : Collection<Snippet>
+    public SnippetCollection()
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SnippetCollection"/> class that is empty.
-        /// </summary>
-        public SnippetCollection()
-        {
-        }
+    }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SnippetCollection"/> class as a wrapper for the specified list.
-        /// </summary>
-        /// <param name="list">The list to wrap.</param>
-        public SnippetCollection(IList<Snippet> list)
-            : base(list)
-        {
-        }
+    /// <summary>
+    /// Initializes a new instance of the <see cref="SnippetCollection"/> class as a wrapper for the specified list.
+    /// </summary>
+    /// <param name="list">The list to wrap.</param>
+    public SnippetCollection(IList<Snippet> list)
+        : base(list)
+    {
     }
 }

@@ -3,39 +3,38 @@
 using System;
 using System.Diagnostics;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Represents a reference to the assembly.
+/// </summary>
+[DebuggerDisplay("{AssemblyName,nq} {Url,nq}")]
+public class AssemblyReference
+#if NETFRAMEWORK
+    : ICloneable
+#endif
 {
     /// <summary>
-    /// Represents a reference to the assembly.
+    /// Creates a new <see cref="AssemblyReference"/> that is a deep copy of the current instance.
     /// </summary>
-    [DebuggerDisplay("{AssemblyName,nq} {Url,nq}")]
-    public class AssemblyReference
-#if NETFRAMEWORK
-        : ICloneable
-#endif
+    /// <returns>A new <see cref="AssemblyReference"/> that is a deep copy of the current instance.</returns>
+    public object Clone()
     {
-        /// <summary>
-        /// Creates a new <see cref="AssemblyReference"/> that is a deep copy of the current instance.
-        /// </summary>
-        /// <returns>A new <see cref="AssemblyReference"/> that is a deep copy of the current instance.</returns>
-        public object Clone()
-        {
-            var clone = new AssemblyReference() { AssemblyName = AssemblyName };
+        var clone = new AssemblyReference() { AssemblyName = AssemblyName };
 
-            if (Url != null)
-                clone.Url = new Uri(Url.OriginalString);
+        if (Url is not null)
+            clone.Url = new Uri(Url.OriginalString);
 
-            return clone;
-        }
-
-        /// <summary>
-        /// Gets or sets assembly name.
-        /// </summary>
-        public string AssemblyName { get; set; }
-
-        /// <summary>
-        /// Gets or sets url.
-        /// </summary>
-        public Uri Url { get; set; }
+        return clone;
     }
+
+    /// <summary>
+    /// Gets or sets assembly name.
+    /// </summary>
+    public string AssemblyName { get; set; }
+
+    /// <summary>
+    /// Gets or sets url.
+    /// </summary>
+    public Uri Url { get; set; }
 }

@@ -2,20 +2,19 @@
 
 using System;
 
-namespace Pihrtsoft.Snippets.Comparers
+namespace Pihrtsoft.Snippets.Comparers;
+
+internal class SnippetShortcutComparer : SnippetStringComparer
 {
-    internal class SnippetShortcutComparer : SnippetStringComparer
+    private static readonly StringComparer _stringComparer = StringComparer.CurrentCultureIgnoreCase;
+
+    protected override string GetValue(Snippet snippet)
     {
-        private static readonly StringComparer _stringComparer = StringComparer.CurrentCultureIgnoreCase;
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
 
-        protected override string GetValue(Snippet snippet)
-        {
-            if (snippet == null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return snippet.Shortcut;
-        }
-
-        internal override StringComparer StringComparer => _stringComparer;
+        return snippet.Shortcut;
     }
+
+    internal override StringComparer StringComparer => _stringComparer;
 }

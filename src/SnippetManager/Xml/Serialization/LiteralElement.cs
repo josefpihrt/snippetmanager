@@ -3,46 +3,45 @@
 using System.ComponentModel;
 using System.Xml.Serialization;
 
-namespace Pihrtsoft.Snippets.Xml.Serialization
+namespace Pihrtsoft.Snippets.Xml.Serialization;
+
+/// <summary>
+/// Represents Literal element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+/// </summary>
+public class LiteralElement
 {
     /// <summary>
-    /// Represents Literal element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+    /// Initializes a new instance of the <see cref="LiteralElement"/> class.
     /// </summary>
-    public class LiteralElement
+    public LiteralElement()
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="LiteralElement"/> class.
-        /// </summary>
-        public LiteralElement()
-        {
-            Editable = true;
-        }
-
-        /// <summary>
-        /// Gets or sets Editable attribute value. Default value is <c>true</c>.
-        /// </summary>
-        [XmlAttribute]
-        [DefaultValue(true)]
-        public bool Editable { get; set; }
-
-        /// <summary>
-        /// Gets or sets ID element value.
-        /// </summary>
-        public string ID { get; set; }
-
-        /// <summary>
-        /// Gets or sets ToolTip element value.
-        /// </summary>
-        public string ToolTip { get; set; }
-
-        /// <summary>
-        /// Gets or sets Default element value.
-        /// </summary>
-        public string Default { get; set; }
-
-        /// <summary>
-        /// Gets or sets Function element value.
-        /// </summary>
-        public string Function { get; set; }
+        Editable = true;
     }
+
+    /// <summary>
+    /// Gets or sets Editable attribute value. Default value is <c>true</c>.
+    /// </summary>
+    [XmlAttribute]
+    [DefaultValue(true)]
+    public bool Editable { get; set; }
+
+    /// <summary>
+    /// Gets or sets ID element value.
+    /// </summary>
+    public string ID { get; set; }
+
+    /// <summary>
+    /// Gets or sets ToolTip element value.
+    /// </summary>
+    public string ToolTip { get; set; }
+
+    /// <summary>
+    /// Gets or sets Default element value.
+    /// </summary>
+    public string Default { get; set; }
+
+    /// <summary>
+    /// Gets or sets Function element value.
+    /// </summary>
+    public string Function { get; set; }
 }

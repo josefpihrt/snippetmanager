@@ -4,33 +4,32 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+/// <summary>
+/// Represents an information about snippets with same shortcut.
+/// </summary>
+[DebuggerDisplay("{Shortcut,nq} Count = {Count}")]
+public class DuplicateShortcutInfo
 {
-    /// <summary>
-    /// Represents an information about snippets with same shortcut.
-    /// </summary>
-    [DebuggerDisplay("{Shortcut,nq} Count = {Count}")]
-    public class DuplicateShortcutInfo
+    internal DuplicateShortcutInfo(string shortcut, IEnumerable<Snippet> snippets)
     {
-        internal DuplicateShortcutInfo(string shortcut, IEnumerable<Snippet> snippets)
-        {
-            Shortcut = shortcut;
-            Snippets = snippets;
-        }
+        Shortcut = shortcut;
+        Snippets = snippets;
+    }
 
-        /// <summary>
-        /// Gets snippet shortcut.
-        /// </summary>
-        public string Shortcut { get; }
+    /// <summary>
+    /// Gets snippet shortcut.
+    /// </summary>
+    public string Shortcut { get; }
 
-        /// <summary>
-        /// Gets an enumerable collection of snippets with same shortcut.
-        /// </summary>
-        public IEnumerable<Snippet> Snippets { get; }
+    /// <summary>
+    /// Gets an enumerable collection of snippets with same shortcut.
+    /// </summary>
+    public IEnumerable<Snippet> Snippets { get; }
 
-        internal int Count
-        {
-            get { return Snippets.Count(); }
-        }
+    internal int Count
+    {
+        get { return Snippets.Count(); }
     }
 }

@@ -2,18 +2,17 @@
 
 using System;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+internal static class TextUtility
 {
-    internal static class TextUtility
+    private const string CDataEnd = "]]>";
+
+    public static bool ContainsCDataEnd(string value)
     {
-        private const string CDataEnd = "]]>";
+        if (value is null)
+            throw new ArgumentNullException(nameof(value));
 
-        public static bool ContainsCDataEnd(string value)
-        {
-            if (value == null)
-                throw new ArgumentNullException(nameof(value));
-
-            return value.IndexOf(CDataEnd, StringComparison.Ordinal) != -1;
-        }
+        return value.IndexOf(CDataEnd, StringComparison.Ordinal) != -1;
     }
 }

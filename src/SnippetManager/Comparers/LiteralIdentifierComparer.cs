@@ -2,16 +2,15 @@
 
 using System;
 
-namespace Pihrtsoft.Snippets.Comparers
-{
-    internal class LiteralIdentifierComparer : LiteralComparer
-    {
-        protected override string GetValue(Literal literal)
-        {
-            if (literal == null)
-                throw new ArgumentNullException(nameof(literal));
+namespace Pihrtsoft.Snippets.Comparers;
 
-            return literal.Identifier;
-        }
+internal class LiteralIdentifierComparer : LiteralComparer
+{
+    protected override string GetValue(Literal literal)
+    {
+        if (literal is null)
+            throw new ArgumentNullException(nameof(literal));
+
+        return literal.Identifier;
     }
 }

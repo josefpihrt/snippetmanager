@@ -4,82 +4,81 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pihrtsoft.Snippets.Validations
+namespace Pihrtsoft.Snippets.Validations;
+
+/// <summary>
+/// Represents a validation rule for the snippet literals.
+/// </summary>
+public class LiteralValidationRule : ValidationRule
 {
+    private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+
     /// <summary>
-    /// Represents a validation rule for the snippet literals.
+    /// Validates literals of the specified <see cref="Snippet"/>.
     /// </summary>
-    public class LiteralValidationRule : ValidationRule
+    /// <param name="snippet">A snippet to be validated.</param>
+    /// <returns>Enumerable collection of validation results.</returns>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
     {
-        private static readonly StringComparer _stringComparer = StringComparer.Ordinal;
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
 
-        /// <summary>
-        /// Validates literals of the specified <see cref="Snippet"/>.
-        /// </summary>
-        /// <param name="snippet">A snippet to be validated.</param>
-        /// <returns>Enumerable collection of validation results.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+        return Validate();
+
+        IEnumerable<SnippetValidationResult> Validate()
         {
-            if (snippet == null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return Validate();
-
-            IEnumerable<SnippetValidationResult> Validate()
+            foreach (Literal literal in snippet.Literals)
             {
-                foreach (Literal literal in snippet.Literals)
+                if (string.IsNullOrEmpty(literal.Identifier))
                 {
-                    if (string.IsNullOrEmpty(literal.Identifier))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.MissingLiteralIdentifier,
-                            "Snippet literal identifier is missing.",
-                            ResultImportance.Error,
-                            literal);
-                    }
-                    else if (!snippet.Placeholders.Contains(literal.Identifier))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.LiteralWithoutPlaceholder,
-                            "Snippet literal does not have corresponding placeholder in code.",
-                            ResultImportance.Error,
-                            literal);
-                    }
-
-                    if (!ValidationHelper.IsValidLiteralIdentifier(literal.Identifier))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.InvalidLiteralIdentifier,
-                            "Snippet literal identifier is invalid.",
-                            ResultImportance.Error,
-                            literal);
-                    }
-
-                    if (string.IsNullOrEmpty(literal.DefaultValue))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.MissingLiteralDefault,
-                            "Snippet literal default value is missing.",
-                            ResultImportance.Error,
-                            literal);
-                    }
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingLiteralIdentifier,
+                        "Snippet literal identifier is missing.",
+                        ResultImportance.Error,
+                        literal);
+                }
+                else if (!snippet.Placeholders.Contains(literal.Identifier))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.LiteralWithoutPlaceholder,
+                        "Snippet literal does not have corresponding placeholder in code.",
+                        ResultImportance.Error,
+                        literal);
                 }
 
-                foreach (IGrouping<string, Literal> grp in snippet.Literals.GroupBy(f => f.Identifier, _stringComparer))
+                if (!ValidationHelper.IsValidLiteralIdentifier(literal.Identifier))
                 {
-                    if (grp.CountExceeds(1))
-                    {
-                        yield return new SnippetValidationResult(
-                            snippet,
-                            ErrorCode.LiteralIdentifierDuplicate,
-                            $"Snippet literal identifier '{grp.Key}' is duplicated.",
-                            ResultImportance.Warning);
-                    }
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.InvalidLiteralIdentifier,
+                        "Snippet literal identifier is invalid.",
+                        ResultImportance.Error,
+                        literal);
+                }
+
+                if (string.IsNullOrEmpty(literal.DefaultValue))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.MissingLiteralDefault,
+                        "Snippet literal default value is missing.",
+                        ResultImportance.Error,
+                        literal);
+                }
+            }
+
+            foreach (IGrouping<string, Literal> grp in snippet.Literals.GroupBy(f => f.Identifier, _stringComparer))
+            {
+                if (grp.CountExceeds(1))
+                {
+                    yield return new SnippetValidationResult(
+                        snippet,
+                        ErrorCode.LiteralIdentifierDuplicate,
+                        $"Snippet literal identifier '{grp.Key}' is duplicated.",
+                        ResultImportance.Warning);
                 }
             }
         }

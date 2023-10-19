@@ -2,12 +2,11 @@
 
 using System;
 
-namespace Pihrtsoft.Snippets.Comparers
-{
-    internal static class Comparer
-    {
-        public static StringComparer StringComparer { get; } = StringComparer.CurrentCulture;
+namespace Pihrtsoft.Snippets.Comparers;
 
-        public static StringComparison StringComparison { get; }
-    }
+internal static class Comparer
+{
+    public static StringComparer StringComparer { get; } = StringComparer.CurrentCulture;
+
+    public static StringComparison StringComparison { get; }
 }

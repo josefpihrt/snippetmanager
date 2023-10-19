@@ -10,4 +10,3 @@
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Redundancy", "RCS1213:Remove unused member declaration.", Justification = "<Pending>", Scope = "member", Target = "~P:Pihrtsoft.Snippets.NamespaceCollection.Namespaces")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Redundancy", "RCS1213:Remove unused member declaration.", Justification = "<Pending>", Scope = "member", Target = "~P:Pihrtsoft.Snippets.PlaceholderCollection.Identifiers")]
 [assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Redundancy", "RCS1213:Remove unused member declaration.", Justification = "<Pending>", Scope = "member", Target = "~P:Pihrtsoft.Snippets.KeywordCollection.Keywords")]
-

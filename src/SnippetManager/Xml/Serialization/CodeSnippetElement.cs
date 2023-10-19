@@ -2,28 +2,27 @@
 
 using System.Xml.Serialization;
 
-namespace Pihrtsoft.Snippets.Xml.Serialization
+namespace Pihrtsoft.Snippets.Xml.Serialization;
+
+/// <summary>
+/// Represents CodeSnippet element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+/// </summary>
+[XmlRoot("CodeSnippet")]
+public sealed class CodeSnippetElement
 {
     /// <summary>
-    /// Represents CodeSnippet element in a serialized <see cref="Snippet"/>. This class cannot be inherited.
+    /// Gets or sets Format attribute value.
     /// </summary>
-    [XmlRoot("CodeSnippet")]
-    public sealed class CodeSnippetElement
-    {
-        /// <summary>
-        /// Gets or sets Format attribute value.
-        /// </summary>
-        [XmlAttribute]
-        public string Format { get; set; }
+    [XmlAttribute]
+    public string Format { get; set; }
 
-        /// <summary>
-        /// Gets or sets Header element.
-        /// </summary>
-        public HeaderElement Header { get; set; }
+    /// <summary>
+    /// Gets or sets Header element.
+    /// </summary>
+    public HeaderElement Header { get; set; }
 
-        /// <summary>
-        /// Gets or sets Snippet element.
-        /// </summary>
-        public SnippetElement Snippet { get; set; }
-    }
+    /// <summary>
+    /// Gets or sets Snippet element.
+    /// </summary>
+    public SnippetElement Snippet { get; set; }
 }

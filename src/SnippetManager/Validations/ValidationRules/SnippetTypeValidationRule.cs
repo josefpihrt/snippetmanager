@@ -3,36 +3,35 @@
 using System;
 using System.Collections.Generic;
 
-namespace Pihrtsoft.Snippets.Validations
+namespace Pihrtsoft.Snippets.Validations;
+
+/// <summary>
+/// Represents a validation rule for the snippet format version.
+/// </summary>
+public class SnippetTypeValidationRule : ValidationRule
 {
     /// <summary>
-    /// Represents a validation rule for the snippet format version.
+    /// Validates a format version of the specified <see cref="Snippet"/>.
     /// </summary>
-    public class SnippetTypeValidationRule : ValidationRule
+    /// <param name="snippet">A snippet to be validated.</param>
+    /// <returns>Enumerable collection of validation results.</returns>
+    /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
+    public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
     {
-        /// <summary>
-        /// Validates a format version of the specified <see cref="Snippet"/>.
-        /// </summary>
-        /// <param name="snippet">A snippet to be validated.</param>
-        /// <returns>Enumerable collection of validation results.</returns>
-        /// <exception cref="ArgumentNullException"><paramref name="snippet"/> is <c>null</c>.</exception>
-        public override IEnumerable<SnippetValidationResult> Validate(Snippet snippet)
+        if (snippet is null)
+            throw new ArgumentNullException(nameof(snippet));
+
+        return Validate();
+
+        IEnumerable<SnippetValidationResult> Validate()
         {
-            if (snippet == null)
-                throw new ArgumentNullException(nameof(snippet));
-
-            return Validate();
-
-            IEnumerable<SnippetValidationResult> Validate()
+            if (snippet.SnippetTypes == SnippetTypes.None)
             {
-                if (snippet.SnippetTypes == SnippetTypes.None)
-                {
-                    yield return new SnippetValidationResult(
-                        snippet,
-                        ErrorCode.MissingSnippetType,
-                        "Snippet type is missing.",
-                        ResultImportance.Information);
-                }
+                yield return new SnippetValidationResult(
+                    snippet,
+                    ErrorCode.MissingSnippetType,
+                    "Snippet type is missing.",
+                    ResultImportance.Information);
             }
         }
     }

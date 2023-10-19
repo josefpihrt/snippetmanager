@@ -3,20 +3,19 @@
 using System;
 using System.Collections.Generic;
 
-namespace Pihrtsoft.Snippets
+namespace Pihrtsoft.Snippets;
+
+internal static class CollectionExtensions
 {
-    internal static class CollectionExtensions
+    public static void AddRange<TSource>(this ICollection<TSource> collection, IEnumerable<TSource> itemsToAdd)
     {
-        public static void AddRange<TSource>(this ICollection<TSource> collection, IEnumerable<TSource> itemsToAdd)
-        {
-            if (collection == null)
-                throw new ArgumentNullException(nameof(collection));
+        if (collection is null)
+            throw new ArgumentNullException(nameof(collection));
 
-            if (itemsToAdd == null)
-                throw new ArgumentNullException(nameof(itemsToAdd));
+        if (itemsToAdd is null)
+            throw new ArgumentNullException(nameof(itemsToAdd));
 
-            foreach (TSource item in itemsToAdd)
-                collection.Add(item);
-        }
+        foreach (TSource item in itemsToAdd)
+            collection.Add(item);
     }
 }
